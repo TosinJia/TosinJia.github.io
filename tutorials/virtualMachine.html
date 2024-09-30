@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>虚拟机 | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/7.fe9d2c9f.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/20.1074faf8.js"><link rel="prefetch" href="/assets/js/21.05a74ab0.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/24.86d2ac06.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/29.5a968fce.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/51.742ddc89.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/54.3dbad0f1.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>虚拟机</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tutorials/virtualMachine.html#系统" class="sidebar-link">系统</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tutorials/virtualMachine.html#virtualbox" class="sidebar-link">VirtualBox</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#官网" class="sidebar-link">官网</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#虚拟机通用目录结构" class="sidebar-link">虚拟机通用目录结构</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#功能菜单" class="sidebar-link">功能菜单</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#安装windows10" class="sidebar-link">安装Windows10</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#网络配置" class="sidebar-link">网络配置</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#导入导出虚拟机" class="sidebar-link">导入导出虚拟机</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#_1-没有全屏" class="sidebar-link">1. 没有全屏</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#_2-扩容" class="sidebar-link">2. 扩容</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#移动整个目录文件" class="sidebar-link">移动整个目录文件</a></li><li class="sidebar-sub-header"><a href="/tutorials/virtualMachine.html#移动存储文件" class="sidebar-link">移动存储文件</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="虚拟机"><a href="#虚拟机" class="header-anchor">#</a> 虚拟机</h1> <p></p><div class="table-of-contents"><ul><li><a href="#虚拟机">虚拟机</a><ul><li><a href="#系统">系统</a></li><li><a href="#virtualbox">VirtualBox</a><ul><li><a href="#官网">官网</a></li><li><a href="#虚拟机通用目录结构">虚拟机通用目录结构</a></li><li><a href="#功能菜单">功能菜单</a><ul><li><a href="#管理">管理</a><ul><li><a href="#全局设定">全局设定</a></li><li><a href="#主机网络管理器">主机网络管理器</a></li></ul></li><li><a href="#视图">视图</a></li><li><a href="#设备">设备</a><ul><li><a href="#共享文件夹">共享文件夹</a></li></ul></li></ul></li><li><a href="#安装windows10">安装Windows10</a><ul><li><a href="#问题汇总">问题汇总</a><ul><li><a href="#fatal-int18-boot-failure">FATAL: INT18: BOOT FAILURE</a></li><li><a href="#e-fail-0x80004005">E_FAIL (0x80004005)</a></li></ul></li><li><a href="#操作步骤">操作步骤</a><ul><li><a href="#核心操作">核心操作</a></li></ul></li></ul></li><li><a href="#网络配置">网络配置</a><ul><li><a href="#nat">NAT</a></li><li><a href="#host-only">HOST-ONLY</a></li><li><a href="#参考">参考</a></li><li><a href="#多网卡配置">多网卡配置</a></li></ul></li><li><a href="#导入导出虚拟机">导入导出虚拟机</a><ul><li><a href="#导入">导入</a></li></ul></li><li><a href="#_1-没有全屏">1. 没有全屏</a></li><li><a href="#_2-扩容">2. 扩容</a><ul><li><a href="#virtualbox-ubuntu-磁盘大小扩容-https-www-cnblogs-com-fsong-p-11759261-html">virtualbox ubuntu 磁盘大小扩容</a></li><li><a href="#调整扩大vmdk格式的磁盘空间">调整扩大VMDK格式的磁盘空间</a><ul><li><a href="#windows中virtualbox调整扩大vmdk格式的磁盘空间-https-www-cnblogs-com-luobo-zhang-p-8128185-html">windows中VirtualBox调整扩大VMDK格式的磁盘空间</a></li></ul></li></ul></li><li><a href="#移动整个目录文件">移动整个目录文件</a></li><li><a href="#移动存储文件">移动存储文件</a></li></ul></li></ul></li></ul></div><p></p> <h2 id="系统"><a href="#系统" class="header-anchor">#</a> 系统</h2> <ul><li><a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener noreferrer">系统镜像<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="virtualbox"><a href="#virtualbox" class="header-anchor">#</a> VirtualBox</h2> <h3 id="官网"><a href="#官网" class="header-anchor">#</a> 官网</h3> <ul><li>https://www.virtualbox.org/
+<ul><li>https://www.virtualbox.org/wiki/Downloads</li></ul></li></ul> <h3 id="虚拟机通用目录结构"><a href="#虚拟机通用目录结构" class="header-anchor">#</a> 虚拟机通用目录结构</h3> <ul><li>TosinJia
+<ul><li>IdeaProjects</li> <li>ProgramShortcut</li> <li>tools
+<ul><li>portableSoft</li></ul></li></ul></li></ul> <h3 id="功能菜单"><a href="#功能菜单" class="header-anchor">#</a> 功能菜单</h3> <h4 id="管理"><a href="#管理" class="header-anchor">#</a> 管理</h4> <h5 id="全局设定"><a href="#全局设定" class="header-anchor">#</a> 全局设定</h5> <p><img src="/assets/img/VirtualBox-GlobalSettings-Network.796fec4a.png" alt="GlobalSettings-Network"></p> <h5 id="主机网络管理器"><a href="#主机网络管理器" class="header-anchor">#</a> 主机网络管理器</h5> <p><img src="/assets/img/VirtualBox-HostNetworkManager.549f6fc4.jpg" alt="HostNetworkManager"></p> <h4 id="视图"><a href="#视图" class="header-anchor">#</a> 视图</h4> <table><thead><tr><th>功能</th> <th>快捷键</th> <th>说明</th></tr></thead> <tbody><tr><td>全屏模式</td> <td>HOST+F</td> <td>HOST+Home 显示隐藏菜单</td></tr> <tr><td>无缝模式</td> <td>HOST+L</td> <td></td></tr> <tr><td>自动缩放模式</td> <td>HOST+C</td> <td></td></tr> <tr><td>自动调整窗口都大小</td> <td>HOST+A</td> <td></td></tr> <tr><td>自动调整显示尺寸</td> <td></td> <td>全屏模式下，上下没有铺满全屏</td></tr></tbody></table> <h4 id="设备"><a href="#设备" class="header-anchor">#</a> 设备</h4> <h5 id="共享文件夹"><a href="#共享文件夹" class="header-anchor">#</a> 共享文件夹</h5> <ul><li>勾选 自动挂载</li> <li><a href="https://jingyan.baidu.com/article/d2b1d102cf998b5c7f37d442.html" target="_blank" rel="noopener noreferrer">VirtualBox主机与虚拟机文件夹共享<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="安装windows10"><a href="#安装windows10" class="header-anchor">#</a> 安装Windows10</h3> <ul><li><p><a href="https://baijiahao.baidu.com/s?id=1655255236440515338&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener noreferrer">VirtualBox中安装Windows10<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="http://www.xitongcheng.com/jiaocheng/win10_article_55870.html" target="_blank" rel="noopener noreferrer">2020免费版win10激活密钥大全（有效激活)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>win10专业版用户请依次输入：
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms.03k.org
+slmgr /ato
+</code></pre></div><h4 id="问题汇总"><a href="#问题汇总" class="header-anchor">#</a> 问题汇总</h4> <h5 id="fatal-int18-boot-failure"><a href="#fatal-int18-boot-failure" class="header-anchor">#</a> FATAL: INT18: BOOT FAILURE</h5> <ul><li>启用EFI（只针对某些系统）设置。安装的时候启用，后边取消，会提示FATAL: INT18: BOOT FAILURE</li></ul> <h5 id="e-fail-0x80004005"><a href="#e-fail-0x80004005" class="header-anchor">#</a> E_FAIL (0x80004005)</h5> <ul><li>修改虚拟机名称，报 E_FAIL (0x80004005)，
+<ol><li>修改文件夹名称</li> <li>点击 *.vbox 重新加载虚拟机，修改虚拟机名称</li></ol></li></ul> <h4 id="操作步骤"><a href="#操作步骤" class="header-anchor">#</a> 操作步骤</h4> <h5 id="核心操作"><a href="#核心操作" class="header-anchor">#</a> 核心操作</h5> <ol><li>修改 默认虚拟电脑位置：C:\Users\Lenovo\VirtualBox VMs D:\VirtualBox\VMs</li> <li>win10 无法识别 .iso，上级加载为G盘，选择G盘即可</li></ol> <h3 id="网络配置"><a href="#网络配置" class="header-anchor">#</a> 网络配置</h3> <table><thead><tr><th>模式</th> <th>NAT</th> <th>BRIDGED</th> <th>INTERNAL</th> <th>HOST-ONLY</th></tr></thead> <tbody><tr><td>虚拟机 -&gt; 主机</td> <td>可以</td> <td>可以</td> <td>不可以</td> <td>可以</td></tr> <tr><td>主机 -&gt; 虚拟机</td> <td>不可以</td> <td>可以</td> <td>不可以</td> <td>可以</td></tr> <tr><td>虚拟机 -&gt; 其他主机</td> <td>可以</td> <td>可以</td> <td>不可以</td> <td>可以</td></tr> <tr><td>其他主机 -&gt; 主机</td> <td>不可以</td> <td>可以</td> <td>不可以</td> <td>不可以</td></tr> <tr><td>虚拟机之间</td> <td>不可以</td> <td>可以</td> <td>同网络可以</td> <td>可以</td></tr></tbody></table> <h4 id="nat"><a href="#nat" class="header-anchor">#</a> NAT</h4> <p><img src="/assets/img/virtualMachine-nat.d5d52270.png" alt="NAT"></p> <h4 id="host-only"><a href="#host-only" class="header-anchor">#</a> HOST-ONLY</h4> <p><img src="/assets/img/virtualMachine-host_only.d3993f1d.png" alt="HOST-ONLY"></p> <ul><li>虚拟机</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@CentOS-7 ~]# ifconfig
+enp0s3: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 192.168.56.102  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::806f:eb6c:8c0f:1819  prefixlen 64  scopeid 0x20&lt;link&gt;
+        ether 08:00:27:80:9b:a2  txqueuelen 1000  (Ethernet)
+        RX packets 813  bytes 318572 (311.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 512  bytes 305221 (298.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2107  bytes 129182 (126.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2107  bytes 129182 (126.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+</code></pre></div><ul><li>主机</li></ul> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\User&gt;ipconfig
+以太网适配器 以太网 2:
+
+   连接特定的 DNS 后缀 . . . . . . . :
+   本地链接 IPv6 地址. . . . . . . . : fe80::357f:200c:72f5:6fca%24
+   IPv4 地址 . . . . . . . . . . . . : 172.16.6.89
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . : 172.16.6.254
+
+以太网适配器 VirtualBox Host-Only Network:
+
+   连接特定的 DNS 后缀 . . . . . . . :
+   本地链接 IPv6 地址. . . . . . . . : fe80::4c04:1aac:1c2c:a723%2
+   IPv4 地址 . . . . . . . . . . . . : 192.168.56.1
+   子网掩码  . . . . . . . . . . . . : 255.255.255.0
+   默认网关. . . . . . . . . . . . . :
+</code></pre></div><ul><li><a href="https://cizixs.com/2017/03/09/virtualbox-network-mode-explained/" target="_blank" rel="noopener noreferrer">virtualbox 常用网络模式解释和配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h4> <ul><li><p><a href="https://reverland.bitbucket.io/VirtualBox_net.html" target="_blank" rel="noopener noreferrer">VirtualBox 网络设置详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://blog.csdn.net/dkfajsldfsdfsd/article/details/79444582" target="_blank" rel="noopener noreferrer">VirtualBox四种网络模式及典型配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>可以配置多网卡模式</p> <ul><li><a href="https://developer.aliyun.com/article/149551" target="_blank" rel="noopener noreferrer">【VirtualBox】虚拟机网络设置详细教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><p><a href="https://www.cnblogs.com/york-hust/archive/2012/03/29/2422911.html" target="_blank" rel="noopener noreferrer">快速理解VirtualBox的四种网络连接方式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://blog.csdn.net/wyj19950908/article/details/98966137" target="_blank" rel="noopener noreferrer">virtualBox虚拟机网络配置教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul> <h4 id="多网卡配置"><a href="#多网卡配置" class="header-anchor">#</a> 多网卡配置</h4> <ul><li>https://zhuanlan.zhihu.com/p/341328334</li></ul> <ol><li>关闭虚拟机</li></ol> <p><img src="/assets/img/virtualMachine-networkCard1.75907880.png" alt="网卡1"> <img src="/assets/img/virtualMachine-networkCard2.7b715ffe.jpg" alt="网卡2"></p> <ol start="2"><li>启动虚拟机，进入CentOS进行额外的配置</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@CentOS-7 ~]# ip addr
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:15:2d:ef brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global noprefixroute dynamic enp0s3
+       valid_lft 86360sec preferred_lft 86360sec
+    inet6 fe80::806f:eb6c:8c0f:1819/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:12:50:a2 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.104/24 brd 192.168.56.255 scope global noprefixroute dynamic enp0s8
+       valid_lft 560sec preferred_lft 560sec
+    inet6 fe80::e832:a2fa:3348:ca90/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+# 查看网卡状态，可以看到enp0s8网卡缺少配置文件，需要自己配置
+[root@CentOS-7 ~]# service network status
+Configured devices:
+lo enp0s3
+Currently active devices:
+lo enp0s3 enp0s8
+</code></pre></div><ol start="3"><li>添加网卡配置文件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>一、使用nmcli con查看网卡uuid
+[root@CentOS-7 ~]# nmcli con
+NAME                UUID                                  TYPE      DEVICE 
+enp0s3              de52877b-61ff-40db-a1dc-6abe8669d2cd  ethernet  enp0s3 
+Wired connection 1  faa000fb-7e3d-3f4e-90c5-b9f5bcf091fb  ethernet  enp0s8
+
+二、使用ip addr或者ifconfig查看网卡mac地址
+[root@CentOS-7 ~]# ip addr
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:12:50:a2 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.104/24 brd 192.168.56.255 scope global noprefixroute dynamic enp0s8
+       valid_lft 538sec preferred_lft 538sec
+    inet6 fe80::e832:a2fa:3348:ca90/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+
+
+三、将/etc/sysconfig/network-scripts/ifcfg-enp0s3拷贝一份，重命名成ifcfg-enp0s8。然后修改enp0s8的网卡配置文件，修改完成以后，使用service network restart重启网络使配置生效
+[root@CentOS-7 ~]# cp /etc/sysconfig/network-scripts/ifcfg-enp0s3 /etc/sysconfig/network-scripts/ifcfg-enp0s8
+
+[root@CentOS-7 ~]# vim /etc/sysconfig/network-scripts/ifcfg-enp0s3
+TYPE=&quot;Ethernet&quot;
+PROXY_METHOD=&quot;none&quot;
+BROWSER_ONLY=&quot;no&quot;
+BOOTPROTO=&quot;dhcp&quot;
+DEFROUTE=&quot;yes&quot;
+IPV4_FAILURE_FATAL=&quot;no&quot;
+IPV6INIT=&quot;yes&quot;
+IPV6_AUTOCONF=&quot;yes&quot;
+IPV6_DEFROUTE=&quot;yes&quot;
+IPV6_FAILURE_FATAL=&quot;no&quot;
+IPV6_ADDR_GEN_MODE=&quot;stable-privacy&quot;
+NAME=&quot;enp0s3&quot;
+UUID=&quot;de52877b-61ff-40db-a1dc-6abe8669d2cd&quot;
+DEVICE=&quot;enp0s3&quot;
+ONBOOT=&quot;yes&quot;
+
+[root@CentOS-7 ~]# vim /etc/sysconfig/network-scripts/ifcfg-enp0s8
+TYPE=&quot;Ethernet&quot;
+PROXY_METHOD=&quot;none&quot;
+BROWSER_ONLY=&quot;no&quot;
+#BOOTPROTO=&quot;dhcp&quot;
+BOOTPROTO=none
+HWADDR=08:00:27:12:50:a2
+DEFROUTE=&quot;yes&quot;
+IPV4_FAILURE_FATAL=&quot;no&quot;
+IPV6INIT=&quot;yes&quot;
+IPV6_AUTOCONF=&quot;yes&quot;
+IPV6_DEFROUTE=&quot;yes&quot;
+IPV6_FAILURE_FATAL=&quot;no&quot;
+IPV6_ADDR_GEN_MODE=&quot;stable-privacy&quot;
+#NAME=&quot;enp0s3&quot;
+NAME=enp0s8
+UUID=&quot;faa000fb-7e3d-3f4e-90c5-b9f5bcf091fb&quot;
+#DEVICE=&quot;enp0s3&quot;
+DEVICE=enp0s8
+ONBOOT=&quot;yes&quot;
+
+# IP
+IPADDR=192.168.56.103
+# 子网掩码
+NETMASK=255.255.255.0
+# 网关
+GATEWAY=192.168.56.1
+</code></pre></div><ol start="4"><li>重启服务器、查看网卡</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@CentOS-7 ~]# ip addr
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:15:2d:ef brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global noprefixroute dynamic enp0s3
+       valid_lft 86377sec preferred_lft 86377sec
+    inet6 fe80::806f:eb6c:8c0f:1819/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:12:50:a2 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.103/24 brd 192.168.56.255 scope global noprefixroute enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::e832:a2fa:3348:ca90/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+</code></pre></div><h3 id="导入导出虚拟机"><a href="#导入导出虚拟机" class="header-anchor">#</a> 导入导出虚拟机</h3> <h4 id="导入"><a href="#导入" class="header-anchor">#</a> 导入</h4> <ol><li>选择要导入的虚拟电脑 D:\VMware backup\centos.ova</li> <li>虚拟电脑导入设置
+<ol><li>修改名称</li> <li>修改虚拟硬盘文件名</li></ol></li> <li>选择为所有网卡重新生成MAC地址（勾选重新初始化所有网卡的MAC地址）</li> <li>导入</li></ol> <h3 id="_1-没有全屏"><a href="#_1-没有全屏" class="header-anchor">#</a> 1. 没有全屏</h3> <ul><li>设备-&gt;安装增强功能...</li></ul> <h3 id="_2-扩容"><a href="#_2-扩容" class="header-anchor">#</a> 2. 扩容</h3> <h4 id="virtualbox-ubuntu-磁盘大小扩容"><a href="#virtualbox-ubuntu-磁盘大小扩容" class="header-anchor">#</a> <a href="https://www.cnblogs.com/fsong/p/11759261.html" target="_blank" rel="noopener noreferrer">virtualbox ubuntu 磁盘大小扩容<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <p><a href="https://blog.csdn.net/LEON1741/article/details/56494797" target="_blank" rel="noopener noreferrer">如何在Virtualbox中对Ubuntu系统根分区扩容<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language- extra-class"><pre class="language-text"><code>
+VBoxManage.exe clonehd &quot;H:\VirtualBox\VMs\ubuntu\ubuntu.vmdk&quot; &quot;H:\VirtualBox\VMs\ubuntu\ubuntu.vdi&quot;  -format VDI
+
+10+50G
+VBoxManage.exe modifyhd &quot;H:\VirtualBox\VMs\ubuntu\ubuntu.vdi&quot; --resize 61440
+
+替换存储文件为 ubuntu.vdi
+
+
+sudo apt-get install gparted
+sudo gparted
+
+删除原有磁盘空间
+1. 禁用swap交换空间。右键linux-swap空间的磁盘，选择禁用交换空间。
+2. 删除该交换空间。
+3. 删除整个交换空间所属的磁盘分区，此时，交换空间所属的磁盘分区与刚新分配的磁盘分区合并到一起了，成为了一个更大的磁盘分区。
+
+重新生成磁盘分区
+1. 生成50G的新分区。未分配的分区中右键选择新建。
+2. 在弹出的对话框中输入新创建的分区数据，新分区的文件类型一定要选择与目前sda1分区的文件系统一样的格式。设置该分区之后的空余空间为1G。
+3. 剩下的就是swap分区空间。未分配分区右键选择新建，弹出的对话框中文件类型选择linux-swap
+
+磁盘分区写入分区表
+1. /dev/sda1	ext4
+2. /dev/sda2	ext4
+3. /dev/sda3	linux-swap
+此时，系统已经生成了3个分区，原来的sda1分区依然存在，紧接着是新生成的50G补充分区sda2，最后是swap分区sda3。
+注意：这3个分区顺序不能错，swap分区必须位于最后，否则将不能执行合并！
+
+退出该工具，重启系统。
+
+
+Ubuntu磁盘分区表重写
+1. 查看当前磁盘分区情况
+
+root@tosinjia-VirtualBox:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            474M     0  474M   0% /dev
+tmpfs            99M  3.6M   96M   4% /run
+/dev/sda1       8.8G  5.7G  2.7G  68% /
+tmpfs           495M  216K  495M   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           495M     0  495M   0% /sys/fs/cgroup
+tmpfs            99M   48K   99M   1% /run/user/1000
+tmpfs            99M     0   99M   0% /run/user/0
+root@tosinjia-VirtualBox:~# fdisk -l /dev/sda
+Disk /dev/sda: 60 GiB, 64424509440 bytes, 125829120 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe9265ebf
+
+Device     Boot     Start       End   Sectors Size Id Type
+/dev/sda1  *         2048  18874367  18872320   9G 83 Linux
+/dev/sda2        18874368 123731967 104857600  50G 83 Linux
+/dev/sda3       123731968 125829119   2097152   1G 82 Linux swap / Solaris
+
+2. 关闭swap分区
+
+root@tosinjia-VirtualBox:~# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            989         623          90           8         276         198
+Swap:             0           0           0
+root@tosinjia-VirtualBox:~# swapoff -a
+swapoff: cannot find the device for UUID=dc3e2979-3dd9-4d02-9960-0bf1615a4766
+root@tosinjia-VirtualBox:~# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            989         623          89           8         277         198
+Swap:             0           0           0
+
+
+
+
+root@tosinjia-VirtualBox:~# fdisk /dev/sda
+
+Welcome to fdisk (util-linux 2.27.1).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+
+Command (m for help): p
+Disk /dev/sda: 60 GiB, 64424509440 bytes, 125829120 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe9265ebf
+
+Device     Boot     Start       End   Sectors Size Id Type
+/dev/sda1  *         2048  18874367  18872320   9G 83 Linux
+/dev/sda2        18874368 123731967 104857600  50G 83 Linux
+/dev/sda3       123731968 125829119   2097152   1G 82 Linux swap / Solaris
+
+Command (m for help): d
+Partition number (1-3, default 3): 1
+
+Partition 1 has been deleted.
+
+Command (m for help): d
+Partition number (2,3, default 3): 2
+
+Partition 2 has been deleted.
+
+Command (m for help): p
+Disk /dev/sda: 60 GiB, 64424509440 bytes, 125829120 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe9265ebf
+
+Device     Boot     Start       End Sectors Size Id Type
+/dev/sda3       123731968 125829119 2097152   1G 82 Linux swap / Solaris
+
+前2个分区已经消失了
+
+4. 重新建立新的分区信息
+
+Command (m for help): n
+Partition type
+   p   primary (1 primary, 0 extended, 3 free)
+   e   extended (container for logical partitions)
+Select (default p): p
+Partition number (1,2,4, default 1): 1
+First sector (2048-125829119, default 2048): 
+Last sector, +sectors or +size{K,M,G,T,P} (2048-123731967, default 123731967): 
+
+Created a new partition 1 of type 'Linux' and of size 59 GiB.
+
+Command (m for help): p
+Disk /dev/sda: 60 GiB, 64424509440 bytes, 125829120 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe9265ebf
+
+Device     Boot     Start       End   Sectors Size Id Type
+/dev/sda1            2048 123731967 123729920  59G 83 Linux
+/dev/sda3       123731968 125829119   2097152   1G 82 Linux swap / Solaris
+
+新分区信心建立完成，主分区已经有59G空间了。
+5. 分区信息写入分区表
+
+Command (m for help): w
+The partition table has been altered.
+Calling ioctl() to re-read partition table.
+Re-reading the partition table failed.: Device or resource busy
+
+The kernel still uses the old table. The new table will be used at the next reboot or after you run partprobe(8) or kpartx(8).
+
+6. 重启系统并生效
+root@tosinjia-VirtualBox:~# reboot
+
+root@tosinjia-VirtualBox:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            474M     0  474M   0% /dev
+tmpfs            99M  3.5M   96M   4% /run
+/dev/sda1       8.8G  5.7G  2.7G  68% /
+tmpfs           495M  188K  495M   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           495M     0  495M   0% /sys/fs/cgroup
+tmpfs            99M   32K   99M   1% /run/user/108
+tmpfs            99M     0   99M   0% /run/user/0
+root@tosinjia-VirtualBox:~# resize2fs /dev/sda1
+resize2fs 1.42.13 (17-May-2015)
+Filesystem at /dev/sda1 is mounted on /; on-line resizing required
+old_desc_blocks = 1, new_desc_blocks = 4
+The filesystem on /dev/sda1 is now 15466240 (4k) blocks long.
+
+root@tosinjia-VirtualBox:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            474M     0  474M   0% /dev
+tmpfs            99M  3.5M   96M   4% /run
+/dev/sda1        58G  5.7G   50G  11% /
+tmpfs           495M  188K  495M   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           495M     0  495M   0% /sys/fs/cgroup
+tmpfs            99M   28K   99M   1% /run/user/108
+tmpfs            99M     0   99M   0% /run/user/0
+root@tosinjia-VirtualBox:~# fdisk -l /dev/sda
+Disk /dev/sda: 60 GiB, 64424509440 bytes, 125829120 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xe9265ebf
+
+Device     Boot     Start       End   Sectors Size Id Type
+/dev/sda1            2048 123731967 123729920  59G 83 Linux
+/dev/sda3       123731968 125829119   2097152   1G 82 Linux swap / Solaris
+
+
+
+
+
+
+
+SecureCRT链接失败+ubuntu中root用户登录失败(https://blog.csdn.net/ke_yi_/article/details/81559288)
+SecureCRT 127.0.0.1:50001 root
+
+tosinjia@tosinjia-VirtualBox:~$ sudo vim /etc/ssh/sshd_config 
+#PermitRootLogin prohibit-password
+PermitRootLogin yes
+
+tosinjia@tosinjia-VirtualBox:~$ service sshd restart
+
+
+
+
+
+
+
+</code></pre></div><h4 id="调整扩大vmdk格式的磁盘空间"><a href="#调整扩大vmdk格式的磁盘空间" class="header-anchor">#</a> 调整扩大VMDK格式的磁盘空间</h4> <h5 id="windows中virtualbox调整扩大vmdk格式的磁盘空间"><a href="#windows中virtualbox调整扩大vmdk格式的磁盘空间" class="header-anchor">#</a> <a href="https://www.cnblogs.com/luobo-zhang/p/8128185.html" target="_blank" rel="noopener noreferrer">windows中VirtualBox调整扩大VMDK格式的磁盘空间<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h5> <ol><li>切换到VirtualBox目录</li></ol> <div class="language- extra-class"><pre class="language-text"><code>C:\Program Files\Oracle\VirtualBox
+</code></pre></div><ol start="2"><li>执行clonehd命令并转为vdi</li></ol> <div class="language- extra-class"><pre class="language-text"><code>VBoxManage.exe clonehd &quot;G:\VMware\VirtualBox VMs\win7_bigdata\win7_1-disk002.vmdk&quot; &quot;G:\VMware\VirtualBox VMs\win7_bigdata\win7_1-disk002.vdi&quot;  -format VDI
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Clone medium created in format 'VDI'. UUID: 3ee0bc94-89f5-49fa-8983-90c002367d21
+</code></pre></div><ol start="3"><li>执行modifyhd命令,这里的51200是MB单位</li></ol> <div class="language- extra-class"><pre class="language-text"><code>VBoxManage.exe modifyhd &quot;G:\VMware\VirtualBox VMs\win7_bigdata\win7_1-disk002.vdi&quot; --resize 51200
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+</code></pre></div><ol start="4"><li><p>如果想用vid重新设置即可,重新挂载硬盘即可,不折不挠的继续往下看下一步</p></li> <li><p>如果想转回去,挂载硬盘即可</p> <ul><li>虚拟机 -&gt; 存储 -&gt; 移除 win7_1-disk002.vmdk 添加 win7_1-disk002-expand.vmdk</li></ul></li></ol> <div class="language- extra-class"><pre class="language-text"><code>VBoxManage.exe clonehd &quot;G:\VMware\VirtualBox VMs\win7_bigdata\win7_1-disk002.vdi&quot; &quot;G:\VMware\VirtualBox VMs\win7_bigdata\win7_1-disk002-expand.vmdk&quot; -format VMDK
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Clone medium created in format 'VMDK'. UUID: 7463d519-4134-4485-bc03-97d9bcfcefe1
+</code></pre></div><ol start="6"><li>系统中的划分新增加的硬盘空间
+<ul><li>windows
+<ul><li>计算机 -&gt; 管理 -&gt; 磁盘管理 -&gt; 选中需要扩展的磁盘 -&gt; 扩展卷</li></ul></li></ul></li></ol> <h3 id="移动整个目录文件"><a href="#移动整个目录文件" class="header-anchor">#</a> 移动整个目录文件</h3> <ol><li>复制整个目录文件到移动硬盘</li> <li>右键 -&gt; 删除 -&gt; 只是移除</li> <li>双击 复制目录下的 .vbox 文件</li></ol> <h3 id="移动存储文件"><a href="#移动存储文件" class="header-anchor">#</a> 移动存储文件</h3> <ol><li>移动 ubuntu2.vmdk 文件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>C:\Program Files\Oracle\VirtualBox&gt;VBoxManage internalcommands sethduuid &quot;C:/Users/TosinJia/VirtualBox VMs/ubuntu2/ubuntu2.vmdk&quot;
+UUID changed to: c92d8638-885e-4abd-9480-ad3ef61c7d70
+</code></pre></div><ol start="2"><li><p>修改 ubuntu2.vbox 文件，ubuntu2.vmdk中相关的两处UUID</p></li> <li><p>虚拟机-设置</p> <ul><li>存储
+<ul><li>控制器：SATA
+<ul><li>删除之前的报错文件</li> <li>添加虚拟硬盘</li></ul></li></ul></li></ul></li> <li><p>导出 ubuntu2.ova</p></li> <li><p>导入 ubuntu2.ova ubuntu2_1</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/7.fe9d2c9f.js" defer></script>
+  </body>
+</html>

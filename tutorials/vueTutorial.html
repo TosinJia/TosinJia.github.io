@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue教程 | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/54.3dbad0f1.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/20.1074faf8.js"><link rel="prefetch" href="/assets/js/21.05a74ab0.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/24.86d2ac06.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/29.5a968fce.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/51.742ddc89.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/7.fe9d2c9f.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tutorials/vueTutorial.html#vue-js" class="sidebar-link">Vue.js</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#内置组件" class="sidebar-link">内置组件</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#选项-数据" class="sidebar-link">选项/数据</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#选项-dom" class="sidebar-link">选项/DOM</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#选项-资源" class="sidebar-link">选项/资源</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#指令" class="sidebar-link">指令</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#特殊-attribute" class="sidebar-link">特殊 attribute</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#实例方法-生命周期" class="sidebar-link">实例方法 / 生命周期</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#全局api" class="sidebar-link">全局API</a></li></ul></li><li><a href="/tutorials/vueTutorial.html#vue-router" class="sidebar-link">Vue Router</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tutorials/vueTutorial.html#npm" class="sidebar-link">npm</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#npm-介绍" class="sidebar-link">npm 介绍</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue-resource" class="sidebar-link">vue-resource</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#axios" class="sidebar-link">axios</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vuex" class="sidebar-link">Vuex</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue-preview" class="sidebar-link">vue-preview</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#eslint" class="sidebar-link">eslint</a></li></ul></li><li><a href="/tutorials/vueTutorial.html#_1-基础语法实践part1-1" class="sidebar-link">1 基础语法实践part1-1</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#前端框架学习介绍" class="sidebar-link">前端框架学习介绍</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#mvvm的介绍" class="sidebar-link">MVVM的介绍</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue中指令的特点" class="sidebar-link">vue中指令的特点</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#插值表达式和v-text指令的两个区别" class="sidebar-link">插值表达式和v-text指令的两个区别</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#v-html渲染html字符串" class="sidebar-link">v-html渲染HTML字符串</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#v-bind指令的使用和注意点" class="sidebar-link">v-bind指令的使用和注意点</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#v-on指令为元素绑定事件" class="sidebar-link">v-on指令为元素绑定事件</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#案例-跑马灯案例的制作" class="sidebar-link">案例：跑马灯案例的制作</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#v-model指令实现数据的双向绑定" class="sidebar-link">v-model指令实现数据的双向绑定</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#事件修饰符" class="sidebar-link">事件修饰符</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#在vue中使用样式" class="sidebar-link">在Vue中使用样式</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue指令之v-for" class="sidebar-link">Vue指令之v-for</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue指令之v-if和v-show" class="sidebar-link">Vue指令之v-if和v-show</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#案例-渲染品牌列表并实现添加功能" class="sidebar-link">案例：渲染品牌列表并实现添加功能</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#全局过滤器的介绍和总结" class="sidebar-link">全局过滤器的介绍和总结</a></li></ul></li><li><a href="/tutorials/vueTutorial.html#_1-基础语法实践part1-2" class="sidebar-link">1 基础语法实践part1-2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#案例-样式案例" class="sidebar-link">案例：样式案例</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#过滤器复习" class="sidebar-link">过滤器复习</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#自定义指令" class="sidebar-link">自定义指令</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#按键修饰符的使用" class="sidebar-link">按键修饰符的使用</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue实例生命周期" class="sidebar-link">vue实例生命周期</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#请求" class="sidebar-link">请求</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue中的动画" class="sidebar-link">Vue中的动画</a></li></ul></li><li><a href="/tutorials/vueTutorial.html#_1-基础语法实践part1-3" class="sidebar-link">1 基础语法实践part1-3</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#vue组件" class="sidebar-link">Vue组件</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#路由" class="sidebar-link">路由</a></li></ul></li><li><a href="/tutorials/vueTutorial.html#_2-vue项目" class="sidebar-link">2 Vue项目</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/tutorials/vueTutorial.html#_3-vue-devtools调试工具" class="sidebar-link">3 Vue-devtools调试工具</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#界面功能" class="sidebar-link">界面功能</a></li><li class="sidebar-sub-header"><a href="/tutorials/vueTutorial.html#开发者工具" class="sidebar-link">开发者工具</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue教程"><a href="#vue教程" class="header-anchor">#</a> Vue教程</h1> <p></p><div class="table-of-contents"><ul><li><a href="#vue教程">Vue教程</a></li><li><a href="#在线参考">在线参考</a><ul><li><a href="#vue-js">Vue.js</a><ul><li><a href="#内置组件">内置组件</a><ul><li><a href="#组件">组件</a></li><li><a href="#动画">动画</a><ul><li><a href="#第三方css动画样式库">第三方CSS动画样式库</a></li></ul></li></ul></li><li><a href="#选项-数据">选项/数据</a></li><li><a href="#选项-dom">选项/DOM</a></li><li><a href="#选项-资源">选项/资源</a></li><li><a href="#指令">指令</a></li><li><a href="#特殊-attribute">特殊 attribute</a></li><li><a href="#实例方法-生命周期">实例方法 / 生命周期</a></li><li><a href="#全局api">全局API</a></li></ul></li><li><a href="#vue-router">Vue Router</a></li><li><a href="#npm">npm</a><ul><li><a href="#npm-介绍">npm 介绍</a></li><li><a href="#vue-resource">vue-resource</a></li><li><a href="#axios">axios</a></li><li><a href="#vuex">Vuex</a></li><li><a href="#vue-preview">vue-preview</a></li><li><a href="#eslint">eslint</a></li></ul></li></ul></li><li><a href="#教程">教程</a><ul><li><a href="#_1-基础语法实践part1-1">1 基础语法实践part1-1</a><ul><li><a href="#前端框架学习介绍">前端框架学习介绍</a><ul><li><a href="#什么是vue-js">什么是Vue.js</a></li><li><a href="#为什么要学习流行框架">为什么要学习流行框架</a></li></ul></li><li><a href="#mvvm的介绍">MVVM的介绍</a></li><li><a href="#vue中指令的特点">vue中指令的特点</a></li><li><a href="#插值表达式和v-text指令的两个区别">插值表达式和v-text指令的两个区别</a><ul><li><a href="#区别">区别</a></li><li><a href="#vue之-基本的代码结构和插值表达式、v-cloak">Vue之-基本的代码结构和插值表达式、v-cloak</a></li></ul></li><li><a href="#v-html渲染html字符串">v-html渲染HTML字符串</a></li><li><a href="#v-bind指令的使用和注意点">v-bind指令的使用和注意点</a><ul><li><a href="#vue指令之v-bind的三种用法">Vue指令之v-bind的三种用法</a></li></ul></li><li><a href="#v-on指令为元素绑定事件">v-on指令为元素绑定事件</a></li><li><a href="#案例-跑马灯案例的制作">案例：跑马灯案例的制作</a></li><li><a href="#v-model指令实现数据的双向绑定">v-model指令实现数据的双向绑定</a><ul><li><a href="#案例-使用v-model指令实现简易计算器">案例：使用v-model指令实现简易计算器</a></li></ul></li><li><a href="#事件修饰符">事件修饰符</a><ul><li><a href="#事件修饰符-上">事件修饰符-上</a><ul><li><a href="#事件修饰符">事件修饰符</a></li></ul></li><li><a href="#事件修饰符-下">事件修饰符-下</a><ul><li><a href="#事件执行的3个阶段-从外到里-从里到外">事件执行的3个阶段：从外到里，从里到外</a></li></ul></li></ul></li><li><a href="#在vue中使用样式">在Vue中使用样式</a><ul><li><a href="#在vue中使用类样式的4种方式">在Vue中使用类样式的4种方式</a></li><li><a href="#使用内联样式">使用内联样式</a></li></ul></li><li><a href="#vue指令之v-for">Vue指令之v-for</a><ul><li><a href="#v-for循环数组">v-for循环数组</a></li><li><a href="#v-for中key属性的使用">v-for中key属性的使用</a></li></ul></li><li><a href="#vue指令之v-if和v-show">Vue指令之v-if和v-show</a></li><li><a href="#案例-渲染品牌列表并实现添加功能">案例：渲染品牌列表并实现添加功能</a><ul><li><a href="#使用数组的findindex方法查找对应项的索引值">使用数组的findIndex方法查找对应项的索引值</a></li><li><a href="#实现品牌检索功能">实现品牌检索功能</a></li><li><a href="#使用字符串的includes新方法来判断是否包含">使用字符串的includes新方法来判断是否包含</a></li><li><a href="#优化品牌列表检索的功能">优化品牌列表检索的功能</a><ul><li><a href="#_1-x-版本中的filterby指令-在2-x中已经被废除-filterby-指令">1.x 版本中的filterBy指令，在2.x中已经被废除： filterBy - 指令</a></li><li><a href="#在2-x版本中-手动实现筛选的方式-https-cn-vuejs-org-v2-guide-list-html-e6-98-be-e7-a4-ba-e8-bf-87-e6-bb-a4-e6-8e-92-e5-ba-8f-e5-90-8e-e7-9a-84-e7-bb-93-e6-9e-9c">在2.x版本中手动实现筛选的方式：</a></li></ul></li></ul></li><li><a href="#全局过滤器的介绍和总结">全局过滤器的介绍和总结</a><ul><li><a href="#过滤器">过滤器</a><ul><li><a href="#私有过滤器">私有过滤器</a></li></ul><ul><li><a href="#全局过滤器">全局过滤器</a></li></ul></li></ul></li></ul></li><li><a href="#_1-基础语法实践part1-2">1 基础语法实践part1-2</a><ul><li><a href="#案例-样式案例">案例：样式案例</a></li><li><a href="#过滤器复习">过滤器复习</a></li><li><a href="#自定义指令">自定义指令</a><ul><li><a href="#函数简写">函数简写</a></li><li><a href="#钩子函数">钩子函数</a></li><li><a href="#钩子函数参数">钩子函数参数</a></li></ul></li><li><a href="#按键修饰符的使用">按键修饰符的使用</a></li><li><a href="#vue实例生命周期">vue实例生命周期</a><ul><li><a href="#vue实例的生命周期">vue实例的生命周期</a></li><li><a href="#实例生命周期-创建阶段">实例生命周期-创建阶段</a></li><li><a href="#实例生命周期-运行和销毁阶段">实例生命周期-运行和销毁阶段</a></li></ul></li><li><a href="#请求">请求</a><ul><li><a href="#vue-resource-实现-get-post-jsonp请求">vue-resource 实现 get, post, jsonp请求</a><ul><li><a href="#_05-使用vue-resource请求数据-html">05.使用vue-resource请求数据.html</a></li><li><a href="#实现请求总结">实现请求总结</a></li></ul></li><li><a href="#使用axios发起数据请求">使用axios发起数据请求</a></li><li><a href="#使用node服务器模拟jsonp实现过程">使用node服务器模拟JSONP实现过程</a></li><li><a href="#案例-品牌案例-获取品牌列表">案例：品牌案例-获取品牌列表</a></li></ul></li><li><a href="#vue中的动画">Vue中的动画</a><ul><li><a href="#动画-相关概念">动画-相关概念</a></li><li><a href="#动画-使用过渡类名">动画-使用过渡类名</a></li><li><a href="#动画-使用第三方css动画样式库">动画-使用第三方CSS动画样式库</a></li><li><a href="#动画-钩子函数实现小球半场动画">动画-钩子函数实现小球半场动画</a></li><li><a href="#动画-列表动画">动画-列表动画</a><ul><li><a href="#v-for-的列表过渡">v-for 的列表过渡</a><ul><li><a href="#列表的排序过渡">列表的排序过渡</a></li></ul></li></ul></li><li><a href="#动画元素的name属性">动画元素的name属性</a></li></ul></li></ul></li><li><a href="#_1-基础语法实践part1-3">1 基础语法实践part1-3</a><ul><li><a href="#vue组件">Vue组件</a><ul><li><a href="#定义vue组件">定义Vue组件</a></li><li><a href="#全局组件定义的三种方式">全局组件定义的三种方式</a><ul><li><a href="#第一种方式">第一种方式：</a></li><li><a href="#第二种方式">第二种方式：</a></li><li><a href="#第三种方式">第三种方式：</a></li></ul></li><li><a href="#定义私有组件">定义私有组件</a></li><li><a href="#组件中展示数据和响应事件">组件中展示数据和响应事件</a></li><li><a href="#组件的data必须是function并返回对象">组件的data必须是function并返回对象</a></li><li><a href="#使用flag标识符和v-if与v-else实现组件的切换">使用flag标识符和v-if与v-else实现组件的切换</a></li><li><a href="#使用component标签结合is属性切换多个组件">使用component标签结合is属性切换多个组件</a></li><li><a href="#为组件切换添加动画效果">为组件切换添加动画效果</a></li><li><a href="#父组件通过属性绑定为子组件传递数据">父组件通过属性绑定为子组件传递数据</a><ul><li><a href="#父组件向子组件传递普通数据">父组件向子组件传递普通数据</a></li></ul></li><li><a href="#父组件向子组件传递对象">父组件向子组件传递对象</a></li><li><a href="#父组件把方法传递给子组件">父组件把方法传递给子组件</a></li><li><a href="#子组件向父组件传递数据">子组件向父组件传递数据</a></li><li><a href="#案例-评论列表案例练习父子组件传值">案例：评论列表案例练习父子组件传值</a></li><li><a href="#使用ref属性操作页面上的元素或组件">使用ref属性操作页面上的元素或组件</a></li><li><a href="#vue中data和props的区别">vue中data和props的区别</a></li></ul></li><li><a href="#路由">路由</a><ul><li><a href="#使用hash模拟前端路由的实现过程">使用hash模拟前端路由的实现过程</a></li><li><a href="#_18-vue-router的基本使用-html">18.vue-router的基本使用.html</a><ul><li><a href="#路由的使用步骤总结">路由的使用步骤总结</a></li></ul></li><li><a href="#_19-登录注册路由切换和高亮-html">19.登录注册路由切换和高亮.html</a></li><li><a href="#为路由的切换添加动画效果">为路由的切换添加动画效果</a></li><li><a href="#在路由规则中定义参数">在路由规则中定义参数</a><ul><li><a href="#在路由中获取query形式传递的参数">在路由中获取query形式传递的参数</a></li><li><a href="#在路由中获取params形式传递的参数">在路由中获取params形式传递的参数</a></li><li><a href="#路由中使用props获取参数">路由中使用props获取参数</a></li></ul></li></ul></li></ul></li><li><a href="#_2-vue项目">2 Vue项目</a></li><li><a href="#_3-vue-devtools调试工具">3 Vue-devtools调试工具</a><ul><li><a href="#安装">安装</a></li><li><a href="#界面功能">界面功能</a><ul><li><a href="#inspector">Inspector</a><ul><li><a href="#componets">Componets</a><ul><li><a href="#左侧-app">左侧 app</a></li><li><a href="#中部-component">中部 component</a></li><li><a href="#右侧-state">右侧 state</a></li><li><a href="#force-refresh-强制刷新">Force Refresh 强制刷新</a></li><li><a href="#s-select-componet-in-the-page">[S] Select componet in the page</a></li><li><a href="#">...</a></li></ul></li><li><a href="#routes">Routes</a></li><li><a href="#vuex">Vuex</a></li></ul></li><li><a href="#timeline">Timeline</a><ul><li><a href="#mouse">Mouse</a></li><li><a href="#keyboard">Keyboard</a></li><li><a href="#component-events-组件事件">Component events 组件事件</a></li><li><a href="#performance">Performance</a></li><li><a href="#router-navigations">Router Navigations</a></li></ul></li></ul></li><li><a href="#开发者工具">开发者工具</a><ul><li><a href="#console">Console</a><ul><li><a href="#路由">路由</a></li><li><a href="#vuex">vuex</a></li></ul></li><li><a href="#elements">Elements</a></li><li><a href="#sources">Sources</a></li></ul></li></ul></li></ul></li></ul></div><p></p> <ul><li><a href="https://gitee.com/tosin/vue-tutorial" target="_blank" rel="noopener noreferrer">vue-tutorial<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h1 id="在线参考"><a href="#在线参考" class="header-anchor">#</a> 在线参考</h1> <h2 id="vue-js"><a href="#vue-js" class="header-anchor">#</a> Vue.js</h2> <ul><li><p><a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js - The Progressive JavaScript Framework | Vue.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>https://vuejs.org/v2/guide/</li></ul></li> <li><p><a href="https://cn.vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js中文官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener noreferrer">Vue 指南<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://cn.vuejs.org/v2/guide/installation.html" target="_blank" rel="noopener noreferrer">安装<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>https://cn.vuejs.org/js/vue.js</li> <li><a href="https://cn.vuejs.org/v2/guide/installation.html#%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-CLI" target="_blank" rel="noopener noreferrer">命令行工具-CLI<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="https://cn.vuejs.org/v2/guide/instance.html" target="_blank" rel="noopener noreferrer">Vue 实例<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/guide/events.html#%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6" target="_blank" rel="noopener noreferrer">按键修饰符<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></li> <li><p>https://github.com/x-extends/vxe-table</p></li></ul> <h3 id="内置组件"><a href="#内置组件" class="header-anchor">#</a> 内置组件</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#component" target="_blank" rel="noopener noreferrer">component<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://cn.vuejs.org/v2/guide/components.html" target="_blank" rel="noopener noreferrer">组件基础<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="https://cn.vuejs.org/v2/api/#transition" target="_blank" rel="noopener noreferrer">transition<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#transition-group" target="_blank" rel="noopener noreferrer">transition-group<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>&lt;transition&gt; can only be used on a single element. Use &lt;transition-group&gt; for lists.</li></ul></li></ul> <h4 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h4> <ul><li><a href="https://cn.vuejs.org/v2/guide/components.html" target="_blank" rel="noopener noreferrer">组件基础<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/guide/instance.html#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%9B%BE%E7%A4%BA" target="_blank" rel="noopener noreferrer">生命周期图示<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="动画"><a href="#动画" class="header-anchor">#</a> 动画</h4> <ul><li><p><a href="https://cn.vuejs.org/v2/guide/transitions.html" target="_blank" rel="noopener noreferrer">过渡 &amp; 动画<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://cn.vuejs.org/v2/guide/transitions.html#CSS-%E8%BF%87%E6%B8%A1" target="_blank" rel="noopener noreferrer">CSS 过渡<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/guide/transitions.html#JavaScript-%E9%92%A9%E5%AD%90" target="_blank" rel="noopener noreferrer">JavaScript-钩子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><p>样式</p> <ul><li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/position</li></ul></li></ul> <h5 id="第三方css动画样式库"><a href="#第三方css动画样式库" class="header-anchor">#</a> 第三方CSS动画样式库</h5> <ul><li><a href="https://animate.style/" target="_blank" rel="noopener noreferrer">Animate.css<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>https://github.com/animate-css/animate.css/tree/v3.6.2</li></ul></li></ul> <h3 id="选项-数据"><a href="#选项-数据" class="header-anchor">#</a> 选项/数据</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#data" target="_blank" rel="noopener noreferrer">data<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#methods" target="_blank" rel="noopener noreferrer">methods<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#props" target="_blank" rel="noopener noreferrer">props<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#computed" target="_blank" rel="noopener noreferrer">computed<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="选项-dom"><a href="#选项-dom" class="header-anchor">#</a> 选项/DOM</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#el" target="_blank" rel="noopener noreferrer">el<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#template" target="_blank" rel="noopener noreferrer">template<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#render" target="_blank" rel="noopener noreferrer">render<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="选项-资源"><a href="#选项-资源" class="header-anchor">#</a> 选项/资源</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#filters" target="_blank" rel="noopener noreferrer">filters<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://cn.vuejs.org/v2/guide/filters.html#ad" target="_blank" rel="noopener noreferrer">指南 过滤器<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="https://cn.vuejs.org/v2/api/#directives" target="_blank" rel="noopener noreferrer">directives<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>https://cn.vuejs.org/v2/guide/custom-directive.html</li></ul></li></ul> <h3 id="指令"><a href="#指令" class="header-anchor">#</a> 指令</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#v-text" target="_blank" rel="noopener noreferrer">v-text<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-html" target="_blank" rel="noopener noreferrer">v-html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-cloak" target="_blank" rel="noopener noreferrer">v-cloak<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-bind" target="_blank" rel="noopener noreferrer">v-bind<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-on" target="_blank" rel="noopener noreferrer">v-on<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-model" target="_blank" rel="noopener noreferrer">v-model<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-for" target="_blank" rel="noopener noreferrer">v-for<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-show" target="_blank" rel="noopener noreferrer">v-show<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#v-if" target="_blank" rel="noopener noreferrer">v-if<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="特殊-attribute"><a href="#特殊-attribute" class="header-anchor">#</a> 特殊 attribute</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#ref" target="_blank" rel="noopener noreferrer">ref<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://cn.vuejs.org/v2/guide/components-edge-cases.html#%E8%AE%BF%E9%97%AE%E5%AD%90%E7%BB%84%E4%BB%B6%E5%AE%9E%E4%BE%8B%E6%88%96%E5%AD%90%E5%85%83%E7%B4%A0" target="_blank" rel="noopener noreferrer">访问子组件实例或子元素<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h3 id="实例方法-生命周期"><a href="#实例方法-生命周期" class="header-anchor">#</a> 实例方法 / 生命周期</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#vm-mount" target="_blank" rel="noopener noreferrer">vm-mount<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="全局api"><a href="#全局api" class="header-anchor">#</a> 全局API</h3> <ul><li><a href="https://cn.vuejs.org/v2/api/#Vue-filter" target="_blank" rel="noopener noreferrer">Vue-filter<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#Vue-directive" target="_blank" rel="noopener noreferrer">Vue-directive<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://cn.vuejs.org/v2/api/#Vue-extend" target="_blank" rel="noopener noreferrer">Vue-extend<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="vue-router"><a href="#vue-router" class="header-anchor">#</a> Vue Router</h2> <blockquote><p>router.vuejs.org 最新版本地址；v3.router.vuejs.org V3.x</p></blockquote> <ul><li><p><a href="https://router.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">Vue Router官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://router.vuejs.org/zh/installation.html" target="_blank" rel="noopener noreferrer">安装<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+-<a href="https://router.vuejs.org/zh/installation.html#npm" target="_blank" rel="noopener noreferrer">npm<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><p><a href="https://router.vuejs.org/zh/guide/" target="_blank" rel="noopener noreferrer">指南<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://router.vuejs.org/zh/guide/essentials/navigation.html" target="_blank" rel="noopener noreferrer">编程式导航<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://router.vuejs.org/zh/guide/essentials/passing-props.html" target="_blank" rel="noopener noreferrer">路由组件传参<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://router.vuejs.org/zh/guide/essentials/passing-props.html#%E5%B8%83%E5%B0%94%E6%A8%A1%E5%BC%8F" target="_blank" rel="noopener noreferrer">布尔模式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></li> <li><p><a href="https://v3.router.vuejs.org/zh/api/" target="_blank" rel="noopener noreferrer">API 参考<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://router.vuejs.org/zh/api/#router-view-props" target="_blank" rel="noopener noreferrer"><code>&lt;router-view&gt;</code> Props<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://router.vuejs.org/zh/api/#name" target="_blank" rel="noopener noreferrer">name<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="https://v3.router.vuejs.org/zh/api/#router-link" target="_blank" rel="noopener noreferrer"><code>&lt;router-link&gt;</code> Props<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://v3.router.vuejs.org/zh/api/#tag" target="_blank" rel="noopener noreferrer">tag<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="https://v3.router.vuejs.org/zh/api/#router-%E6%9E%84%E5%BB%BA%E9%80%89%E9%A1%B9" target="_blank" rel="noopener noreferrer">Router 构建选项<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://v3.router.vuejs.org/zh/api/#routes" target="_blank" rel="noopener noreferrer">routes<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://v3.router.vuejs.org/zh/api/#linkactiveclass" target="_blank" rel="noopener noreferrer">linkActiveClass<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></li></ul> <h2 id="npm"><a href="#npm" class="header-anchor">#</a> npm</h2> <h3 id="npm-介绍"><a href="#npm-介绍" class="header-anchor">#</a> npm 介绍</h3> <ul><li><p><a href="https://neveryu.github.io/2017/04/10/npm/" target="_blank" rel="noopener noreferrer">npm 全面介绍<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="http://javascript.ruanyifeng.com/nodejs/npm.html" target="_blank" rel="noopener noreferrer">npm模块管理器<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><p><a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><p>https://www.npmjs.com/package/van</p></li> <li><p>https://www.npmjs.com/package/file-loader</p> <ul><li>Placeholders</li></ul></li> <li><p>https://www.npmjs.com/package/open-browser-webpack-plugin</p></li> <li><p>https://www.npmjs.com/package/webpack-dev-server?activeTab=readme</p></li> <li><p>https://www.npmjs.com/package/webpack</p></li> <li><p>https://www.npmjs.com/package/webpack-cli</p></li> <li><p>https://www.npmjs.com/package/html-webpack-plugin</p></li> <li><p>https://www.npmjs.com/package/webpack-open-browser-plugin</p></li> <li><p>https://www.npmjs.com/package/open-browser-webpack-plugin</p></li> <li><p>https://www.npmjs.com/package/jquery</p></li> <li><p>https://www.npmjs.com/package/node-nightly</p></li> <li><p>样式</p> <ul><li>https://www.npmjs.com/package/css-loader</li> <li>https://www.npmjs.com/package/style-loader</li> <li>https://www.npmjs.com/package/file-loader</li> <li>https://www.npmjs.com/package/url-loader</li> <li>https://www.npmjs.com/package/optimize-css-assets-webpack-plugin</li></ul></li> <li><p>js</p> <ul><li>https://www.npmjs.com/package/babel-core</li> <li>https://www.npmjs.com/package/babel-loader</li> <li>https://www.npmjs.com/package/babel-plugin-transform-runtime</li> <li>https://www.npmjs.com/package/babel-preset-env</li> <li>https://www.npmjs.com/package/babel-preset-stage-0</li></ul></li> <li><p>https://www.npmjs.com/package/eslint</p></li> <li><p>https://www.npmjs.com/package/vconsole 前端真机调试</p></li> <li><p>https://www.npmjs.com/package/optimize-css-assets-webpack-plugin</p> <ul><li>https://github.com/NMFR/optimize-css-assets-webpack-plugin</li></ul></li> <li><p>https://www.npmjs.com/package/moment</p> <ul><li>https://momentjs.com/
+<ul><li>https://momentjs.com/docs/#/use-it/</li></ul></li></ul></li> <li><p>https://www.npmjs.com/package/vuex</p></li></ul></li></ul> <h3 id="vue-resource"><a href="#vue-resource" class="header-anchor">#</a> vue-resource</h3> <ul><li>https://www.npmjs.com/package/vue-resource</li></ul> <h3 id="axios"><a href="#axios" class="header-anchor">#</a> axios</h3> <ul><li>https://www.npmjs.com/package/axios
+<ul><li>https://www.npmjs.com/package/axios#config-defaults
+<ul><li>https://github.com/axios/axios</li></ul></li></ul></li></ul> <h3 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h3> <ul><li>https://www.npmjs.com/package/vuex</li> <li>https://vuex.vuejs.org/guide/</li> <li>https://vuex.vuejs.org/zh/
+<ul><li>https://vuex.vuejs.org/zh/installation.html#npm</li> <li>https://vuex.vuejs.org/zh/guide/state.html</li> <li>https://vuex.vuejs.org/zh/guide/getters.html</li> <li>https://vuex.vuejs.org/zh/guide/mutations.html</li> <li>https://vuex.vuejs.org/zh/guide/actions.html</li></ul></li></ul> <h3 id="vue-preview"><a href="#vue-preview" class="header-anchor">#</a> vue-preview</h3> <ul><li>https://www.npmjs.com/package/vue-preview
+<ul><li>https://www.npmjs.com/package/vue-preview/v/1.0.5</li></ul></li></ul> <h3 id="eslint"><a href="#eslint" class="header-anchor">#</a> eslint</h3> <h1 id="教程"><a href="#教程" class="header-anchor">#</a> 教程</h1> <h2 id="_1-基础语法实践part1-1"><a href="#_1-基础语法实践part1-1" class="header-anchor">#</a> 1 基础语法实践part1-1</h2> <h3 id="前端框架学习介绍"><a href="#前端框架学习介绍" class="header-anchor">#</a> 前端框架学习介绍</h3> <h4 id="什么是vue-js"><a href="#什么是vue-js" class="header-anchor">#</a> 什么是Vue.js</h4> <ul><li>Vue.js 是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机App， Vue语法也是可以用于进行手机App开发的，需要借助于Weex）</li> <li>Vue.js 是前端的主流框架之一，和Angular.js、React.js 一起，并成为前端三大主流框架！</li> <li>Vue.js 是一套构建用户界面的框架，只关注视图层，它不仅易于上手，还便于与第三方库或既有项目整合。（Vue有配套的第三方类库，可以整合起来做大型项目的开发）</li></ul> <h4 id="为什么要学习流行框架"><a href="#为什么要学习流行框架" class="header-anchor">#</a> 为什么要学习流行框架</h4> <ul><li>企业为了提高开发效率：在企业中，时间就是效率，效率就是金钱；
+<ul><li>在没有前端框架之前，我们前端需要经常的操作DOM元素；</li> <li>在项目中，vue 能够简化DOM操作，让程序员根本不用操作任何DOM元素，就能渲染页面；</li> <li>企业中，使用框架，能够提高开发的效率；</li></ul></li> <li>提高开发效率的发展历程：原生JS -&gt; Jquery之类的类库 -&gt; 前端模板引擎 -&gt; Angular.js / Vue.js（能够帮助我们减少不必要的DOM操作；提高渲染效率；双向数据绑定的概念【通过框架提供的指令，前端程序员只需要关心数据的业务逻辑，不再关心DOM是如何渲染的了】）</li> <li>在Vue中，一个核心的概念，就是让用户不再操作DOM元素，解放了用户的双手，让程序员可以更多的时间去关注业务逻辑；</li></ul> <h3 id="mvvm的介绍"><a href="#mvvm的介绍" class="header-anchor">#</a> MVVM的介绍</h3> <ul><li><p>MVVM是前端视图层的概念，主要关注于视图层分离，也就是说：MVVM把前端的视图层，分为了 三部分 Model, View , VM ViewModel</p></li> <li><p>通过代码理解Vue基本使用和MVVM的对应关系</p> <ul><li>01.体验Vue并了解MVVM.html</li></ul></li></ul> <h3 id="vue中指令的特点"><a href="#vue中指令的特点" class="header-anchor">#</a> vue中指令的特点</h3> <ul><li>在Vue中,所有的指令,都是属性,Vue的指令,都是以 v- 开头</li> <li>01.体验Vue并了解MVVM-05.html</li></ul> <h3 id="插值表达式和v-text指令的两个区别"><a href="#插值表达式和v-text指令的两个区别" class="header-anchor">#</a> 插值表达式和v-text指令的两个区别</h3> <ul><li>01.体验Vue并了解MVVM-06.html</li></ul> <h4 id="区别"><a href="#区别" class="header-anchor">#</a> 区别</h4> <ol><li> 语法,叫做插值表达式, 在插值表达式中,可以写任何合法的JS表达式，语法只能使用在元素标签内容区域，不能在属性中使用</li> <li>v-text属性语法,叫做指令，在Vue中所有的指令，都是属性, Vue的指令，都是以v-开头的</li></ol> <h4 id="vue之-基本的代码结构和插值表达式、v-cloak"><a href="#vue之-基本的代码结构和插值表达式、v-cloak" class="header-anchor">#</a> Vue之-基本的代码结构和插值表达式、v-cloak</h4> <ol><li>使用插值表达式,存在内容闪烁的问题,但是,<code>v-text</code>没有闪烁问题;
+<ol><li>vue-2.6.14.js 不放在 head中</li> <li>Network slow 3G</li></ol></li> <li>在插值表达式中,可以使用 <code>v-cloak</code> 解决闪烁问题;</li> <li>插值表达式只会插入内容,并不会清除其余的内容; <code>v-text</code> 会把元素中之前的内容都清空!</li></ol> <ul><li>02.区分插值表达式和v-text的区别.html</li></ul> <h3 id="v-html渲染html字符串"><a href="#v-html渲染html字符串" class="header-anchor">#</a> v-html渲染HTML字符串</h3> <ul><li>Vue指令之v-text和v-html
+<ul><li>02.区分插值表达式和v-text的区别.html</li></ul></li></ul> <h3 id="v-bind指令的使用和注意点"><a href="#v-bind指令的使用和注意点" class="header-anchor">#</a> v-bind指令的使用和注意点</h3> <ul><li>03.在Vue中绑定属性值.html</li></ul> <h4 id="vue指令之v-bind的三种用法"><a href="#vue指令之v-bind的三种用法" class="header-anchor">#</a> Vue指令之v-bind的三种用法</h4> <ol><li>v-bind: 可以为元素的属性,绑定一些数据</li> <li>直接使用指令v-bind</li> <li>使用简化指令:</li> <li>在绑定的时候，拼接绑定内容：:title=&quot;btnTitle + ', 这是追加的内容'&quot;
+<ul><li>如果想要实现表达式的拼接, 被拼接的字符串,一定要用 引号包裹起来, 否则,会被当作变量解析</li></ul></li></ol> <h3 id="v-on指令为元素绑定事件"><a href="#v-on指令为元素绑定事件" class="header-anchor">#</a> v-on指令为元素绑定事件</h3> <ul><li><p>Vue中提供了v-on: 来为元素绑定事件</p></li> <li><p>v-on:简写是@</p></li> <li><p>绑定的事件处理函数,必须定义到 VM 实例的methods属性中</p></li> <li><p>04.使用v-on指令绑定事件.html</p></li></ul> <h3 id="案例-跑马灯案例的制作"><a href="#案例-跑马灯案例的制作" class="header-anchor">#</a> 案例：跑马灯案例的制作</h3> <ul><li><p>05.跑马灯效果.html</p></li> <li><p>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substring</p></li> <li><p>https://developer.mozilla.org/zh-CN/docs/Web/API/setInterval</p></li></ul> <h3 id="v-model指令实现数据的双向绑定"><a href="#v-model指令实现数据的双向绑定" class="header-anchor">#</a> v-model指令实现数据的双向绑定</h3> <ul><li><p>06.v-model指令的学习.html</p></li> <li><p>v-model 指令的作用是干什么的，双向绑定的具体与单项绑定的具体区别？</p> <ul><li>双向数据绑定，能够让我们修改表单之后，不必自己操作DOM元素获取表单元素的值；</li> <li>单项数据绑定，让我们不必自己操作DOM，去渲染数据了！</li></ul></li></ul> <h4 id="案例-使用v-model指令实现简易计算器"><a href="#案例-使用v-model指令实现简易计算器" class="header-anchor">#</a> 案例：使用v-model指令实现简易计算器</h4> <ul><li><p>07.简易计算器案例.html</p></li> <li><p>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat</p></li> <li><p>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval</p></li></ul> <h3 id="事件修饰符"><a href="#事件修饰符" class="header-anchor">#</a> 事件修饰符</h3> <h4 id="事件修饰符-上"><a href="#事件修饰符-上" class="header-anchor">#</a> 事件修饰符-上</h4> <ul><li>08.事件修饰符-阻止冒泡.html</li> <li>09.事件修饰符-阻止默认行为.html</li></ul> <h5 id="事件修饰符-2"><a href="#事件修饰符-2" class="header-anchor">#</a> 事件修饰符</h5> <ul><li>.stop 阻止冒泡</li> <li>.prevent 阻止默认事件</li> <li>.capture 添加事件侦听器时使用事件捕获模式</li> <li>.self 只当事件在该元素本身（比如不是子元素）触发时触发回调</li> <li>.once 事件只触发一次</li></ul> <h4 id="事件修饰符-下"><a href="#事件修饰符-下" class="header-anchor">#</a> 事件修饰符-下</h4> <ul><li>10.事件修饰符-捕获模式.html</li> <li>11.事件修饰符-self和stop的区别.html</li></ul> <h5 id="事件执行的3个阶段-从外到里-从里到外"><a href="#事件执行的3个阶段-从外到里-从里到外" class="header-anchor">#</a> 事件执行的3个阶段：从外到里，从里到外</h5> <div class="language- extra-class"><pre><code>1. 捕获
+2. 事件原
+3. 冒泡
+</code></pre></div><h3 id="在vue中使用样式"><a href="#在vue中使用样式" class="header-anchor">#</a> 在Vue中使用样式</h3> <h4 id="在vue中使用类样式的4种方式"><a href="#在vue中使用类样式的4种方式" class="header-anchor">#</a> 在Vue中使用类样式的4种方式</h4> <ul><li><p>12.vue中使用类样式.html</p></li> <li><p>数组、<strong>数组中使用三元表达式</strong>、<strong>数组中嵌套对象</strong>、对象</p> <ul><li>对象中类名作为对象的属性名（对象中属性名带连字符空格时需要带引号）
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Working_with_Objects</li></ul></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>        &lt;p&gt;在Vue中,使用 v-bind 为元素绑定数组的类样式:&lt;/p&gt;
+        &lt;h1 v-bind:class=&quot;['red', 'small']&quot;&gt;12.vue中使用类样式.html&lt;/h1&gt;
+
+        &lt;hr&gt;
+        &lt;p&gt;在数组中使用三元表达式:&lt;/p&gt;
+        &lt;input type=&quot;button&quot; value=&quot;变化&quot; @click=&quot;isThin=!isThin&quot;&gt;
+        &lt;h1 v-bind:class=&quot;['red', isThin? 'thin':'']&quot;&gt;12.vue中使用类样式.html&lt;/h1&gt;
+        
+        &lt;hr&gt;
+        &lt;p&gt;在数组中使用对象来简化三元表达式:&lt;/p&gt;
+        &lt;!-- &lt;h1 v-bind:class=&quot;['red', 'thin':isThin]&quot;&gt;12.vue中使用类样式.html&lt;/h1&gt; --&gt;
+        &lt;h1 v-bind:class=&quot;['red', {thin:isThin}]&quot;&gt;12.vue中使用类样式.html&lt;/h1&gt;
+
+        &lt;hr&gt;
+        &lt;p&gt;传递对象作为类样式:&lt;/p&gt;
+        &lt;h1 v-bind:class=&quot;{red:true, small:true, thin:isThin}&quot;&gt;12.vue中使用类样式.html&lt;/h1&gt;
+</code></pre></div><h4 id="使用内联样式"><a href="#使用内联样式" class="header-anchor">#</a> 使用内联样式</h4> <ul><li>在Vue中使用style行内样式
+<ul><li>13.vue中书写行内的样式.html</li></ul></li></ul> <ol><li>直接在元素上通过 :style 的形式，书写样式对象</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;h1 v-bind:style=&quot;{color: 'red', 'font-size': 15px, 'font-style': 'italic'}&quot;&gt;13.vue中书写行内的样式.html&lt;/h1&gt;
+                &lt;h1 v-bind:style=&quot;[{color: 'red', 'font-size': '15px'}, { 'font-style': 'italic'}]&quot;&gt;13.vue中书写行内的样式.html&lt;/h1&gt;
+</code></pre></div><ol start="2"><li><p>将样式对象，定义到 data 中，并直接引用到 :style 中</p></li> <li><p>在 :style 中通过数组，引用多个 data 上的样式对象</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>                &lt;h1 v-bind:style=&quot;[{color: 'red', 'font-size': '15px'}, { 'font-style': 'italic'}]&quot;&gt;13.vue中书写行内的样式.html&lt;/h1&gt;
+        &lt;h1 v-bind:style=&quot;[styleObj1, styleObj2]&quot;&gt;13.vue中书写行内的样式.html&lt;/h1&gt;
+
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                styleObj1: {color: 'red', 'font-size': '15px'},
+                styleObj2: {'font-style': 'italic'}
+            }
+        });
+</code></pre></div><h3 id="vue指令之v-for"><a href="#vue指令之v-for" class="header-anchor">#</a> Vue指令之v-for</h3> <ol><li>迭代数组</li></ol> <div class="language- extra-class"><pre class="language-text"><code># 数组
+            &lt;li v-for=&quot;item in list&quot;&gt;{{item}}&lt;/li&gt;
+            &lt;hr&gt;
+            &lt;li v-for=&quot;(item, i) in list&quot;&gt;{{ i }}--{{item}}&lt;/li&gt;
+
+
+            data: {
+                list: ['item1', 'item2', 'item3', 'item4'],
+            }
+# 对象数组
+            &lt;li v-for=&quot;(item, i) in list&quot;&gt;{{i}}--{{item.id}}--{{item.name}}&lt;/li&gt;
+            
+            data: {
+                list: [
+                    {id:100, name:'item1'},
+                    {id:200, name:'item2'},
+                    {id:300, name:'item3'},
+                    {id:400, name:'item4'},
+                ]
+            }
+</code></pre></div><ol start="2"><li>迭代对象中的属性</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            &lt;!-- 循环遍历对象身上的属性 --&gt;
+            &lt;li v-for=&quot;(val, key, i) in person&quot;&gt;{{i}}--{{key}}--{{val}}&lt;/li&gt;
+
+            data: {
+                person:{
+                    id: 100,
+                    name: 'name1',
+                    age: 18,
+                    gender: '男'
+                }
+            }
+</code></pre></div><ol start="3"><li>迭代数字</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;p v-for=&quot;i in 10&quot;&gt;这是第 {{i}} 个P标签&lt;/p&gt;
+</code></pre></div><blockquote><p>2.2.0+ 的版本里，当在组件中使用 v-for 时，key 现在是必须的。</p></blockquote> <ul><li><p>当 Vue.js 用 v-for 正在更新已渲染过的元素列表时，它默认用 “就地复用” 策略。如果数据项的顺序被改变，Vue将不是移动 DOM 元素来匹配数据项的顺序， 而是简单复用此处每个元素，并且确保它在特定索引下显示已被渲染过的每个元素。</p></li> <li><p>为了给 Vue 一个提示，以便它能跟踪每个节点的身份，从而重用和重新排序现有元素，你需要为每项提供一个唯一 key 属性。</p></li></ul> <h4 id="v-for循环数组"><a href="#v-for循环数组" class="header-anchor">#</a> v-for循环数组</h4> <ul><li>14.v-for循环数组.html</li> <li>15.v-for循环对象数组.html</li></ul> <h4 id="v-for中key属性的使用"><a href="#v-for中key属性的使用" class="header-anchor">#</a> v-for中key属性的使用</h4> <ul><li>16.v-for循环对象中的属性.html</li> <li>17.演示key属性.html</li></ul> <blockquote><p>今后,只要涉及到了v-for这种循环,推荐,给循环的每一项添加 :key 属性，
+其中, :key 属性,只接受 number 或 string 类型的数据,不要直接为 :key 指定对象，
+:key 指定的值,必须具有唯一性</p></blockquote> <ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array</li></ul> <h3 id="vue指令之v-if和v-show"><a href="#vue指令之v-if和v-show" class="header-anchor">#</a> Vue指令之v-if和v-show</h3> <ul><li>18.v-if和v-show的使用.html</li></ul> <blockquote><p>一般来说，v-if有更高的切换消耗而 v-show有更高的初始渲染消耗。因此，如果需要频繁切换v-show较好，如果在运行时条件不大可能改变v-if较好。</p></blockquote> <ul><li>v-if和v-show只有一个作用,就是根据指定的标识符,切换元素的显示和隐藏状态
+<ol><li>v-if 是实时的创建或移除元素,从而达到元素的显示和隐藏
+<ul><li>如果元素 被创建出来之后,可能不会进行状态的切换,此时,适合使用 v-if</li></ul></li> <li>v-show 是通过为元素添加或移除display:none来实现隐藏和显示的
+<ul><li>如果 元素 需要经常的切换显示和隐藏的状态,此时,使用 v-show 更合适一些</li></ul></li></ol></li></ul> <h3 id="案例-渲染品牌列表并实现添加功能"><a href="#案例-渲染品牌列表并实现添加功能" class="header-anchor">#</a> 案例：渲染品牌列表并实现添加功能</h3> <ul><li><p>19.品牌列表案例.html</p></li> <li><p>样式优化</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>PS &gt; npm init -y
+Wrote to \package.json:
+
+{
+  &quot;name&quot;: &quot;day1&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;directories&quot;: {
+    &quot;lib&quot;: &quot;lib&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+
+
+PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day1&gt; npm i bootstrap
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN bootstrap@5.1.3 requires a peer of @popperjs/core@^2.10.2 but none is installed. You must install peer dependencies yourself.
+npm WARN day1@1.0.0 No description
+npm WARN day1@1.0.0 No repository field.
+
++ bootstrap@5.1.3
+added 1 package from 2 contributors in 1.519s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+</code></pre></div><ul><li>html页面导入样式</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;./node_modules/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+</code></pre></div><h4 id="使用数组的findindex方法查找对应项的索引值"><a href="#使用数组的findindex方法查找对应项的索引值" class="header-anchor">#</a> 使用数组的findIndex方法查找对应项的索引值</h4> <ul><li>19.品牌列表案例.html
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</li></ul></li></ul></li> <li>20.自己模拟数组的findIndex方法.html
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Strict_equality</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Equality</li></ul></li></ul> <h4 id="实现品牌检索功能"><a href="#实现品牌检索功能" class="header-anchor">#</a> 实现品牌检索功能</h4> <p>21.品牌列表-检索功能.html</p> <h4 id="使用字符串的includes新方法来判断是否包含"><a href="#使用字符串的includes新方法来判断是否包含" class="header-anchor">#</a> 使用字符串的includes新方法来判断是否包含</h4> <ul><li>21.品牌列表-检索功能.html
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/includes</li></ul></li></ul> <h4 id="优化品牌列表检索的功能"><a href="#优化品牌列表检索的功能" class="header-anchor">#</a> 优化品牌列表检索的功能</h4> <ul><li>22.品牌列表-优化检索实现过程.html</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter</li></ul> <h5 id="_1-x-版本中的filterby指令-在2-x中已经被废除-filterby-指令"><a href="#_1-x-版本中的filterby指令-在2-x中已经被废除-filterby-指令" class="header-anchor">#</a> 1.x 版本中的filterBy指令，在2.x中已经被废除： filterBy - 指令</h5> <div class="language- extra-class"><pre class="language-text"><code>&lt;tr v-for=&quot;item in list | filterBy searchName in 'name'&quot;&gt;
+&lt;td&gt;{{item.id}}&lt;/td&gt;
+&lt;td&gt;{{item.name}}&lt;/td&gt;
+&lt;td&gt;{{item.ctime}}&lt;/td&gt;
+&lt;td&gt;
+ &lt;a href=&quot;#&quot; @click.prevent=&quot;del(item.id)&quot;&gt;删除&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+</code></pre></div><h5 id="在2-x版本中手动实现筛选的方式"><a href="#在2-x版本中手动实现筛选的方式" class="header-anchor">#</a> 在2.x版本中<a href="https://cn.vuejs.org/v2/guide/list.html#%E6%98%BE%E7%A4%BA%E8%BF%87%E6%BB%A4-%E6%8E%92%E5%BA%8F%E5%90%8E%E7%9A%84%E7%BB%93%E6%9E%9C" target="_blank" rel="noopener noreferrer">手动实现筛选的方式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>：</h5> <ul><li>筛选框绑定到 VM 实例中的 searchName 属性：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;hr&gt; 输入筛选名称：
+&lt;input type=&quot;text&quot; v-model=&quot;searchName&quot;&gt;
+
+</code></pre></div><ul><li>在使用 v-for 指令循环每一行数据的时候，不再直接 item in list，而是 in 一个 过滤的methods 方法，同时，把过滤条件searchName传递进去：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;tbody&gt;
+    &lt;tr v-for=&quot;item in search(searchName)&quot;&gt;
+      &lt;td&gt;{{item.id}}&lt;/td&gt;
+      &lt;td&gt;{{item.name}}&lt;/td&gt;
+      &lt;td&gt;{{item.ctime}}&lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;#&quot; @click.prevent=&quot;del(item.id)&quot;&gt;删除&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+
+</code></pre></div><ul><li>search 过滤方法中，使用 数组的 filter 方法进行过滤：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>search(name) {
+return this.list.filter(x =&gt; {
+  return x.name.indexOf(name) != -1;
+});
+}
+</code></pre></div><h3 id="全局过滤器的介绍和总结"><a href="#全局过滤器的介绍和总结" class="header-anchor">#</a> 全局过滤器的介绍和总结</h3> <h4 id="过滤器"><a href="#过滤器" class="header-anchor">#</a> 过滤器</h4> <blockquote><p>概念：Vue.js 允许你自定义过滤器，<strong>可被用作一些常见的文本格式化</strong>。过滤器可以用在两个地方：<strong>mustache 插值和 v-bind 表达式</strong>。过滤器应该被添加在 JavaScript 表达式的尾部，由“管道”符指示；</p></blockquote> <ul><li><p>过滤器的使用注意事项:</p> <ol><li>Vue.filter('过滤器的名称', 过滤器的处理函数)</li> <li>注意: 过滤器的处理函数中,第一个形参,功能已经被规定好了,永远都是管道符前面的 值</li> <li>调用过滤器</li></ol> <div class="language- extra-class"><pre class="language-text"><code>{{ item.ctime | formatDate }}
+</code></pre></div><ol start="4"><li>在调用过滤器的时候,可以传递参数,</li></ol> <div class="language- extra-class"><pre class="language-text"><code>{{ item.ctime | formatDate('传递参数') }}
+</code></pre></div><ol start="5"><li>注意: 调用过滤器传递的参数, 只能从处理函数的第二个形参开始接收, 因为第一个形参已经被管道符前面的值给占用了</li> <li>注意: 过滤器的处理函数中, 必须返回一个值</li> <li>可以连续使用管道符 调用多个过滤器, 最终输出的结果,永远以 最后一个过滤器为准;</li> <li>注意: 过滤器只能使用在差值表达中, 或者v-bind中,不能使用在其它地方了,比如v-text就不支持调用过滤器</li></ol></li> <li><p>23.全局过滤器.html</p></li> <li><p>02.过滤器的基本使用.html</p> <ul><li>https://cn.vuejs.org/v2/guide/filters.html#ad</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day1&gt; npm i moment -S
+npm WARN bootstrap@5.1.3 requires a peer of @popperjs/core@^2.10.2 but none is installed. You must install peer dependencies yourself.
+npm WARN day1@1.0.0 No description      
+npm WARN day1@1.0.0 No repository field.
+
++ moment@2.29.1
+added 1 package from 6 contributors in 1.298s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+</code></pre></div><ul><li>js引入html</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;script src=&quot;./node_modules/moment/min/moment.min.js&quot;&gt;&lt;/script&gt;
+</code></pre></div><h6 id="私有过滤器"><a href="#私有过滤器" class="header-anchor">#</a> 私有过滤器</h6> <div class="language- extra-class"><pre class="language-text"><code>        &lt;h5&gt;{{msg | strFormat}}&lt;/h5&gt;
+        &lt;h5&gt;{{msg | strFormat | addStr}}&lt;/h5&gt;
+
+            filters: {  // 当前实例私有的过滤器
+                addStr: function(data){
+                    return data+'[addStr]';
+                },
+                // 如果全局过滤器和私有过滤器重名了，则会就近原则调用过滤器
+                strFormat: function(data){  // vm2 的私有过滤器
+                    return data+'[filters.strFormat]';
+                }
+
+            }
+</code></pre></div><blockquote><p>使用ES6中的字符串新方法 String.prototype.padStart(maxLength, fillString='') 或 String.prototype.padEnd(maxLength, fillString='')来填充字符串；</p></blockquote> <h5 id="全局过滤器"><a href="#全局过滤器" class="header-anchor">#</a> 全局过滤器</h5> <div class="language- extra-class"><pre class="language-text"><code>    &lt;!-- 注意： 使用Vue中过滤器，并不会修改原数据，只是在展示数据的时候，做了一层包装而已； --&gt;        
+        &lt;h5&gt;{{msg | strFormat}}&lt;/h5&gt;
+        &lt;h5&gt;{{msg | strFormat('开心')}}&lt;/h5&gt;
+
+        // 创建全局的一个过滤器
+        Vue.filter('strFormat', function(data, str=&quot;XE&quot;){
+            // return data.replace('纯洁', str);
+            // 正则表达式 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+            return data.replace(/纯洁/g, str);  
+        });
+</code></pre></div><blockquote><p>注意：当有局部和全局两个名称相同的过滤器时候，会以就近原则进行调用，即：局部过滤器优先于全局过滤器被调用！</p></blockquote> <h2 id="_1-基础语法实践part1-2"><a href="#_1-基础语法实践part1-2" class="header-anchor">#</a> 1 基础语法实践part1-2</h2> <h3 id="案例-样式案例"><a href="#案例-样式案例" class="header-anchor">#</a> 案例：样式案例</h3> <ul><li><p>使用Vue循环显示一个对象数组到页面上，并设置索引为0的那一项被默认选中；</p></li> <li><p>为默认选中项添加 .active 类样式（红色、加粗字体）；</p></li> <li><p>非选中项 的默认样式为（蓝色，非加粗字体）；</p></li> <li><p>并且点击不同的列表项， 可以切换选中状态；</p></li> <li><p>01.样式案例.html</p></li></ul> <h3 id="过滤器复习"><a href="#过滤器复习" class="header-anchor">#</a> 过滤器复习</h3> <ul><li><p>注意：</p> <ul><li>使用Vue中过滤器，并不会修改原数据，只是在展示数据的时候，做了一层包装而已；</li> <li>如果全局过滤器和私有过滤器重名了，则会就近原则调用过滤器</li></ul></li> <li><p>02.过滤器的基本使用.html</p></li></ul> <h3 id="自定义指令"><a href="#自定义指令" class="header-anchor">#</a> 自定义指令</h3> <ul><li><p>Vue自定义指令的名称中，不需要写 v- 前缀，但是，在调用自定义指令的时候，必须在 前面加上 v- 前缀</p></li> <li><p>03.品牌列表-自定义指令.html</p> <ul><li>参考
+<ul><li>https://cn.vuejs.org/v2/guide/custom-directive.html</li> <li>https://cn.vuejs.org/v2/api/#Vue-directive</li> <li>https://www.w3schools.com/jsref/met_html_focus.asp</li> <li>https://www.w3schools.com/jsref/prop_style_color.asp</li> <li>https://cn.vuejs.org/v2/api/#directives</li></ul></li> <li>自定义全局指令让文本框获得焦点</li> <li>自定义全局的v-color指令</li> <li>自定义私有指令和函数的简写形式</li></ul></li></ul> <ol><li>自定义全局和局部的 自定义指令：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        // 全局自定义 获得焦点的 v-focus 指令
+        // Vue.filter('过滤器的名称', 处理函数)
+        // 注意： Vue 自定义指令的名称中，不需要写 v- 前缀，但是，在调用自定义指令的时候，必须在 前面加上 v- 前缀
+        Vue.directive('focus', {
+            // 参数列表中的 第一个参数，永远是  el 表示被绑定指令的那个元素
+            //  如果要操作元素的样式， 写到 bind 就行了  
+            bind(el, binding, vnode) {  // 当指令绑定到的元素，被Vue实例解析的时候，就会 立即执行 bind 函数
+                console.log(&quot;Vue.directive focus bind &quot;, el, binding, vnode);
+
+                // 这是 JS DOM API 中原生的方法
+                // el.focus();  // 如果想要让文本框获得焦点，那么，文本框必须先插入到文档中才能生效
+                el.style.color='red';
+
+            },
+            // 今后在自定义指令的时候，如果 需要操作 元素的JS行为了，最好写到 inserted 中
+            inserted(el, binding, vnode) {  // 调用时机： 当 指令绑定到的元素，被插入到文档的父节点时候，调用 inserted 函数
+                console.info(&quot;Vue.directive focus inserted &quot;, el, binding, vnode);
+                el.focus();
+            },
+            update(el, binding, vnode, oldVnode) {
+                console.info(&quot;Vue.directive focus update &quot;, el, binding, vnode, oldVnode);
+            },
+            componentUpdated(el, binding, vnode) {
+                console.info(&quot;Vue.directive focus componentUpdated &quot;, el, binding, vnode);
+            },
+            unbind(el, binding, vnode) {
+                console.info(&quot;Vue.directive unbind &quot;, el, binding, vnode);
+            },
+        });
+
+
+        Vue.directive('color', {
+            bind(el, binding, vnode) {
+                console.log(&quot;Vue.directive color bind&quot; , el, binding, vnode);
+                el.style.color = binding.value || 'red';
+            },
+        });
+
+            directives: {   // 自定义指令区域
+                bold: { // 让指定元素字体加粗的指令
+                    bind: function(el, binding){
+                        console.log(&quot;directives bold bind &quot;, el, binding);
+                        el.style.fontWeight = binding.value;
+                    }
+                },
+                italic: function(el, binding){  // 让文字倾斜的指令
+                    // 用到了指令的函数简写形式，如果指令给定的是 function，则 等同于 把 这个 function 中的代码，分别定义到了 bind 和 update 中去；
+                    console.log(&quot;directives italic &quot;, el, binding);
+                    el.style.fontStyle = &quot;italic&quot;;
+                },
+                italic1: {
+                    bind: function(el, binding){
+                        console.log(&quot;italic1 bind&quot;);
+                        el.style.fontStyle = &quot;italic&quot;
+                    },
+                    update: function(el, binding){
+                        console.log(&quot;italic1 update&quot;);
+                        el.style.fontStyle = &quot;italic&quot;
+                    }
+                }
+            }
+
+</code></pre></div><ol start="2"><li>自定义指令的使用方式：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            &lt;span v-color&gt;按照品牌名称检索:&lt;/span&gt;
+            &lt;input type=&quot;text&quot; v-model=&quot;keywords&quot; v-on:change=&quot;searchByName&quot; v-focus&gt;
+
+                    &lt;th v-italic1&gt;name&lt;/th&gt;
+                    &lt;th v-italic&gt;ctime&lt;/th&gt;
+                    &lt;th v-color=&quot;'blue'&quot; v-bold=&quot;100&quot;&gt;操作&lt;/th&gt;
+</code></pre></div><h5 id="函数简写"><a href="#函数简写" class="header-anchor">#</a> 函数简写</h5> <blockquote><p>在很多时候，你可能想在 <code>bind</code> 和 <code>update</code> 时触发相同行为，而不关心其它的钩子。比如这样写：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>Vue.directive('color-swatch', function (el, binding) {
+  el.style.backgroundColor = binding.value
+})
+</code></pre></div><h5 id="钩子函数"><a href="#钩子函数" class="header-anchor">#</a> 钩子函数</h5> <ul><li><p><a href="https://cn.vuejs.org/v2/guide/custom-directive.html#%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0" target="_blank" rel="noopener noreferrer">钩子函数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>bind：只调用一次，指令第一次绑定到元素时调用。在这里可以进行一次性的初始化设置。</p> <ul><li>操作元素的样式</li></ul></li> <li><p>inserted：被绑定元素插入父节点时调用 (仅保证父节点存在，但不一定已被插入文档中)。</p> <ul><li>操作元素的JS行为，最好写到 inserted 中</li></ul></li></ul> <h5 id="钩子函数参数"><a href="#钩子函数参数" class="header-anchor">#</a> 钩子函数参数</h5> <ul><li><p><a href="https://cn.vuejs.org/v2/guide/custom-directive.html#%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0" target="_blank" rel="noopener noreferrer">钩子函数参数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>el：指令所绑定的元素，可以用来直接操作 DOM。</p></li> <li><p>binding：一个对象，包含以下 property：</p> <ul><li>name：指令名，不包括 v- 前缀。</li> <li>value：指令的绑定值，例如：v-my-directive=&quot;1 + 1&quot; 中，绑定值为 2。</li> <li>oldValue：指令绑定的前一个值，仅在 update 和 componentUpdated 钩子中可用。无论值是否改变都可用。</li> <li>expression：字符串形式的指令表达式。例如 v-my-directive=&quot;1 + 1&quot; 中，表达式为 &quot;1 + 1&quot;。</li> <li>arg：传给指令的参数，可选。例如 v-my-directive:foo 中，参数为 &quot;foo&quot;。</li> <li>modifiers：一个包含修饰符的对象。例如：v-my-directive.foo.bar 中，修饰符对象为 { foo: true, bar: true }。</li></ul></li> <li><p>vnode：Vue 编译生成的虚拟节点。移步 VNode API 来了解更多详情。</p></li> <li><p>oldVnode：上一个虚拟节点，仅在 update 和 componentUpdated 钩子中可用。</p></li></ul> <h3 id="按键修饰符的使用"><a href="#按键修饰符的使用" class="header-anchor">#</a> 按键修饰符的使用</h3> <ul><li>03.品牌列表-自定义指令.html
+<ul><li>https://cn.vuejs.org/v2/guide/events.html#%E6%8C%89%E9%94%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6</li> <li>https://www.w3schools.com/jsref/dom_obj_event.asp</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/API/KeyboardEvent</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/API/Element/click_event</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>            &lt;!-- &lt;input type=&quot;text&quot; v-model=&quot;name&quot; v-on:keyup.enter=&quot;add&quot;&gt; --&gt;
+            
+            &lt;!-- 自动匹配按键修饰符 2.5.0 新增 --&gt;
+            &lt;!-- &lt;input type=&quot;text&quot; v-model=&quot;name&quot; v-on:keyup.f2=&quot;add&quot;&gt; --&gt;
+            &lt;!-- &lt;input type=&quot;text&quot; v-model=&quot;name&quot; v-on:keyup.0=&quot;add&quot;&gt; --&gt;
+            &lt;!-- &lt;input type=&quot;text&quot; v-model=&quot;name&quot; v-on:keyup.end=&quot;add&quot;&gt; --&gt;
+</code></pre></div><h3 id="vue实例生命周期"><a href="#vue实例生命周期" class="header-anchor">#</a> vue实例生命周期</h3> <ul><li>04.生命周期函数.html</li></ul> <h4 id="vue实例的生命周期"><a href="#vue实例的生命周期" class="header-anchor">#</a> vue实例的生命周期</h4> <ul><li>什么是生命周期：从Vue实例创建、运行、到销毁期间，总是伴随着各种各样的事件，这些事件，统称为生命周期！</li> <li>生命周期钩子函数：就是生命周期事件的别名而已；</li> <li>生命周期钩子函数= 生命周期函数 = 生命周期事件</li> <li>主要的生命周期函数分类：
+<ol><li>创建期间的生命周期函数：
+<ol><li>beforeCreate：实例刚在内存中被创建出来，此时，还没有初始化好 data 和 methods 属性</li> <li>created：实例已经在内存中创建OK，此时 data 和 methods 已经创建OK，此时还没有开始编译模板</li> <li>beforeMount：此时已经完成了模板的编译，但是还没有挂载到页面中</li> <li>mounted：此时，已经将编译好的模板，挂载到了页面指定的容器中显示</li></ol></li> <li>运行期间的生命周期函数：
+<ol><li>beforeUpdate：状态更新之前执行此函数， 此时 data 中的状态值是最新的，但是界面上显示的数据还是旧的，因为此时还没有开始重新渲染DOM节点</li> <li>updated：实例更新完毕之后调用此函数，此时 data 中的状态值和界面上显示的数据，都已经完成了更新，界面已经被重新渲染好了！</li></ol></li> <li>销毁期间的生命周期函数：
+<ol><li>beforeDestroy：实例销毁之前调用。在这一步，实例仍然完全可用。</li> <li>destroyed：Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。</li></ol></li></ol></li></ul> <p><img src="https://note.youdao.com/yws/api/personal/file/WEB83c542c867919c50d034ac7b0d09f806?method=download&amp;shareKey=1db1e55fd0d76ee31387435a5720f040" alt="vue实例的生命周期"></p> <h4 id="实例生命周期-创建阶段"><a href="#实例生命周期-创建阶段" class="header-anchor">#</a> 实例生命周期-创建阶段</h4> <ul><li>04.生命周期函数.html</li></ul> <h4 id="实例生命周期-运行和销毁阶段"><a href="#实例生命周期-运行和销毁阶段" class="header-anchor">#</a> 实例生命周期-运行和销毁阶段</h4> <ul><li>04.生命周期函数.html</li></ul> <h3 id="请求"><a href="#请求" class="header-anchor">#</a> 请求</h3> <h4 id="vue-resource-实现-get-post-jsonp请求"><a href="#vue-resource-实现-get-post-jsonp请求" class="header-anchor">#</a> vue-resource 实现 get, post, jsonp请求</h4> <ul><li>https://github.com/pagekit/vue-resource
+<ul><li>HTTP Requests/Response https://github.com/pagekit/vue-resource/blob/develop/docs/http.md</li></ul></li></ul> <blockquote><p>除了 vue-resource 之外，还可以使用 axios 的第三方包实现实现数据的请求</p></blockquote> <h5 id="_05-使用vue-resource请求数据-html"><a href="#_05-使用vue-resource请求数据-html" class="header-anchor">#</a> 05.使用vue-resource请求数据.html</h5> <ol><li>使用vue-resource发起get请求</li></ol> <div class="language- extra-class"><pre class="language-text"><code>PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2&gt; npm install vue-resource
+npm WARN saveError ENOENT: no such file or directory, open 'E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2\package.json'
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN enoent ENOENT: no such file or directory, open 'E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2\package.json'
+npm WARN day2 No description
+npm WARN day2 No repository field.
+npm WARN day2 No README data      
+npm WARN day2 No license field.
+
++ vue-resource@1.5.3
+added 31 packages from 54 contributors in 2.897s
+
+7 packages are looking for funding
+  run `npm fund` for details
+</code></pre></div><div class="language- extra-class"><pre><code>- practices\day2\node_modules\vue-resource\dist\vue-resource.js
+</code></pre></div><ol start="2"><li>使用async和await来修饰实现数据请求的异步方法</li> <li>使用vue-resource发起post和jsonp请求</li></ol> <h5 id="实现请求总结"><a href="#实现请求总结" class="header-anchor">#</a> 实现请求总结</h5> <ol><li>之前的学习中，如何发起数据请求？
+<ul><li>不推荐使用jQuery、Ajax，Vue不推荐操作Dom元素，jQuery主要操作Dom元素</li></ul></li> <li>常见的数据请求类型？ get post jsonp</li> <li>测试的URL请求资源地址：
+<ol><li>get请求地址： http://www.liulongbin.top:3005/api/getlunbo</li> <li>post请求地址：http://www.liulongbin.top:3005/api/post</li> <li>jsonp请求地址：http://www.liulongbin.top:3005/api/jsonp</li></ol></li> <li>JSONP的实现原理
+<ol><li>由于浏览器的安全性限制，不允许AJAX访问协议不同、域名不同、端口号不同的数据接口，浏览器认为这种访问不安全；</li> <li>可以通过动态创建script标签的形式，把script标签的src属性，指向数据接口的地址，因为script标签不存在跨域限制，这种数据获取方式，称作JSONP（注意：根据JSONP的实现原理，知晓，JSONP只支持Get请求）；</li> <li>具体实现过程：
+<ol><li>先在客户端定义一个回调方法，预定义对数据的操作；</li> <li>再把这个回调方法的名称，通过URL传参的形式，提交到服务器的数据接口；</li> <li>服务器数据接口组织好要发送给客户端的数据，再拿着客户端传递过来的回调方法名称，拼接出一个调用这个方法的字符串，发送给客户端去解析执行；</li> <li>客户端拿到服务器返回的字符串之后，当作Script脚本去解析执行，这样就能够拿到JSONP的数据了；</li></ol></li></ol></li></ol> <h4 id="使用axios发起数据请求"><a href="#使用axios发起数据请求" class="header-anchor">#</a> 使用axios发起数据请求</h4> <blockquote><p>axios 不支持jsonp</p></blockquote> <ul><li>06.axios结合vue发起请求.html
+<ul><li>https://www.npmjs.com/package/axios</li> <li>https://www.axios-http.cn/docs/intro</li> <li>https://axios-http.com/docs/intro</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2&gt; npm install axios
+npm WARN saveError ENOENT: no such file or directory, open 'E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2\package.json'
+npm WARN day2 No description
+npm WARN day2 No repository field.
+npm WARN day2 No README data
+npm WARN day2 No license field.
+
++ axios@0.24.0
+added 2 packages from 4 contributors in 0.842s
+
+8 packages are looking for funding
+  run `npm fund` for details
+</code></pre></div><h4 id="使用node服务器模拟jsonp实现过程"><a href="#使用node服务器模拟jsonp实现过程" class="header-anchor">#</a> 使用node服务器模拟JSONP实现过程</h4> <ul><li>07.模拟JSONP.html</li> <li>08.模拟动态创建的script标签.js</li> <li>09.JSONP数据服务器.js
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify</li> <li>https://www.npmjs.com/package/nodemon</li> <li>http://nodejs.cn/api/url.html
+<ul><li>http://nodejs.cn/api/url.html#urlparseurlstring-parsequerystring-slashesdenotehost</li></ul></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\User&gt;node
+Welcome to Node.js v14.17.6.
+Type &quot;.help&quot; for more information.
+&gt; .exit
+
+PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2&gt; node .\09.JSONP数据服务器.js
+http://127.0.0.1:3000
+
+PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2&gt; npm install -g nodemon
+C:\Users\User\AppData\Roaming\npm\nodemon -&gt; C:\Users\User\AppData\Roaming\npm\node_modules\nodemon\bin\nodemon.js
+
+&gt; nodemon@2.0.15 postinstall C:\Users\User\AppData\Roaming\npm\node_modules\nodemon
+&gt; node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ &gt; https://opencollective.com/nodemon/donate
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\nodemon\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+
++ nodemon@2.0.15
+added 116 packages from 53 contributors in 7.701s
+PS E:\iEnviroment\development\projects\ideaProjects\VueDemo\code_2020_4_2-master\practices\day2&gt; nodemon .\09.JSONP数据服务器.js
+[nodemon] 2.0.15
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node .\09.JSONP数据服务器.js`
+http://127.0.0.1:3000
+</code></pre></div><h4 id="案例-品牌案例-获取品牌列表"><a href="#案例-品牌案例-获取品牌列表" class="header-anchor">#</a> 案例：品牌案例-获取品牌列表</h4> <ul><li>10.数据库版-品牌管理案例.html
+<ul><li>参考
+<ul><li>https://www.npmjs.com/package/axios</li> <li>https://www.npmjs.com/package/axios#config-defaults
+<ul><li>https://github.com/axios/axios</li></ul></li> <li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Equality</li> <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality</li></ul></li></ul></li></ul> <ol><li>品牌案例-获取品牌列表</li> <li>品牌案例-实现添加品牌功能</li> <li>配置axios请求的根路径并且抽离为单独的文件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>//  注意：   axios.create() 方法，调用的返回值，是一个新的 axios 实例，在 调用 create 函数的时候，可以初始化一些默认配置项，比如，请求的 baseURL 地址
+Vue.prototype.$http = axios.create({
+    baseURL: &quot;http://api.cms.liulongbin.top&quot;
+});
+</code></pre></div><ol start="4"><li>品牌案例-实现删除功能</li></ol> <h3 id="vue中的动画"><a href="#vue中的动画" class="header-anchor">#</a> Vue中的动画</h3> <ul><li>https://cn.vuejs.org/v2/guide/transitions.html</li></ul> <blockquote><p>为什么要有动画：动画能够提高用户的体验，帮助用户更好的理解页面中的功能；</p></blockquote> <h4 id="动画-相关概念"><a href="#动画-相关概念" class="header-anchor">#</a> 动画-相关概念</h4> <p><img src="https://cn.vuejs.org/images/transition.png" alt="enter image description here"></p> <ol><li>Vue 把一个完整的动画，拆分成了两部分   入场动画  和   出场动画</li> <li>入场动画中，包含两个时间点，分别是 进入之前（v-enter）  和   进入之后（v-enter-to）</li> <li>v-enter 表示 动画入场之前的起始状态，比如： 透明度为0， 横向偏移量 为   50px</li> <li>v-enter-to 表示 动画 入场完成之后的终止状态，比如： 透明度为 1， 横向偏移量为    0px</li> <li>v-enter-active 表示 入场动画的时间段， 在这里，可以规定动画的时长、还有一些相关的动画效果 ease</li></ol> <h4 id="动画-使用过渡类名"><a href="#动画-使用过渡类名" class="header-anchor">#</a> 动画-使用过渡类名</h4> <ul><li><p>12.动画-使用过渡类名.html</p> <ul><li>https://cn.vuejs.org/v2/guide/transitions.html#CSS-过渡</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition</li></ul></li> <li><p>添加动画效果</p></li></ul> <ol><li>把要实现动画的元素，使用 transition 元素包裹起来</li> <li>要实现动画的元素，必须使用 v-if 或 v-show 来进行控制</li> <li>动画完成的状态，以正常显示的状态为准</li></ol> <h4 id="动画-使用第三方css动画样式库"><a href="#动画-使用第三方css动画样式库" class="header-anchor">#</a> 动画-使用第三方CSS动画样式库</h4> <ul><li>13.动画-使用现成的动画类库.html
+<ul><li><a href="https://animate.style/" target="_blank" rel="noopener noreferrer">Animate.css<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>https://github.com/animate-css/animate.css/tree/v3.6.2</li></ul></li></ul></li></ul> <h4 id="动画-钩子函数实现小球半场动画"><a href="#动画-钩子函数实现小球半场动画" class="header-anchor">#</a> 动画-钩子函数实现小球半场动画</h4> <ul><li><p>14.动画-使用JS动画生命周期函数.html</p> <ul><li>https://cn.vuejs.org/v2/guide/transitions.html#JavaScript-钩子</li> <li>https://www.w3schools.com/jsref/prop_style_transition.asp</li> <li>https://www.w3schools.com/jsref/prop_style_transform.asp</li> <li>https://www.w3schools.com/jsref/prop_element_offsetwidth.asp</li></ul></li> <li><p>动画-小球动画执行过程的分析</p></li> <li><p>动画-flag变化的过程分析</p></li> <li><p>开发者工具 Console 调试</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>var ball = document.getElementById('ball')
+ball.style.display='block'
+</code></pre></div><h4 id="动画-列表动画"><a href="#动画-列表动画" class="header-anchor">#</a> 动画-列表动画</h4> <ul><li>15.动画-列表过渡.html
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice</li></ul></li></ul> <h5 id="v-for-的列表过渡"><a href="#v-for-的列表过渡" class="header-anchor">#</a> v-for 的列表过渡</h5> <blockquote><p><a href="https://cn.vuejs.org/v2/guide/transitions.html#%E5%88%97%E8%A1%A8%E7%9A%84%E8%BF%9B%E5%85%A5%E5%92%8C%E7%A6%BB%E5%BC%80%E8%BF%87%E6%B8%A1" target="_blank" rel="noopener noreferrer">https://cn.vuejs.org/v2/guide/transitions.html#列表的进入和离开过渡<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <ol><li>定义过渡样式</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+ .list-enter,
+ .list-leave-to {
+   opacity: 0;
+   transform: translateY(10px);
+ }
+
+ .list-enter-active,
+ .list-leave-active {
+   transition: all 0.3s ease;
+ }
+&lt;/style&gt;
+</code></pre></div><ol start="2"><li>定义DOM结构，其中，需要使用 transition-group 组件把v-for循环的列表包裹起来：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+ &lt;input type=&quot;text&quot; v-model=&quot;txt&quot; @keyup.enter=&quot;add&quot;&gt;
+
+ &lt;transition-group tag=&quot;ul&quot; name=&quot;list&quot;&gt;
+   &lt;li v-for=&quot;(item, i) in list&quot; :key=&quot;i&quot;&gt;{{item}}&lt;/li&gt;
+ &lt;/transition-group&gt;
+&lt;/div&gt;
+</code></pre></div><ol start="3"><li>定义 VM中的结构：</li></ol> <div class="language- extra-class"><pre class="language-text"><code> // 创建 Vue 实例，得到 ViewModel
+ var vm = new Vue({
+   el: '#app',
+   data: {
+     txt: '',
+     list: [1, 2, 3, 4]
+   },
+   methods: {
+     add() {
+       this.list.push(this.txt);
+       this.txt = '';
+     }
+   }
+ });
+</code></pre></div><h6 id="列表的排序过渡"><a href="#列表的排序过渡" class="header-anchor">#</a> 列表的排序过渡</h6> <ul><li><code>&lt;transition-group&gt;</code> 组件还有一个特殊之处。不仅可以进入和离开动画，还可以改变定位。要使用这个新功能只需了解新增的 v-move 特性，它会在元素的改变定位的过程中应用。</li> <li>v-move 和 v-leave-active 结合使用，能够让列表的过渡更加平缓柔和：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>.v-move{
+transition: all 0.8s ease;
+}
+.v-leave-active{
+position: absolute;
+}
+</code></pre></div><h4 id="动画元素的name属性"><a href="#动画元素的name属性" class="header-anchor">#</a> 动画元素的name属性</h4> <ul><li>16.动画-演示name属性的必要性.html</li></ul> <h2 id="_1-基础语法实践part1-3"><a href="#_1-基础语法实践part1-3" class="header-anchor">#</a> 1 基础语法实践part1-3</h2> <h3 id="vue组件"><a href="#vue组件" class="header-anchor">#</a> Vue组件</h3> <h4 id="定义vue组件"><a href="#定义vue组件" class="header-anchor">#</a> 定义Vue组件</h4> <ul><li>什么是模块化：模块化是从代码的角度出发，分析项目，把项目中一些功能类似的代码，单独的抽离为一个个的模块；那么为了保证大家以相同的方式去封装模块，于是我们就创造了模块化的规范（<a href="http://javascript.ruanyifeng.com/nodejs/module.html" target="_blank" rel="noopener noreferrer">CommonJS规<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）；
+<ul><li>模块化的好处：方便项目的开发；和后期的维护与扩展；今后如果需要某些固定功能的模块，则直接拿来引用就行，提高了项目开发效率！</li></ul></li> <li>什么是组件化：从UI的角度出发考虑问题，把页面上有重用性的UI解构和样式，单独的抽离出来，封装为单独的组件；
+<ul><li>组件化的好处：随着项目规模的发展，我们手里的组件，会越来越多，这样，我们今后一个页面中的UI，几乎都可以从手中拿现成的组件拼接出来；方便项目的开发和维护；</li></ul></li></ul> <h4 id="全局组件定义的三种方式"><a href="#全局组件定义的三种方式" class="header-anchor">#</a> 全局组件定义的三种方式</h4> <blockquote><p>注意：从更抽象的角度来说，每个组件，就相当于一个自定义的元素；
+注意：组件中的DOM结构，有且只能有唯一的根元素（Root Element）来进行包裹；</p></blockquote> <h5 id="第一种方式"><a href="#第一种方式" class="header-anchor">#</a> 第一种方式：</h5> <ul><li>01.组件-创建全局组件方式1.html</li></ul> <ol><li>先调用 <code>Vue.extend()</code> 得到组件的构造函数：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        // ① 创建全局组件的第一种方式：   component
+        const com1 = Vue.extend({
+            template: '&lt;h5&gt;这是创建的第一个全局组件&lt;/h5&gt;',   // template 属性，表示这个组件的 UI 代码解构
+        });
+</code></pre></div><ol start="2"><li>通过 <code>Vue.component('组件的名称', 组件的构造函数)</code> 来注册全局组件：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        // ② 使用 Vue.component 向全局注册一个组件
+        // Vue.component('组件的名称', 组件的构造函数)
+        Vue.component('mycom1', com1);
+</code></pre></div><ol start="3"><li>把注册好的全局组件名称，以标签形式引入到页面中即可：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;!-- 如何引入一个全局的Vue组件呢？ ③ 直接把 组件的名称，以标签的形式，放到页面上就好了！ --&gt;
+        &lt;mycom1&gt;&lt;/mycom1&gt;
+</code></pre></div><h5 id="第二种方式"><a href="#第二种方式" class="header-anchor">#</a> 第二种方式：</h5> <ul><li>02.组件-创建全局组件方式2.html</li></ul> <ol><li>直接使用 Vue.component('组件名称', { 组件模板对象 })</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        const com2Obj = {
+            // 1. template 属性中，不能单独放一段文本，必须用标签包裹起来；
+            // 2. 如果在 template 属性中，想要放多个元素了，那么，在这些元素外，必须有唯一的一个根元素进行包裹；
+
+            // Component template requires a root element, rather than just text.
+            // template: '02.组件-创建全局组件方式2.html',
+            // Component template should contain exactly one root element. If you are using v-if on multiple elements, use v-else-if to chain them instead.
+            // template: '&lt;h5&gt;02.组件-创建全局组件方式2.html&lt;/h5&gt;&lt;h5&gt;02.组件-创建全局组件方式2.html&lt;/h5&gt;',
+            template: '&lt;div&gt;&lt;h5&gt;02.组件-创建全局组件方式2.html&lt;/h5&gt;&lt;h5&gt;02.组件-创建全局组件方式2.html&lt;/h5&gt;&lt;/div&gt;',
+        };
+
+        // 定义全局的组件
+        // Vue.component 的第二个参数，既接收 一个 组件的构造函数， 同时，也接受 一个对象
+        Vue.component('mycom2', com2Obj);
+</code></pre></div><h5 id="第三种方式"><a href="#第三种方式" class="header-anchor">#</a> 第三种方式：</h5> <ul><li>03.组件-创建全局组件方式3.html</li></ul> <ol><li>先使用 template 标签定义一个模板的代码解构：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    &lt;!-- 定义一个 template 标签元素  --&gt;
+    &lt;!-- 使用 Vue 提供的 template 标签，可以定义组件的UI模板解构 --&gt;
+    &lt;template id=&quot;tmpl&quot;&gt;
+        &lt;div&gt;
+            &lt;h5&gt;03.组件-创建全局组件方式3.html&lt;/h5&gt;
+            &lt;h5&gt;03.组件-创建全局组件方式3.html----2&lt;/h5&gt;
+        &lt;/div&gt;
+    &lt;/template&gt;
+</code></pre></div><ol start="2"><li>使用 Vue.component 注册组件：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        // 这是定义的全局组件
+        // tmpl template 必须在本行代码之前，不能放到 选项el 对应元素内 
+        Vue.component('mycom3', {
+            template: '#tmpl'
+        });
+</code></pre></div><blockquote><p>注意： 从更抽象的角度来说，每个组件，就相当于是一个自定义的元素； 注意： 组件中的DOM结构，有且只能有唯一的根元素（Root Element）来进行包裹！</p></blockquote> <h4 id="定义私有组件"><a href="#定义私有组件" class="header-anchor">#</a> 定义私有组件</h4> <ul><li>03.组件-创建全局组件方式3.html</li></ul> <div class="language- extra-class"><pre class="language-text"><code>        var vm = new Vue({
+            el: '#app',
+            components: {   // 定义实例中私有组件的 组件的名称 和组件的 解构
+                'mycom4': {
+                    template: '&lt;h6&gt; 03.组件-创建全局组件方式3.html 这是定义的私有组件&lt;/h6&gt;'
+                }
+            }
+        });
+</code></pre></div><h4 id="组件中展示数据和响应事件"><a href="#组件中展示数据和响应事件" class="header-anchor">#</a> 组件中展示数据和响应事件</h4> <ul><li>04.组件-组件中是否有自己的data和methods.html</li></ul> <div class="language- extra-class"><pre class="language-text"><code>        Vue.component('mycom', {
+            template: `&lt;h5 v-on:click=&quot;show&quot;&gt;这是自定义的全局组件 {{msg}}&lt;/h5&gt;`,
+            data: function(){   // 在 组件中，可以有自己的私有数据，但是，组件的 data 必须是一个 function，并且内部 return 一个 数据对象
+                return {
+                    msg: 'mycom data return msg'
+                };
+            },
+            methods: {  // 尝试定义组件的私有方法
+                show: function(){
+                    console.log(&quot;mycom methods show&quot;);
+                }
+            }
+        });
+</code></pre></div><h4 id="组件的data必须是function并返回对象"><a href="#组件的data必须是function并返回对象" class="header-anchor">#</a> 组件的data必须是function并返回对象</h4> <ul><li><p>05.组件-为什么组件的data必须是function并返回对象.html</p></li> <li><p>为什么要把 组件中的 data 定义为一个function呢？</p> <ul><li>因为这样做的话，每当我们在页面上引用一次组件，必然会先调用 这个 data function，从而得到一个当前组件私有的 数据对象；</li></ul></li></ul> <h4 id="使用flag标识符和v-if与v-else实现组件的切换"><a href="#使用flag标识符和v-if与v-else实现组件的切换" class="header-anchor">#</a> 使用flag标识符和v-if与v-else实现组件的切换</h4> <ul><li>06.组件的切换1.html
+<ul><li>https://cn.vuejs.org/v2/api/#v-if</li> <li>https://cn.vuejs.org/v2/api/#v-else</li></ul></li></ul> <h4 id="使用component标签结合is属性切换多个组件"><a href="#使用component标签结合is属性切换多个组件" class="header-anchor">#</a> 使用component标签结合is属性切换多个组件</h4> <ul><li>07.组件的切换2.html
+<ul><li>https://cn.vuejs.org/v2/api/#component</li></ul></li></ul> <h4 id="为组件切换添加动画效果"><a href="#为组件切换添加动画效果" class="header-anchor">#</a> 为组件切换添加动画效果</h4> <ul><li>07.组件的切换2.html</li></ul> <h4 id="父组件通过属性绑定为子组件传递数据"><a href="#父组件通过属性绑定为子组件传递数据" class="header-anchor">#</a> 父组件通过属性绑定为子组件传递数据</h4> <ul><li>08.父组件向子组件传值.html</li></ul> <h5 id="父组件向子组件传递普通数据"><a href="#父组件向子组件传递普通数据" class="header-anchor">#</a> 父组件向子组件传递普通数据</h5> <ol><li>把要传递给子组件的数据，作为 自定义属性，通过 v-bind: 绑定到子组件身上：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;!-- 父组件如果想要给子组件传递数据，则需要使用属性绑定的形式 --&gt;
+        &lt;!-- 这样，子组件身上的 自定义属性，就是你要传递给子组件的数据 --&gt;        
+        &lt;com1 v-bind:msg1=&quot;parentMsg&quot;&gt;&lt;/com1&gt;
+</code></pre></div><ol start="2"><li>在子组件中，不能直接使用父组件传递过来的数据，需要先使用props 数组来接收一下：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            components: {   // 定义私有组件
+                'com1': {   // 在Vue中，默认，子组件无法直接获取父组件中的数据
+                    template: `&lt;h5&gt;{{msg1}}&lt;/h5&gt;`,
+                    props: ['msg1'],    // 在Vue中，只有 props 是数组，其它带 s 后缀的属性都是 对象
+                }
+            }
+</code></pre></div><ol start="3"><li>注意：在接收父组件传递过来的 props的时候，接收的名称，一定要和父组件传递过来的自定义属性，名称保持一致！</li></ol> <h4 id="父组件向子组件传递对象"><a href="#父组件向子组件传递对象" class="header-anchor">#</a> 父组件向子组件传递对象</h4> <ul><li>09.父组件向子组件传递对象.html</li></ul> <h4 id="父组件把方法传递给子组件"><a href="#父组件把方法传递给子组件" class="header-anchor">#</a> 父组件把方法传递给子组件</h4> <ul><li>10.父组件向子组件传递function.html</li></ul> <ol><li>事件绑定</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;!-- 1. 如果要向子组件传递 data 中的数据，则 使用 属性绑定的形式  v-bind: --&gt;
+        &lt;!-- 2. 如果要向子组件传递 methods 中的 方法，则 使用 事件绑定的形式 v-on: --&gt;
+        &lt;com1 v-on:func1=&quot;show&quot;&gt;&lt;/com1&gt;
+</code></pre></div><ol start="2"><li>this.$emit 调用</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            components: {   // 定义子组件
+                'com1': {
+                    template: `&lt;div&gt;
+                        &lt;!-- 当点击子组件的  按钮时候， 调用一下 父组件传递过来的 func 方法 --&gt;
+                        &lt;input type=&quot;button&quot; value=&quot;com1按钮&quot; v-on:click=&quot;btnClick&quot;/&gt;
+                        &lt;/div&gt;`,
+                    methods: {
+                        btnClick: function(){
+                            console.log(&quot;com1 methods btnClick&quot;);
+                            // 调用一下 父组件传递过来的 func1 方法  emit 英文原意为 发射， 在 计算机中，引申为 触发
+                            this.$emit('func1');
+                        }
+                    }
+                }
+            }
+</code></pre></div><h4 id="子组件向父组件传递数据"><a href="#子组件向父组件传递数据" class="header-anchor">#</a> 子组件向父组件传递数据</h4> <ul><li>11.子组件向父组件传递数据.html</li></ul> <h4 id="案例-评论列表案例练习父子组件传值"><a href="#案例-评论列表案例练习父子组件传值" class="header-anchor">#</a> 案例：评论列表案例练习父子组件传值</h4> <ul><li>12.评论列表案例.html</li></ul> <h4 id="使用ref属性操作页面上的元素或组件"><a href="#使用ref属性操作页面上的元素或组件" class="header-anchor">#</a> 使用ref属性操作页面上的元素或组件</h4> <ul><li>13.在vue中$refs的使用.html
+<ul><li>https://cn.vuejs.org/v2/api/#ref</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>    &lt;div id=&quot;app&quot;&gt;
+        &lt;input type=&quot;button&quot; value=&quot;获取元素内容&quot; v-on:click=&quot;getInfo&quot; ref=&quot;ref_btn&quot;&gt;
+        &lt;!-- ref     reference --&gt;
+        &lt;h3 id=&quot;id_h3&quot; ref=&quot;ref_h3&quot;&gt;{{msg}}&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                msg: 'vm data msg'
+            },
+            methods: {
+                getInfo(){  // 点击按钮，获取 h3 中的文本内容
+                    console.log(&quot;id_h3&quot;, document.getElementById('id_h3').innerHTML);
+
+                    // ref 属性
+                    console.log(this.$refs);
+                    console.log(&quot;ref_h3&quot;, this.$refs.ref_h3.innerHTML);
+                }
+            }
+        });
+    &lt;/script&gt;
+</code></pre></div><ul><li>14.使用ref属性获取页面上的组件.html</li></ul> <div class="language- extra-class"><pre class="language-text"><code>    &lt;div id=&quot;app&quot;&gt;
+        &lt;input type=&quot;button&quot; value=&quot;获取页面上的组件&quot; v-on:click=&quot;getCom&quot;&gt;
+        &lt;com1 ref=&quot;ref_com1&quot;&gt;&lt;/com1&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        Vue.component('com1', {
+            template: `&lt;h5&gt;com1 {{msg}}&lt;/h5&gt;`,
+            data: function(){
+                return {
+                    msg: 'com1_data_msg'
+                }
+            },
+            methods: {  // 子组件的方法
+                show: function(){
+                    console.log(&quot;com1_methods_show&quot;);
+                }
+            }
+        });
+
+        const vm = new Vue({
+            el: '#app',
+            data: {},
+            methods: {
+                getCom: function(){
+                    console.log(this.$refs);
+                    // 修改 子组件上的数据
+                    this.$refs.ref_com1.msg=&quot;this.$refs.ref_com1.msg&quot;
+                    // 调用子组件中的方法
+                    this.$refs.ref_com1.show();
+                }
+            }
+        });
+    &lt;/script&gt;
+</code></pre></div><h4 id="vue中data和props的区别"><a href="#vue中data和props的区别" class="header-anchor">#</a> vue中data和props的区别</h4> <ul><li>15.data和props的区别.html
+<ol><li>data 在组件中，要被定义成function并返回一个对象</li> <li>props 在组件中，要被定义成数组，其中，数组的值都是字符串名，表示父组件传递过来的数据；</li> <li>props 的数据，不要直接拿来修改，如果想要修改，必须在 data 上重新定义一个 属性，然后把属性的值 从 this.props 拿过来</li></ol></li></ul> <blockquote><p>data 上的数据，都是组件自己私有的， data 上的数据，都是可读可写的
+props 数据，都是外界传递过来的数据， props 中的数据只能读取，不能重新写入</p></blockquote> <h3 id="路由"><a href="#路由" class="header-anchor">#</a> 路由</h3> <ol><li>对于普通的网站，所有的超链接都是URL地址，所有的URL地址都对应服务器上对应的资源；</li> <li>对于单页面应用程序来说，主要通过<a href="https://www.cnblogs.com/joyho/articles/4430148.html" target="_blank" rel="noopener noreferrer">URL中的hash(#号)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>来实现不同页面之间的切换，同时，hash有一个特点：HTTP请求中不会包含hash相关的内容；所以，单页面程序中的页面跳转主要用hash实现；</li> <li>在单页面应用程序中，这种通过hash改变来切换页面的方式，称作前端路由（区别于后端路由）；</li> <li>前端的路由：就是根据不同的Hash地址，在页面上展示不同的前端组件；</li></ol> <h4 id="使用hash模拟前端路由的实现过程"><a href="#使用hash模拟前端路由的实现过程" class="header-anchor">#</a> 使用hash模拟前端路由的实现过程</h4> <ul><li>16.URL地址中的#.html</li> <li>17.Vue中自己监听Hash的改变现实不同的组件.html
+<ul><li>https://developer.mozilla.org/zh-CN/docs/Web/API/WindowEventHandlers/onhashchange</li> <li>https://developer.mozilla.org/zh-CN/docs/Web/API/Location</li> <li><a href="https://cn.vuejs.org/v2/guide/instance.html#%E5%AE%9E%E4%BE%8B%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90" target="_blank" rel="noopener noreferrer">实例生命周期钩子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h4 id="_18-vue-router的基本使用-html"><a href="#_18-vue-router的基本使用-html" class="header-anchor">#</a> 18.vue-router的基本使用.html</h4> <ul><li>18.vue-router的基本使用.html
+<ul><li><p>https://router.vuejs.org/zh/installation.html</p></li> <li><p>vue-router最基本的使用方式</p></li> <li><p>router的匹配过程介绍</p></li></ul></li></ul> <h5 id="路由的使用步骤总结"><a href="#路由的使用步骤总结" class="header-anchor">#</a> 路由的使用步骤总结</h5> <ol><li>导入 vue-router</li> <li>创建要进行切换的组件</li> <li>创建一个路由的对象</li> <li>把路由对象，通过 vm 的 router 属性，挂载到vm上</li> <li>router-view 默认不会被渲染为元素</li> <li>router-link 路由链接， router-link 默认渲染为 a 标签</li></ol> <h4 id="_19-登录注册路由切换和高亮-html"><a href="#_19-登录注册路由切换和高亮-html" class="header-anchor">#</a> 19.登录注册路由切换和高亮.html</h4> <ul><li>19.登录注册路由切换和高亮.html
+<ul><li><p>https://router.vuejs.org/zh/api/#tag</p></li> <li><p>https://router.vuejs.org/zh/api/#linkactiveclass</p></li> <li><p>设置被选中路由高亮的两种方式</p></li> <li><p>使用路由规则的redirect属性实现重定向</p></li></ul></li></ul> <h4 id="为路由的切换添加动画效果"><a href="#为路由的切换添加动画效果" class="header-anchor">#</a> 为路由的切换添加动画效果</h4> <ul><li>20.设置路由的切换动画效果.html
+<ul><li>https://cn.vuejs.org/v2/api/#transition</li></ul></li></ul> <h4 id="在路由规则中定义参数"><a href="#在路由规则中定义参数" class="header-anchor">#</a> 在路由规则中定义参数</h4> <h5 id="在路由中获取query形式传递的参数"><a href="#在路由中获取query形式传递的参数" class="header-anchor">#</a> 在路由中获取query形式传递的参数</h5> <ul><li>21.路由传参.html</li></ul> <div class="language- extra-class"><pre class="language-text"><code>21.路由传参.html#/login?id=10
+
+        const login = { // 组件也有自己的生命周期函数，这些函数，和 vm 实例的 生命周期函数一致
+            template: `&lt;h5&gt;登录组件{{$route.query.id}}&lt;/h5&gt;`,
+            created: function(){    // 当 login 组件 中 data 和 methods 初始化完毕后，调用 created
+                console.log(this, this.$route, this.$route.query.id);
+            }
+        };
+</code></pre></div><ul><li>在路由中，使用?传参，不需要修改对应的路由规则；</li></ul> <h5 id="在路由中获取params形式传递的参数"><a href="#在路由中获取params形式传递的参数" class="header-anchor">#</a> 在路由中获取params形式传递的参数</h5> <ul><li>22.路由传参2.html</li></ul> <ol><li>在规则中定义参数：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        const router = new VueRouter({
+            routes:[
+                {path: '/', redirect: '/login'},
+                {path: '/login/:id/:name', component: login},
+                {path: '/reg', component: reg},
+            ]
+        });
+</code></pre></div><ol start="2"><li>通过 this.$route.params来获取路由中的参数：</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        const login = {
+            template: '&lt;h5&gt;登录组件{{this.$route.params.id}}-{{$route.params.name}}&lt;/h5&gt;',
+            created: function() {
+                console.log(this, this.$route, this.$route.params);
+            }
+        };
+
+</code></pre></div><ol start="3"><li>router-link</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;router-link to=&quot;/login/100/tosin&quot;&gt;登录&lt;/router-link&gt;
+</code></pre></div><h5 id="路由中使用props获取参数"><a href="#路由中使用props获取参数" class="header-anchor">#</a> 路由中使用props获取参数</h5> <ul><li>23.路由中使用props获取参数.html
+<ul><li>https://router.vuejs.org/zh/guide/essentials/passing-props.html</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>        const login = {
+            template: '&lt;h5&gt;登录组件 {{id}}--{{name}}&lt;/h5&gt;',
+            props: ['id', 'name'],  // vue-router 新版本中，才提供的功能，在之前稍微老点的版本中，只能使用 $route.params.参数名
+            created: function(){
+                console.log(this, this.$route, this.id, this.name);
+            }
+        };
+        const router = new VueRouter({
+            routes:[
+                {path: '/', redirect: '/login'},
+                {path: '/login/:id/:name', component: login, props: true},
+            ]
+        });
+</code></pre></div><h2 id="_2-vue项目"><a href="#_2-vue项目" class="header-anchor">#</a> 2 Vue项目</h2> <h2 id="_3-vue-devtools调试工具"><a href="#_3-vue-devtools调试工具" class="header-anchor">#</a> 3 Vue-devtools调试工具</h2> <ul><li><p><a href="https://zhuanlan.zhihu.com/p/196757661" target="_blank" rel="noopener noreferrer">手抓手带你使用vue devtools<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://cn.vuejs.org/v2/guide/installation.html#Vue-Devtools" target="_blank" rel="noopener noreferrer">Vue-Devtools<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>https://devtools.vuejs.org/
+<ul><li>https://github.com/vuejs/devtools#vue-devtools
+<ul><li><a href="https://devtools.vuejs.org/guide/installation.html#settings" target="_blank" rel="noopener noreferrer">Vue Devtools Guide<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></li></ul></li></ul> <blockquote><p>以 _ 或 $ 开头的属性 不会 被 Vue 实例代理，因为它们可能和 Vue 内置的属性、API 方法冲突。你可以使用例如 vm.$data._property 的方式访问这些属性。</p></blockquote> <ul><li>相关代码
+<ul><li>basicGrammar-part1-1\07.简易计算器案例.html</li> <li>basicGrammar-part1-2\04.生命周期函数.html</li> <li>basicGrammar-part1-2\02.过滤器的基本使用.html</li> <li>basicGrammar-part1-2\03.品牌列表-自定义指令.html</li> <li>basicGrammar-part1-3\03.组件-创建全局组件方式3.html</li> <li>basicGrammar-part1-4\08.使用wath监听URL地址的改变.html</li> <li>basicGrammar-part1-4\10.计算属性的get和set.html</li> <li>basicGrammar-part1-3\14.使用ref属性获取页面上的组件.html</li> <li>basicGrammar-part1-3\12.评论列表案例.html</li> <li>basicGrammar-part1-3\10.父组件向子组件传递function2.html</li> <li>basicGrammar-part1-3\23.路由中使用props获取参数.html</li> <li>basicGrammar-part1-3\23.路由中使用props获取参数.html</li></ul></li></ul> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <div class="language- extra-class"><pre class="language-text"><code>E:\iEnviroment\development\projects\ideaProjects\VueDemo&gt;git clone git@github.com:TosinJia/devtools.git
+Cloning into 'devtools'...
+remote: Enumerating objects: 18627, done.
+remote: Counting objects: 100% (1474/1474), done.
+remote: Compressing objects: 100% (637/637), done.
+remote: Total 18627 (delta 879), reused 1404 (delta 827), pack-reused 17153R
+Receiving objects: 100% (18627/18627), 13.58 MiB | 4.03 MiB/s, done.
+Resolving deltas: 100% (12363/12363), done.
+
+E:\iEnviroment\development\projects\ideaProjects\VueDemo\devtools&gt;yarn install
+User@WIN10-0009 MINGW64 /e/iEnviroment/development/projects/ideaProjects/VueDemo/devtools (main)
+$ yarn run build
+</code></pre></div><ul><li>chrome 更多工具-&gt;扩展程序
+<ol><li>开启开发者模式</li> <li>加载已解压的扩展程序（packages\shell-chrome）</li></ol></li></ul> <h3 id="界面功能"><a href="#界面功能" class="header-anchor">#</a> 界面功能</h3> <h4 id="inspector"><a href="#inspector" class="header-anchor">#</a> Inspector</h4> <h5 id="componets"><a href="#componets" class="header-anchor">#</a> Componets</h5> <h6 id="左侧-app"><a href="#左侧-app" class="header-anchor">#</a> 左侧 app</h6> <ul><li>顶部工具栏
+<ul><li>Find apps..</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-3\03.组件-创建全局组件方式3.html
+</code></pre></div><h6 id="中部-component"><a href="#中部-component" class="header-anchor">#</a> 中部 component</h6> <ul><li>顶部工具栏
+<ul><li>Find components...</li></ul></li></ul> <blockquote><p>每个组件实例都有一个变量，当前选中的组件是$vm 或 $vm0，<s>其余组件从上到下升序赋值($vm1、$vm2、$vm3...)</s>，其余组件按选中的先后顺序倒序赋值（$vm1、$vm2、$vm3...），控制台直接打印$vm0可以直接看到这个实例。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$vm==$vm0
+	true
+# $vm0-9和查看的次序有关，0当前查看的对象，1 前1次查看的对象，2 前2次查看的对象...
+console.log($vm0, $vm1, $vm2, $vm3, $vm4, $vm5, $vm6, $vm7, $vm8, $vm9);
+</code></pre></div><ol><li><p>new Vue</p> <ul><li>data</li></ul></li> <li><p>Transition transition</p> <ul><li>props [properties]</li></ul></li> <li><p>TransitionGroup transition-group</p></li> <li><p>RouterLink router-link</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>$vm0.$props
+	{…}
+		activeClass: undefined
+		append: false
+		ariaCurrentValue: &quot;page&quot;
+		custom: false
+		event: &quot;click&quot;
+		exact: false
+		exactActiveClass: undefined
+		exactPath: false
+		replace: false
+		tag: &quot;span&quot;
+		to: &quot;/login&quot;
+</code></pre></div><ol><li>router-view
+<ul><li>&lt;组件名|Anonymous Component&gt; router-view:path1
+<ul><li>&lt;组件名|Anonymous Component&gt; router-view:path1/path11</li></ul></li></ul></li></ol> <div class="language- extra-class"><pre class="language-text"><code>$vm0.$route
+	{name: undefined, meta: {…}, path: '/login', hash: '', query: {…}, …}
+		fullPath: &quot;/login&quot;
+		hash: &quot;&quot;
+		matched: Array(1)
+			0: {path: '/login', regex: /^\/login(?:\/(?=$))?$/i, components: {…}, alias: Array(0), instances: {…}, …}
+		length: 1
+		[[Prototype]]: Array(0)
+		meta: {}
+		name: undefined
+		params: {}
+		path: &quot;/login&quot;
+		query: {}
+</code></pre></div><h6 id="右侧-state"><a href="#右侧-state" class="header-anchor">#</a> 右侧 state</h6> <ul><li>顶部工具栏
+<ul><li>Filter state...</li> <li>Scroll to component</li> <li>Show render code</li> <li>Inspect DOM</li> <li>Open ... in editor</li></ul></li></ul> <blockquote><p>面板内可以看到我们定义的一系列组件，选中相应的组件后，右侧面板可以看到组件内的<code>data</code>、<code>props</code>、<code>computed</code>、attrs属性，<code>$refs</code>，<code>route</code>。</p></blockquote> <ul><li>data属性是可以编辑的，编辑后页面也会实时改变</li></ul> <h6 id="force-refresh-强制刷新"><a href="#force-refresh-强制刷新" class="header-anchor">#</a> Force Refresh 强制刷新</h6> <h6 id="s-select-componet-in-the-page"><a href="#s-select-componet-in-the-page" class="header-anchor">#</a> [S] Select componet in the page</h6> <ul><li>Click on a componet on the page to select it</li></ul> <h6 id=""><a href="#" class="header-anchor">#</a> ...</h6> <ol><li>Component names:
+<ul><li>Original 原始</li> <li>PascalCase Pascal命名法 大驼峰式命名法</li> <li>kebab-case 短横线分割</li></ul></li></ol> <h5 id="routes"><a href="#routes" class="header-anchor">#</a> Routes</h5> <ul><li>展示路由相关信息</li></ul> <h5 id="vuex-2"><a href="#vuex-2" class="header-anchor">#</a> Vuex</h5> <ul><li>展示Vuex相关信息</li></ul> <h4 id="timeline"><a href="#timeline" class="header-anchor">#</a> Timeline</h4> <h5 id="mouse"><a href="#mouse" class="header-anchor">#</a> Mouse</h5> <h5 id="keyboard"><a href="#keyboard" class="header-anchor">#</a> Keyboard</h5> <h5 id="component-events-组件事件"><a href="#component-events-组件事件" class="header-anchor">#</a> Component events 组件事件</h5> <ul><li>展示组件事件调用相关信息</li></ul> <h5 id="performance"><a href="#performance" class="header-anchor">#</a> Performance</h5> <h5 id="router-navigations"><a href="#router-navigations" class="header-anchor">#</a> Router Navigations</h5> <h3 id="开发者工具"><a href="#开发者工具" class="header-anchor">#</a> 开发者工具</h3> <ul><li>Inspector -&gt; Componets component窗口选中需要查看的组件</li></ul> <h4 id="console"><a href="#console" class="header-anchor">#</a> Console</h4> <ol><li>el</li></ol> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-1\07.简易计算器案例.html
+
+// 自带属性方法以$、_开头
+$vm0
+$vm0.$el.id
+$vm0.$options.el
+</code></pre></div><ol><li>data</li></ol> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-1\07.简易计算器案例.html
+
+$vm0.$data
+$vm0._data
+$vm0.$data===$vm0._data
+	true
+
+$vm0.data中数据名
+
+$vm0.$data.data中数据名===$vm0.data中数据名
+	true
+</code></pre></div><ol><li>methods</li></ol> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-1\07.简易计算器案例.html
+
+# [[FunctionLocation]]:  点击跳转 DOM未渲染 源码位置
+$vm0.$options.methods
+
+$vm0.methods中方法名 点击跳转 DOM未渲染 源码位置
+$vm0.$options.methods.methods中方法名 点击跳转 DOM未渲染 源码位置
+
+# 执行方法
+$vm0.methods中方法名()
+$vm0.$options.methods.methods中方法名()
+</code></pre></div><ol><li>生命周期函数</li></ol> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-2\04.生命周期函数.html
+
+# 点击跳转 DOM未渲染 源码位置
+$vm0.$options.beforeCreate[$vm0.$options.beforeCreate.length-1]
+$vm0.$options.created[$vm0.$options.created.length-1]
+
+$vm0.$options.beforeMount[$vm0.$options.beforeMount.length-1]
+$vm0.$options.mounted[$vm0.$options.mounted.length-1]
+
+$vm0.$options.beforeUpdate[$vm0.$options.beforeUpdate.length-1]
+$vm0.$options.updated[$vm0.$options.updated.length-1]
+
+$vm0.$options.beforeDestroyed[$vm0.$options.beforeDestroyed.length-1]
+$vm0.$options.destroyed[$vm0.$options.destroyed.length-1]
+</code></pre></div><ul><li>过滤器</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-2\02.过滤器的基本使用.html
+$vm0.$options.filters
+	{addStr: ƒ, strFormat: ƒ} 私有过滤器
+		addStr: ƒ (data) 私有过滤器
+		strFormat: ƒ (data)
+		[[Prototype]]: Object
+			strFormat: ƒ (data, str=&quot;XE&quot;) 全局过滤器
+
+# 点击跳转 DOM未渲染 源码位置
+$vm0.$options.filters.私有过滤器名字 
+</code></pre></div><ul><li>指令</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-2\03.品牌列表-自定义指令.html
+
+# 指令 指令名.[[FunctionLocation]] 源码位置
+$vm0.$options.directives
+	{bold: {…}, italic: {…}, italic1: {…}} 私有指令
+		bold: {bind: ƒ}
+		italic: {bind: ƒ, update: ƒ}
+		italic1: {bind: ƒ, update: ƒ}
+		[[Prototype]]: Object
+			color: {bind: ƒ} 全局指令
+			focus: {bind: ƒ, inserted: ƒ, update: ƒ, componentUpdated: ƒ, unbind: ƒ} 全局指令
+			model: {inserted: ƒ, componentUpdated: ƒ}
+			show: {bind: ƒ, update: ƒ, unbind: ƒ}
+# 点击跳转 DOM未渲染 源码位置
+$vm0.$options.directives.私有指令名字
+</code></pre></div><ul><li>components 组件</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-3\03.组件-创建全局组件方式3.html
+
+$vm0.$options.components
+	{mycom4: {…}}
+		mycom4: {template: '&lt;h6&gt; 03.组件-创建全局组件方式3.html 这是定义的私有组件&lt;/h6&gt;', _Ctor: {…}} 私有组件
+		[[Prototype]]: Object
+			KeepAlive: {name: 'keep-alive', abstract: true, props: {…}, methods: {…}, created: ƒ, …}
+			Transition: {name: 'transition', props: {…}, abstract: true, render: ƒ}
+			TransitionGroup: {props: {…}, methods: {…}, beforeMount: ƒ, render: ƒ, updated: ƒ}
+			mycom3: ƒ VueComponent(options) 全局组件构造函数
+
+# 查找源码 Search【Ctrl+Shif+F】
+</code></pre></div><ul><li>watch</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-4\08.使用wath监听URL地址的改变.html
+
+$vm0.$options.watch
+# 点击跳转 DOM未渲染 源码位置
+$vm0.$options.watch.要监听的数据
+$vm.$options.watch[&quot;要监听的数据&quot;]
+</code></pre></div><ul><li>computed 计算属性</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-4\10.计算属性的get和set.html
+
+$vm0.$options.computed
+# 点击跳转 DOM未渲染 源码位置
+$vm0.$options.computed['computed中数据名']
+	.get
+	.set
+$vm0.computed中数据名
+
+$vm0.$options.computed
+	{fullname: {…}}
+		fullname:
+			get: ƒ ()
+			set: ƒ (val)
+
+$vm0._computedWatchers
+	{fullname: Watcher}
+		fullname: Watcher
+			active: true
+			before: undefined
+			cb: ƒ noop(a, b, c)
+			deep: false
+			depIds: Set(2) {3, 4}
+			deps: (2) [Dep, Dep]
+			dirty: false
+			expression: &quot;function(){    // get 表示外界要引用 fullname 的值 //$vm0.$options.computed['fullname'].get\n                        console.log('computed fullname get');\n                        return this.firstname + '-' + this.lastname;\n                    }&quot;
+			getter: ƒ ()
+				arguments: null
+				caller: null
+				length: 0
+				name: &quot;get&quot;
+				prototype: {constructor: ƒ}
+				[[FunctionLocation]]: 10.计算属性的get和set.html:32
+				[[Prototype]]: ƒ ()
+				[[Scopes]]: Scopes[2]
+			id: 1
+			lazy: true
+			newDepIds: Set(0) {size: 0}
+			newDeps: []
+			sync: false
+			user: false
+			value: &quot;-&quot;
+			vm: Vue {_uid: 0, _isVue: true, $options: {…}, _renderProxy: Proxy, _self: Vue, …}
+</code></pre></div><ul><li>ref</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-3\14.使用ref属性获取页面上的组件.html
+
+$vm0.$refs
+	{ref_btn: input, ref_com1: VueComponent, ref_h3: h3#id_h3}
+		ref_btn: input
+		ref_com1: VueComponent {_uid: 1, _isVue: true, $options: {…}, _renderProxy: Proxy, _self: VueComponent, …}
+		ref_h3: h3#id_h3
+
+$vm0.$refs.ref_com1===$vm1
+	true
+</code></pre></div><p>组件</p> <ul><li>基础数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-3\12.评论列表案例.html
+
+# 选中Root，选中cmt-box，选中Root
+# 子对象实例
+$vm0.$children[0]===$vm1
+true
+
+$vm1.$options._componentTag
+	'cmt-box'
+</code></pre></div><ul><li>template</li></ul> <div class="language- extra-class"><pre class="language-text"><code>$vm0.$options.template
+</code></pre></div><ul><li>事件绑定 属性绑定</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+# day3 basicGrammar-part1-3\10.父组件向子组件传递function2.html
+
+//&lt;com1 v-on:func=&quot;show&quot; v-bind:func1=&quot;show&quot; v-on:func3=&quot;show3&quot;&gt;&lt;/com1&gt;
+$vm0._events
+	{func: Array(1), func3: Array(1), hook:beforeDestroy: Array(1)}
+		func: [ƒ]
+		func3: [ƒ]
+
+$vm0._props
+	{}
+		func1: ƒ ()
+$vm0.$props
+	{}
+		func1: ƒ ()
+</code></pre></div><ul><li>props</li></ul> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-3\23.路由中使用props获取参数.html
+
+# 值内容
+$vm.$props===$vm0._props
+true
+
+$vm.$props.props元素名
+
+$vm.$props.props元素名===$vm0.$options.propsData.props元素名
+	true
+
+$vm0.$props
+	{}
+		id: &quot;100&quot;
+		name: &quot;tosin&quot;
+$vm0._props
+	{}
+		id: &quot;100&quot;
+		name: &quot;tosin&quot;
+
+# 配置
+$vm0.$options.props
+	{name: {…}, id: {…}}
+		id: {type: null}
+		name: {type: null}
+
+$vm0.$options.propsData
+	{name: 'tosin', id: '100'}
+		id: &quot;100&quot;
+		name: &quot;tosin&quot;
+
+
+# transition basicGrammar-part1-2\14.动画-使用JS动画生命周期函数.html
+
+$vm0
+	VueComponent {_uid: 1, _isVue: true, $options: {…}, _renderProxy: Proxy, _self: VueComponent, …}
+$vm0.$props
+	{…}
+		appear: (...)
+		appearActiveClass: (...)
+		appearClass: (...)
+		appearToClass: (...)
+		css: (...)
+		duration: (...)
+		enterActiveClass: (...)
+		enterClass: (...)
+		enterToClass: (...)
+		leaveActiveClass: (...)
+		leaveClass: (...)
+		leaveToClass: (...)
+		mode: (...)
+		name: (...)
+		type: (...)
+# transition-group basicGrammar-part1-2\15.动画-列表过渡.html
+
+$vm0
+	VueComponent {_uid: 1, _isVue: true, $options: {…}, _renderProxy: Proxy, _self: VueComponent, …}
+vm0.$props
+	{…}
+		...
+		moveClass: (...)
+
+</code></pre></div><h5 id="路由-2"><a href="#路由-2" class="header-anchor">#</a> 路由</h5> <div class="language- extra-class"><pre class="language-text"><code># basicGrammar-part1-3\23.路由中使用props获取参数.html
+
+# 选中挂载路由的vm实例
+$vm0.$router===$vm0._router
+	true
+$vm0.$router===$vm0.$options.router
+	true
+
+$vm0.$router.options.routes
+$vm0._router.options.routes
+$vm0.$options.router.options.routes
+
+$vm0._router.options
+	{routes: Array(4)}
+		routes: Array(4)
+			0: {path: '/', redirect: '/login'}
+			1: {path: '/login', component: {…}}
+			2: {path: '/login/:id/:name', component: {…}, props: true}
+			3: {path: '/reg', component: {…}}
+			length: 4
+
+# 选中 router-view 中
+$vm0.$router===$vm1.$router
+	true
+$vm0.$router===$vm0._router
+	false
+$vm0._router
+	undefined
+
+// &lt;router-link to=&quot;/login?id=10&quot;&gt;登录1&lt;/router-link&gt;
+$vm0.$route.query
+	{id: '10'}
+
+//&lt;router-link to=&quot;/login/100/tosin&quot;&gt;登录2&lt;/router-link&gt;
+//{path: '/login/:id/:name', component: login2, props: true},
+$vm0.$route.params
+	{id: '100', name: 'tosin'}
+</code></pre></div><h5 id="vuex-3"><a href="#vuex-3" class="header-anchor">#</a> vuex</h5> <div class="language- extra-class"><pre class="language-text"><code>$vm0.$store
+$vm0.$store.state
+$vm0.$store._modulesNamespaceMap
+$vm0.$store._mutations
+$vm0.$store._actions
+</code></pre></div><h4 id="elements"><a href="#elements" class="header-anchor">#</a> Elements</h4> <ul><li>渲染后</li></ul> <h4 id="sources"><a href="#sources" class="header-anchor">#</a> Sources</h4> <ul><li>未渲染</li> <li>执行过程中可打断点</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/54.3dbad0f1.js" defer></script>
+  </body>
+</html>

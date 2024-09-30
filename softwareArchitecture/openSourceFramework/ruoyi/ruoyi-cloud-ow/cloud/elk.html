@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>分布式日志 | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/29.5a968fce.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/20.1074faf8.js"><link rel="prefetch" href="/assets/js/21.05a74ab0.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/24.86d2ac06.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/51.742ddc89.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/54.3dbad0f1.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/7.fe9d2c9f.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>分布式日志</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#基本介绍" class="sidebar-link">基本介绍</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#elasticsearch" class="sidebar-link">Elasticsearch</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#简介" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#下载" class="sidebar-link">下载</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#启动" class="sidebar-link">启动</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#logstash" class="sidebar-link">Logstash</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#简介-2" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#下载-2" class="sidebar-link">下载</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#安装-2" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#启动-2" class="sidebar-link">启动</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#kibana" class="sidebar-link">Kibana</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#简介-3" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#下载-3" class="sidebar-link">下载</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#安装-3" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#启动-3" class="sidebar-link">启动</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#切换中文" class="sidebar-link">切换中文</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud-ow/cloud/elk.html#日志收集" class="sidebar-link">日志收集</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="分布式日志"><a href="#分布式日志" class="header-anchor">#</a> 分布式日志</h1> <h2 id="基本介绍"><a href="#基本介绍" class="header-anchor">#</a> 基本介绍</h2> <ul><li>什么是分布式日志</li></ul> <p>在分布式应用中，日志被分散在储存不同的设备上。如果你管理数十上百台服务器，你还在使用依次登录每台机器的传统方法查阅日志。这样是不是感觉很繁琐和效率低下。所以我们使用集中化的日志管理，分布式日志就是对大规模日志数据进行采集、追踪、处理。</p> <ul><li>为什么要使用分布式日志</li></ul> <p>一般我们需要进行日志分析场景：直接在日志文件中<code>grep</code>、<code>awk</code>就可以获得自己想要的信息。但在规模较大的场景中，此方法效率低下，面临问题包括日志量太大如何归档、文本搜索太慢怎么办、如何多维度查询。需要集中化的日志管理，所有服务器上的日志收集汇总。常见解决思路是建立集中式日志收集系统，将所有节点上的日志统一收集，管理，访问。</p> <ul><li>ELK 分布式日志</li></ul> <p>实际上<code>ELK</code>是三款软件的简称，分别是<code>Elasticsearch</code>、 <code>Logstash</code>、<code>Kibana</code>组成。</p> <p><strong>Elasticsearch</strong> 基于<code>java</code>，是个开源分布式搜索引擎，它的特点有：分布式，零配置，自动发现，索引自动分片，索引副本机制，<code>restful</code>风格接口，多数据源，自动搜索负载等。</p> <p><strong>Kibana</strong> 基于<code>nodejs</code>，也是一个开源和免费的工具，<code>Kibana</code>可以为<code>Logstash</code>和<code>ElasticSearch</code>提供的日志分析友好的Web 界面，可以汇总、分析和搜索重要数据日志。</p> <p><strong>Logstash</strong> 基于<code>java</code>，是一个开源的用于收集,分析和存储日志的工具。</p> <p>下面是<code>ELK</code>的工作原理：
+<img src="https://oscimg.oschina.net/oscnet/up-c62bd9299557f77a05d1a9c4ccd046f8fef.png" alt="elk"></p> <h2 id="elasticsearch"><a href="#elasticsearch" class="header-anchor">#</a> Elasticsearch</h2> <h3 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h3> <p>ElasticSearch是一个基于Lucene的搜索服务器。它提供了一个分布式多用户能力的全文搜索引擎，基于RESTful web接口。Elasticsearch是用Java开发的，并作为Apache许可条款下的开放源码发布，是当前流行的企业级搜索引擎。设计用于云计算中，能够达到实时搜索，稳定，可靠，快速，安装使用方便。</p> <p>我们建立一个网站或应用程序，并要添加搜索功能，但是想要完成搜索工作的创建是非常困难的。我们希望搜索解决方案要运行速度快，我们希望能有一个零配置和一个完全免费的搜索模式，我们希望能够简单地使用JSON通过HTTP来索引数据，我们希望我们的搜索服务器始终可用，我们希望能够从一台开始并扩展到数百台，我们要实时搜索，我们要简单的多租户，我们希望建立一个云的解决方案。因此我们利用Elasticsearch来解决所有这些问题及可能出现的更多其它问题。</p> <p>ElasticSearch是Elastic Stack的核心，同时Elasticsearch 是一个分布式、RESTful风格的搜索和数据分析引擎，能够解决不断涌现出的各种用例。作为Elastic Stack的核心，它集中存储您的数据，帮助您发现意料之中以及意料之外的情况。</p> <h3 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h3> <p>到官网下载： (<a href="https://www.elastic.co/cn/downloads/elasticsearch" target="_blank" rel="noopener noreferrer">https://www.elastic.co/cn/downloads/elasticsearch<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)
+<img src="https://oscimg.oschina.net/oscnet/up-d392963dafc68bc669d12ada72348dbf95b.png" alt="Elasticsearch"></p> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <ul><li>解压到相应目录</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">tar</span> -zxvf elasticsearch-7.10.2-linux-x86_64.tar.gz -C /usr/local
+</code></pre></div><ul><li>修改配置</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> /usr/local/elasticsearch-7.10.2/config/
+<span class="token function">vim</span> elasticsearch.yml
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>node.name: node-1
+path.data: /usr/local/elasticsearch-7.10.2/data
+path.logs: /usr/local/elasticsearch-7.10.2/logs
+network.host: <span class="token number">127.0</span>.0.1
+http.host: <span class="token number">0.0</span>.0.0
+http.port: <span class="token number">9200</span>
+discovery.seed_hosts: <span class="token punctuation">[</span><span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">]</span>
+cluster.initial_master_nodes: <span class="token punctuation">[</span><span class="token string">&quot;node-1&quot;</span><span class="token punctuation">]</span>
+</code></pre></div><ul><li>创建<code>es</code>用户
+因为<code>ElasticSearch</code>不支持<code>Root</code>用户直接操作，因此我们需要创建一个<code>es</code>用户</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">useradd</span> es
+<span class="token function">chown</span> -R es:es /usr/local/elasticsearch-7.10.2
+</code></pre></div><h3 id="启动"><a href="#启动" class="header-anchor">#</a> 启动</h3> <ul><li>切换用户成es用户进行操作</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">su</span> - es
+/usr/local/elasticsearch-7.10.2/bin/elasticsearch
+</code></pre></div><ul><li>后台启动</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>/usr/local/elasticsearch-7.10.2/bin/elasticsearch -d 
+</code></pre></div><p>在浏览器打开<code>9200</code>端口地址： (<a href="http://120.78.129.95:9200/" target="_blank" rel="noopener noreferrer">http://120.78.129.95:9200/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)，如果出现了下面的信息，就表示已经成功启动了
+<img src="https://oscimg.oschina.net/oscnet/up-38da6dfc0998a88b8b2f974f6192ae6420a.png" alt="Elasticsearch"></p> <h2 id="logstash"><a href="#logstash" class="header-anchor">#</a> Logstash</h2> <h3 id="简介-2"><a href="#简介-2" class="header-anchor">#</a> 简介</h3> <p>Logstash是一个开源的服务器端数据处理管道，能够同时从多个来源采集数据，转换数据，然后将数据发送到最喜欢的存储库中（我们的存储库当然是ElasticSearch）</p> <h3 id="下载-2"><a href="#下载-2" class="header-anchor">#</a> 下载</h3> <p>到官网下载： (<a href="https://www.elastic.co/cn/downloads/logstash" target="_blank" rel="noopener noreferrer">https://www.elastic.co/cn/downloads/logstash<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)<br> <img src="https://oscimg.oschina.net/oscnet/up-7780b6e1555bae2c2d2ce3e1dde44d9e783.png" alt="Logstash"></p> <h3 id="安装-2"><a href="#安装-2" class="header-anchor">#</a> 安装</h3> <ul><li>解压到相应目录</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">tar</span> -zxvf logstash-7.10.2.tar.gz -C /usr/local
+</code></pre></div><ul><li>新增配置文件</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> /usr/local/logstash-7.10.2/bin
+<span class="token function">vim</span> logstash-elasticsearch.conf
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>input <span class="token punctuation">{</span>
+	stdin <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+output <span class="token punctuation">{</span>
+	elasticsearch <span class="token punctuation">{</span>
+		hosts <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'120.78.129.95:9200'</span>
+	<span class="token punctuation">}</span>
+	stdout <span class="token punctuation">{</span>
+		codec <span class="token operator">=</span><span class="token operator">&gt;</span> rubydebug
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="启动-2"><a href="#启动-2" class="header-anchor">#</a> 启动</h3> <div class="language-sh extra-class"><pre class="language-sh"><code>./logstash -f logstash-elasticsearch.conf
+</code></pre></div><h2 id="kibana"><a href="#kibana" class="header-anchor">#</a> Kibana</h2> <h3 id="简介-3"><a href="#简介-3" class="header-anchor">#</a> 简介</h3> <p>Kibana 是一款开源的数据分析和可视化平台，它是 Elastic Stack 成员之一，设计用于和 Elasticsearch 协作。您可以使用 Kibana 对 Elasticsearch 索引中的数据进行搜索、查看、交互操作。您可以很方便的利用图表、表格及地图对数据进行多元化的分析和呈现。</p> <h3 id="下载-3"><a href="#下载-3" class="header-anchor">#</a> 下载</h3> <p>到官网下载： (<a href="https://www.elastic.co/cn/downloads/kibana" target="_blank" rel="noopener noreferrer">https://www.elastic.co/cn/downloads/kibana<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)<br> <img src="https://oscimg.oschina.net/oscnet/up-8a4821b16ba2f3bd96baf9a3b2bb7b55f0b.png" alt="Kibana"></p> <h3 id="安装-3"><a href="#安装-3" class="header-anchor">#</a> 安装</h3> <ul><li>解压到相应目录</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">tar</span> -zxvf kibana-7.10.2-linux-x86_64.tar.gz -C /usr/local
+<span class="token function">mv</span> /usr/local/kibana-7.10.2-linux-x86_64 /usr/local/kibana-7.10.2
+</code></pre></div><ul><li>修改配置</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token builtin class-name">cd</span> /usr/local/kibana-7.10.2/config
+<span class="token function">vim</span> kibana.yml
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>server.port: <span class="token number">5601</span> 
+server.host: <span class="token string">&quot;0.0.0.0&quot;</span> 
+elasticsearch.hosts: <span class="token punctuation">[</span><span class="token string">&quot;http://120.78.129.95:9200&quot;</span><span class="token punctuation">]</span> 
+kibana.index: <span class="token string">&quot;.kibana&quot;</span>
+</code></pre></div><ul><li>授权es用户</li></ul> <div class="language- extra-class"><pre class="language-text"><code>chown -R es:es /usr/local/kibana-7.10.2/
+</code></pre></div><h3 id="启动-3"><a href="#启动-3" class="header-anchor">#</a> 启动</h3> <ul><li>切换用户成es用户进行操作</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">su</span> - es
+/usr/local/kibana-7.10.2/bin/kibana 
+</code></pre></div><ul><li>后台启动</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>/usr/local/kibana-7.10.2/bin/kibana <span class="token operator">&amp;</span>
+</code></pre></div><p>在浏览器打开<code>5601</code>端口地址： (<a href="http://120.78.129.95:5601/" target="_blank" rel="noopener noreferrer">http://120.78.129.95:5601/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>)，如果出现了下面的信息，就表示已经成功启动了
+<img src="https://oscimg.oschina.net/oscnet/up-f9bd125ad0b1d3887a2d3f94df9e9202d2c.png" alt="kibana"></p> <h2 id="切换中文"><a href="#切换中文" class="header-anchor">#</a> 切换中文</h2> <p>在<code>config/kibana.yml</code>添加</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">i18n.locale</span><span class="token punctuation">:</span> <span class="token string">&quot;zh-CN&quot;</span>
+</code></pre></div><h2 id="日志收集"><a href="#日志收集" class="header-anchor">#</a> 日志收集</h2> <p>对应服务器安装<code>logstash</code>，配置规则，例如新建<code>logstash-apache.conf</code></p> <div class="language-sh extra-class"><pre class="language-sh"><code>input <span class="token punctuation">{</span>
+  <span class="token function">file</span> <span class="token punctuation">{</span>
+    path <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;/home/ruoyi/logs/sys-*.log&quot;</span>
+	start_position <span class="token operator">=</span><span class="token operator">&gt;</span> beginning
+	sincedb_path <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;/dev/null&quot;</span>
+	codec <span class="token operator">=</span><span class="token operator">&gt;</span> multiline <span class="token punctuation">{</span>
+      pattern <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}&quot;</span>
+      negate <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span>
+      auto_flush_interval <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">3</span>
+      what <span class="token operator">=</span><span class="token operator">&gt;</span> previous
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+filter <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span>path<span class="token punctuation">]</span> <span class="token operator">=~</span> <span class="token string">&quot;info&quot;</span> <span class="token punctuation">{</span>
+    mutate <span class="token punctuation">{</span> replace <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> <span class="token builtin class-name">type</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;sys-info&quot;</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+    grok <span class="token punctuation">{</span>
+      match <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> <span class="token string">&quot;message&quot;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;%{COMBINEDAPACHELOG}&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">date</span> <span class="token punctuation">{</span>
+      match <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span> <span class="token string">&quot;timestamp&quot;</span> , <span class="token string">&quot;dd/MMM/yyyy:HH:mm:ss Z&quot;</span> <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">[</span>path<span class="token punctuation">]</span> <span class="token operator">=~</span> <span class="token string">&quot;error&quot;</span> <span class="token punctuation">{</span>
+    mutate <span class="token punctuation">{</span> replace <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> <span class="token builtin class-name">type</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;sys-error&quot;</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    mutate <span class="token punctuation">{</span> replace <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span> <span class="token builtin class-name">type</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;random_logs&quot;</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+output <span class="token punctuation">{</span>
+  elasticsearch <span class="token punctuation">{</span>
+    hosts <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'120.78.129.95:9200'</span>
+  <span class="token punctuation">}</span>
+  stdout <span class="token punctuation">{</span> codec <span class="token operator">=</span><span class="token operator">&gt;</span> rubydebug <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>启动logstash</li></ul> <div class="language-sh extra-class"><pre class="language-sh"><code>./logstash -f logstash-apache.conf
+</code></pre></div><ul><li>通过<code>kibana</code>可视化检索各个服务日志数据
+<img src="https://oscimg.oschina.net/oscnet/up-928d6f45a566fc7e6191db840a4b27de551.png" alt="kibana"></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/29.5a968fce.js" defer></script>
+  </body>
+</html>

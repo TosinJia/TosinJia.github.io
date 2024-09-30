@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RuoYi-Vue | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/51.742ddc89.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/20.1074faf8.js"><link rel="prefetch" href="/assets/js/21.05a74ab0.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/24.86d2ac06.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/29.5a968fce.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/54.3dbad0f1.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/7.fe9d2c9f.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>RuoYi-Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#参考" class="sidebar-link">参考</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#新增模块" class="sidebar-link">新增模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#_1-新增模块" class="sidebar-link">1. 新增模块</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#_2-修改父级pom-xml" class="sidebar-link">2. 修改父级pom.xml</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#_3-使用新建模块" class="sidebar-link">3. 使用新建模块</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#代码生成" class="sidebar-link">代码生成</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#实操" class="sidebar-link">实操</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#oralce版" class="sidebar-link">oralce版</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#上传下载" class="sidebar-link">上传下载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#上传" class="sidebar-link">上传</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#下载" class="sidebar-link">下载</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#本地文件访问" class="sidebar-link">本地文件访问</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#前端" class="sidebar-link">前端</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#后端" class="sidebar-link">后端</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#重构" class="sidebar-link">重构</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#ruoyi-vue-oracle" class="sidebar-link">RuoYi-Vue-Oracle</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#重构-2" class="sidebar-link">重构</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#部署" class="sidebar-link">部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/#前端-3" class="sidebar-link">前端</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="ruoyi-vue"><a href="#ruoyi-vue" class="header-anchor">#</a> RuoYi-Vue</h1> <p></p><div class="table-of-contents"><ul><li><a href="#ruoyi-vue">RuoYi-Vue</a><ul><li><a href="#参考">参考</a></li><li><a href="#新增模块">新增模块</a><ul><li><a href="#_1-新增模块">1. 新增模块</a></li><li><a href="#_2-修改父级pom-xml">2. 修改父级pom.xml</a></li><li><a href="#_3-使用新建模块">3. 使用新建模块</a></li></ul></li><li><a href="#代码生成">代码生成</a><ul><li><a href="#实操">实操</a></li><li><a href="#oralce版">oralce版</a><ul><li><a href="#_1-单表">1. 单表</a></li></ul></li></ul></li><li><a href="#上传下载">上传下载</a><ul><li><a href="#上传">上传</a></li><li><a href="#下载">下载</a><ul><li><a href="#无法下载问题">无法下载问题</a></li></ul></li></ul></li><li><a href="#本地文件访问">本地文件访问</a><ul><li><a href="#前端">前端</a></li><li><a href="#后端">后端</a></li></ul></li><li><a href="#重构">重构</a><ul><li><a href="#ruoyi-vue-oracle">RuoYi-Vue-Oracle</a></li><li><a href="#重构">重构</a><ul><li><a href="#前端">前端</a></li><li><a href="#后端">后端</a><ul><li><a href="#数据库">数据库</a></li></ul></li></ul></li></ul></li><li><a href="#部署">部署</a><ul><li><a href="#前端">前端</a></li></ul></li></ul></li></ul></div><p></p> <h2 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h2> <ul><li><p><a href="https://gitee.com/y_project/RuoYi-Vue" target="_blank" rel="noopener noreferrer">RuoYi-Vue源码<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://gitee.com/tosin/RuoYi-Vue" target="_blank" rel="noopener noreferrer">Forked<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><p><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener noreferrer">Element官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><a href="https://element.eleme.cn/#/zh-CN/component/upload" target="_blank" rel="noopener noreferrer">组件 | Element Upload 上传<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://element.eleme.cn/#/zh-CN/component/link" target="_blank" rel="noopener noreferrer">组件 | Element Link 文字链接<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><p>https://cli.vuejs.org/config/#devserver-proxy</p></li></ul> <h2 id="新增模块"><a href="#新增模块" class="header-anchor">#</a> 新增模块</h2> <h3 id="_1-新增模块"><a href="#_1-新增模块" class="header-anchor">#</a> 1. 新增模块</h3> <ol><li>创建文件夹 <code>\ruoyi-english</code></li> <li>创建pom.xml <code>\ruoyi-english\pom.xml</code></li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;parent&gt;
+        &lt;artifactId&gt;ruoyi&lt;/artifactId&gt;
+        &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;
+        &lt;version&gt;3.8.1&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;artifactId&gt;ruoyi-english&lt;/artifactId&gt;
+
+    &lt;description&gt;
+        english模块
+    &lt;/description&gt;
+
+    &lt;dependencies&gt;
+
+        &lt;!-- 通用工具--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;
+            &lt;artifactId&gt;ruoyi-common&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+    &lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre></div><h3 id="_2-修改父级pom-xml"><a href="#_2-修改父级pom-xml" class="header-anchor">#</a> 2. 修改父级pom.xml</h3> <ol><li>修改父级pom.xml <code>\pom.xml</code></li></ol> <div class="language- extra-class"><pre class="language-text"><code>    &lt;!-- 依赖声明 --&gt;
+    &lt;dependencyManagement&gt;
+        &lt;dependencies&gt;
+            ...
+            &lt;dependency&gt;
+                &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;
+                &lt;artifactId&gt;ruoyi-english&lt;/artifactId&gt;
+                &lt;version&gt;${ruoyi.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+        &lt;/dependencies&gt;
+    &lt;/dependencyManagement&gt;
+
+    &lt;modules&gt;
+        ...
+        &lt;module&gt;ruoyi-english&lt;/module&gt;
+    &lt;/modules&gt;
+</code></pre></div><ol start="2"><li>Maven窗口 Reload All Maven Projects，识别模块</li></ol> <h3 id="_3-使用新建模块"><a href="#_3-使用新建模块" class="header-anchor">#</a> 3. 使用新建模块</h3> <ol><li>src目录中 添加main中相关代码</li> <li>Maven窗口 Reload All Maven Projects，识别代码</li> <li>启动项目pom.xml中配置</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    &lt;dependencies&gt;
+
+        ...
+        
+        &lt;!-- english模块--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;
+            &lt;artifactId&gt;ruoyi-english&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+</code></pre></div><h2 id="代码生成"><a href="#代码生成" class="header-anchor">#</a> 代码生成</h2> <ol><li>generator.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code># 代码生成
+gen:
+  # 作者
+  author: dyetc
+  # 默认生成包路径 system 需改成自己的模块名称 如 system monitor tool
+  packageName: com.dyetc.test
+  # 自动去除表前缀，默认是false
+  autoRemovePre: false
+  # 表前缀（生成类名不会包含表前缀，多个用逗号分隔）
+  tablePrefix: tst_
+</code></pre></div><h3 id="实操"><a href="#实操" class="header-anchor">#</a> 实操</h3> <div class="language- extra-class"><pre class="language-text"><code>E:\iEnviroment\英语学习\开发\ruoyi&gt;tree /F
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 3448-8611
+E:.
+│  dic_word_bizMenu.sql
+│
+├─main
+│  ├─java
+│  │  └─com
+│  │      └─ruoyi
+│  │          └─english
+│  │              ├─controller
+│  │              │      DictWordInfoController.java
+│  │              │
+│  │              ├─domain
+│  │              │      DictWordInfo.java
+│  │              │
+│  │              ├─mapper
+│  │              │      DictWordInfoMapper.java
+│  │              │
+│  │              └─service
+│  │                  │  IDictWordInfoService.java
+│  │                  │
+│  │                  └─impl
+│  │                          DictWordInfoServiceImpl.java
+│  │
+│  └─resources
+│      └─mapper
+│          └─english_mod
+│                  DictWordInfoMapper.xml
+│
+└─vue
+    ├─api
+    │  └─english_mod
+    │          dic_word_biz.js
+    │
+    └─views
+        └─english_mod
+            └─dic_word_biz
+                    index.vue
+</code></pre></div><ol><li><p>执行 dic_word_bizMenu.sql</p></li> <li><p>覆盖文件夹</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>RuoYi-Vue\ruoyi-admin\src\main
+main
+
+RuoYi-Vue\ruoyi-ui\src
+
+vue\
+</code></pre></div><h3 id="oralce版"><a href="#oralce版" class="header-anchor">#</a> oralce版</h3> <h4 id="_1-单表"><a href="#_1-单表" class="header-anchor">#</a> 1. 单表</h4> <ol><li>新增功能数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>drop table tst_person;
+create table tst_person (
+  person_id number(11) primary key, 
+  person_name varchar2(30) default '', 
+  person_age number(3) default null, 
+  person_hobby varchar2(30) default '', 
+  person_sex char(1) default '0', 
+  person_status char(1) default '0', 
+  person_birthday date,
+  person_image varchar2(1024),
+  person_file varchar2(1024)
+); 
+
+comment on table tst_person is '人员信息表';
+comment on column tst_person.person_id is '编号';
+comment on column tst_person.person_name is '名称'; 
+comment on column tst_person.person_age is '年龄'; 
+comment on column tst_person.person_hobby is '爱好（0代码 1音乐 2电影）'; 
+comment on column tst_person.person_sex is '性别（0男 1女 2未知）'; 
+comment on column tst_person.person_status is '状态（0正常 1停用）'; 
+comment on column tst_person.person_birthday is '生日';
+comment on column tst_person.person_image is '图片';
+comment on column tst_person.person_file is '文件';
+</code></pre></div><ol start="2"><li>导入、编辑提交</li> <li>下载源码
+<ol><li>执行 *.sql</li> <li>vue文件加下的文件夹复制到dyetc-ui\src中</li> <li>main文件下覆盖目标模块下的main文件夹</li></ol></li></ol> <h2 id="上传下载"><a href="#上传下载" class="header-anchor">#</a> 上传下载</h2> <ul><li>参考
+<ul><li><a href="http://doc.ruoyi.vip/ruoyi-cloud/document/htsc.html#%E4%B8%8A%E4%BC%A0%E4%B8%8B%E8%BD%BD" target="_blank" rel="noopener noreferrer">上传下载<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>88-89</li></ul></li></ul> <ol><li>建库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>drop table if exists sys_file_info;
+create table sys_file_info (
+  file_id           int(11)          not null auto_increment       comment '文件id',
+  file_name         varchar(50)      default ''                    comment '文件名称',
+  file_path         varchar(255)     default ''                    comment '文件路径',
+  primary key (file_id)
+) engine=innodb auto_increment=1 default charset=utf8 comment = '文件信息表';
+</code></pre></div><ol start="2"><li>代码生成</li></ol> <h3 id="上传"><a href="#上传" class="header-anchor">#</a> 上传</h3> <ul><li>参考
+<ul><li><a href="https://element.eleme.cn/#/zh-CN/component/upload" target="_blank" rel="noopener noreferrer">组件 | Element Upload 上传<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <ol><li>替换上传控件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>          &lt;el-upload
+            ref=&quot;upload&quot;
+            :limit=&quot;1&quot;
+            accept=&quot;.jpg, .png&quot;
+            :action=&quot;upload.url&quot;
+            :headers=&quot;upload.headers&quot;
+            :file-list=&quot;upload.fileList&quot;
+            :on-progress=&quot;handleFileUploadProgress&quot;
+            :on-success=&quot;handleFileSuccess&quot;
+            :auto-upload=&quot;false&quot;&gt;
+            &lt;el-button slot=&quot;trigger&quot; size=&quot;small&quot; type=&quot;primary&quot;&gt;选取文件&lt;/el-button&gt;
+            &lt;el-button style=&quot;margin-left: 10px;&quot; size=&quot;small&quot; type=&quot;success&quot; :loading=&quot;upload.isUploading&quot; @click=&quot;submitUpload&quot;&gt;上传到服务器&lt;/el-button&gt;
+            &lt;div slot=&quot;tip&quot; class=&quot;el-upload__tip&quot;&gt;只能上传jpg/png文件，且不超过500kb&lt;/div&gt;
+          &lt;/el-upload&gt;
+</code></pre></div><ol start="2"><li>引入getToken方法</li></ol> <div class="language- extra-class"><pre class="language-text"><code>import { getToken } from &quot;@/utils/auth&quot;;
+</code></pre></div><ol start="3"><li>data中添加用于上传的数据</li></ol> <div class="language- extra-class"><pre class="language-text"><code>      // 上传参数
+      upload: {
+        // 是否禁用上传
+        isUploading: false,
+        // 设置上传的请求头部
+        headers: { Authorization: &quot;Bearer &quot; + getToken() },
+        // 上传的地址
+        url: process.env.VUE_APP_BASE_API + &quot;/common/upload&quot;,
+        // 上传的文件列表
+        fileList: []
+      },
+</code></pre></div><ol start="4"><li>处理fileList参数</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    handleAdd() {
+
+      this.upload.fileList = [];
+    },
+
+    handleUpdate(row) {
+
+        this.upload.fileList = [{ name: this.form.fileName, url: this.form.filePath }];
+      });
+    },
+</code></pre></div><ol start="5"><li>添加上传事件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    // 文件提交处理
+    submitUpload() {
+      this.$refs.upload.submit();
+    },
+    // 文件上传中处理
+    handleFileUploadProgress(event, file, fileList) {
+      this.upload.isUploading = true;
+    },
+    // 文件上传成功处理
+    handleFileSuccess(response, file, fileList) {
+      this.upload.isUploading = false;
+      this.form.filePath = response.url;
+      this.$modal.msgSuccess(response.msg);
+      // this.msgSuccess(response.msg);
+    },
+</code></pre></div><h3 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h3> <ol><li>添加下载按钮</li></ol> <div class="language- extra-class"><pre class="language-text"><code>          &lt;el-button
+            size=&quot;mini&quot;
+            type=&quot;text&quot;
+            icon=&quot;el-icon-edit&quot;
+            @click=&quot;handleDownload(scope.row)&quot;
+          &gt;下载&lt;/el-button&gt;
+</code></pre></div><ol start="2"><li>实现下载事件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>    // 文件下载处理
+    handleDownload(row) {
+      var name = row.fileName;
+      var url = row.filePath;
+      var suffix = url.substring(url.lastIndexOf(&quot;.&quot;), url.length);
+      const a = document.createElement('a')
+      a.setAttribute('download', name + suffix)
+      a.setAttribute('target', '_blank')
+      a.setAttribute('href', url)
+      a.click()
+    }
+</code></pre></div><h4 id="无法下载问题"><a href="#无法下载问题" class="header-anchor">#</a> 无法下载问题</h4> <blockquote><p>a标签跨域会导致download属性无效</p></blockquote> <ul><li><a href="https://blog.csdn.net/zgjsxzlx/article/details/86543022" target="_blank" rel="noopener noreferrer">a标签download属性不起作用<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/xi_nuo/article/details/104795963" target="_blank" rel="noopener noreferrer">&lt;a&gt;标签下载文件重命名失败，download 无效<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="本地文件访问"><a href="#本地文件访问" class="header-anchor">#</a> 本地文件访问</h2> <ul><li>参考
+<ul><li><a href="https://blog.csdn.net/Mr_Wonka/article/details/118631772" target="_blank" rel="noopener noreferrer">【开发实践】ruoyi如何实现图片的服务器上传和地址回显<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h3 id="前端"><a href="#前端" class="header-anchor">#</a> 前端</h3> <div class="language- extra-class"><pre class="language-text"><code>RuoYi-Vue\ruoyi-ui\vue.config.js
+// 使用代理来解决跨域问题 http://localhost/dev-api -&gt; http://localhost:8080
+    proxy: {
+      // detail: https://cli.vuejs.org/config/#devserver-proxy
+      [process.env.VUE_APP_BASE_API]: {
+        target: `http://localhost:8080`,
+        changeOrigin: true,
+        pathRewrite: {
+          ['^' + process.env.VUE_APP_BASE_API]: ''
+        }
+      }
+    },
+
+-- 前端请求 /dev-api
+http://localhost/dev-api/profile/upload/2022/02/22/3f08f7aa-4014-484d-b89d-673a418d2399.pdf
+-- 处理后，将请求交给后端处理
+http://localhost:8080/profile/upload/2022/02/22/3f08f7aa-4014-484d-b89d-673a418d2399.pdf
+</code></pre></div><h3 id="后端"><a href="#后端" class="header-anchor">#</a> 后端</h3> <ul><li>后端对匹配的URL进行拦截 /profile/** ，映射至本地文件夹 RuoYiConfig.getProfile()。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>@Configuration
+public class ResourcesConfig implements WebMvcConfigurer
+{
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry)
+    {
+        /** 本地文件上传路径 */
+        registry.addResourceHandler(Constants.RESOURCE_PREFIX + &quot;/**&quot;)
+                .addResourceLocations(&quot;file:&quot; + RuoYiConfig.getProfile() + &quot;/&quot;);
+
+
+public class Constants
+    /**
+     * 资源映射路径 前缀
+     */
+    public static final String RESOURCE_PREFIX = &quot;/profile&quot;;
+
+application.yml
+# 项目相关配置
+ruoyi:
+  # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
+  profile: D:/ruoyi/uploadPath
+
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
+public class SecurityConfig extends WebSecurityConfigurerAdapter
+                .antMatchers(
+                        HttpMethod.GET,
+                        &quot;/profile/**&quot;
+                ).permitAll()
+</code></pre></div><h2 id="重构"><a href="#重构" class="header-anchor">#</a> 重构</h2> <ul><li>数据库</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# mysql -uroot -h127.0.0.1 -p123456
+mysql&gt; CREATE DATABASE IF NOT EXISTS RuoYi_Vue DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;       
+Query OK, 1 row affected (0.00 sec)
+mysql&gt; use RuoYi_Vue;
+Database changed
+mysql&gt; source /root/RuoYi-Vue/ry_20210908.sql;
+mysql&gt; source /root/RuoYi-Vue/quartz.sql;
+</code></pre></div><ul><li>缓存</li></ul> <div class="language- extra-class"><pre class="language-text"><code>D:\tools\portable\Redis-x64-3.0.504&gt;redis-server.exe redis.windows.conf
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework\RuoYi-Vue-master\ruoyi-ui&gt;npm install
+E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework\RuoYi-Vue-master\ruoyi-ui&gt;npm run dev
+</code></pre></div><ul><li>http://localhost/login</li></ul> <h3 id="ruoyi-vue-oracle"><a href="#ruoyi-vue-oracle" class="header-anchor">#</a> RuoYi-Vue-Oracle</h3> <ul><li>https://github.com/yangzongzhuan/RuoYi-Vue-Oracle</li></ul> <h3 id="重构-2"><a href="#重构-2" class="header-anchor">#</a> 重构</h3> <ul><li>https://blog.csdn.net/qq_36557065/article/details/115488387
+https://doc.ruoyi.vip/ruoyi/other/faq.html#%E5%A6%82%E4%BD%95%E4%B8%8D%E7%99%BB%E5%BD%95%E7%9B%B4%E6%8E%A5%E8%AE%BF%E9%97%AE</li></ul> <blockquote><p>RuoYi -&gt; SqdyEtc
+ruoyi -&gt; sqdyetc
+Ruoyi -&gt; Sqdyetc
+若依-&gt;陕汽德银ETC
+3.8.1-&gt;1.0.0</p></blockquote> <h4 id="前端-2"><a href="#前端-2" class="header-anchor">#</a> 前端</h4> <ol><li><p>RuoYi-&gt;SqdyEtc</p> <ol><li>修改文件夹 sqdyetc-ui\src\components\RuoYi</li> <li>查找替换</li></ol></li> <li><p>ruoyi-&gt;sqdyetc</p> <ol><li>重构文件
+<ol><li>src\utils\ruoyi.js</li> <li>src\assets\styles\ruoyi.scss</li></ol></li> <li>查找替换</li></ol></li> <li><p>最终检索不到区分大小写 ruoyi</p></li> <li><p>若依-&gt;陕汽德银ETC 查找替换</p></li></ol> <h4 id="后端-2"><a href="#后端-2" class="header-anchor">#</a> 后端</h4> <ol><li><p>RuoYi-Vue-master.zip 解压 修改文件件为 SqdyEtc</p></li> <li><p>修改项目名称、模块文件夹名</p> <ul><li>File-&gt;Project Structure-&gt;Project Project Name SqdyEtc</li></ul></li> <li><p>修改模块名称</p> <ul><li>File-&gt;Project Structure-&gt;Modules
+<ul><li>sqdyetc   Apply</li> <li>sqdyetc-admin</li> <li>sqdyetc-common</li> <li>sqdyetc-framework</li> <li>sqdyetc-generator</li> <li>sqdyetc-quartz</li> <li>sqdyetc-system</li></ul></li></ul></li> <li><p>修改模块文件夹名</p></li> <li><p>修改pom文件</p> <ol><li>pom.xml ruoyi-&gt;sqdyetc</li> <li>sqdyetc-admin\pom.xml</li> <li>sqdyetc-common\pom.xml</li> <li>sqdyetc-framework\pom.xml</li> <li>sqdyetc-generator\pom.xml</li> <li>sqdyetc-quartz\pom.xml</li> <li>sqdyetc-system\pom.xml</li></ol></li> <li><p>检测</p> <ol><li>修改数据库配置 sqdyetc-admin\src\main\resources\application-druid.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            master:
+                url: jdbc:mysql://localhost:3306/RuoYi_Vue?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=true&amp;serverTimezone=GMT%2B8
+                username: root
+                password: 123456
+</code></pre></div><ol start="2"><li>前端</li></ol> <div class="language- extra-class"><pre class="language-text"><code>SqdyEtc&gt;cd sqdyetc-ui
+SqdyEtc\sqdyetc-ui&gt;npm install
+SqdyEtc\sqdyetc-ui&gt;npm run dev
+</code></pre></div></li> <li><p>更换项目所有包名称com.ruoyi.xxx换成com.dyetc.xxx</p> <ul><li>com.ruoyi -&gt; Refactor -&gt; Rename
+-&gt; In Whole Project
+-&gt; 勾选 Search in comments and strings; Search for text occurences
+-&gt; Preview -&gt; Do Refactor</li></ul></li> <li><p>启动检测</p> <ol><li>sqdyetc-admin\src\main\resources\application.yml
+<ol><li>ruoyi-&gt;sqdyetc</li> <li>RuoYi -&gt; SqdyEtc</li></ol></li></ol></li> <li><p>替换</p> <ol><li>RuoYi -&gt; SqdyEtc
+<ul><li>RuoYiConfig -&gt; SqdyEtcConfig</li> <li>RuoYiApplication -&gt; SqdyEtcApplication</li> <li>RuoYiServletInitializer -&gt; SqdyEtcServletInitializer</li></ul></li> <li>Ruoyi -&gt; Sqdyetc
+<ul><li>RuoyiScheduler</li></ul></li> <li>替换其他字符串，最终检索不到区分大小写 ruoyi</li></ol></li> <li><p>若依-&gt;陕汽德银ETC 查找替换</p></li></ol> <h5 id="数据库"><a href="#数据库" class="header-anchor">#</a> 数据库</h5> <div class="language- extra-class"><pre class="language-text"><code>CREATE DATABASE IF NOT EXISTS `sqdy-etc` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+</code></pre></div><h2 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h2> <h3 id="前端-3"><a href="#前端-3" class="header-anchor">#</a> 前端</h3> <div class="language- extra-class"><pre class="language-text"><code>worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+
+    server {
+        listen       80;
+        server_name  localhost;
+		charset utf-8;
+
+		location / {
+            root   D://tools/portable/nginx-1.21.3/app/ruoyi-ui;
+			try_files $uri $uri/ /index.html;
+            index  index.html index.htm;
+        }
+		
+		location /dev-api/ {
+			proxy_set_header Host $http_host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header REMOTE-HOST $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_pass http://localhost:8080/;
+		}	
+		location /stage-api/ {
+			proxy_set_header Host $http_host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header REMOTE-HOST $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_pass http://localhost:8080/;
+		}
+		location /prod-api/ {
+			proxy_set_header Host $http_host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header REMOTE-HOST $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_pass http://localhost:8080/;
+		}	
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/51.742ddc89.js" defer></script>
+  </body>
+</html>

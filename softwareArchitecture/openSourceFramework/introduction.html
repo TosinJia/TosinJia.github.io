@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>开源框架 | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/24.86d2ac06.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/20.1074faf8.js"><link rel="prefetch" href="/assets/js/21.05a74ab0.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/29.5a968fce.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/51.742ddc89.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/54.3dbad0f1.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/7.fe9d2c9f.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>开源框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#前端框架" class="sidebar-link">前端框架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#panjiachen" class="sidebar-link">PanJiaChen</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#ruoyi" class="sidebar-link">RuoYi</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#ruoyi-vue" class="sidebar-link">RuoYi-Vue</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#ruoyi-2" class="sidebar-link">RuoYi</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#xxl开源社区" class="sidebar-link">XXL开源社区</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#xxl-job-分布式任务调度平台" class="sidebar-link">XXL-JOB | 分布式任务调度平台</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#guns" class="sidebar-link">Guns</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#pig" class="sidebar-link">pig</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#jeecg-boot" class="sidebar-link">Jeecg-boot</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#如何启动项目" class="sidebar-link">如何启动项目</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#readme-md" class="sidebar-link">README.md</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#访问账户" class="sidebar-link">访问账户</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#报表设计" class="sidebar-link">报表设计</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#renren" class="sidebar-link">renren</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#vue-manage-system-前端" class="sidebar-link">vue-manage-system 前端</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#后端" class="sidebar-link">后端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#logback的使用和logback-xml详解" class="sidebar-link">logback的使用和logback.xml详解</a></li><li class="sidebar-sub-header"><a href="/softwareArchitecture/openSourceFramework/introduction.html#日志级别控制优先级" class="sidebar-link">日志级别控制优先级</a></li></ul></li><li><a href="/softwareArchitecture/openSourceFramework/introduction.html#etc2022" class="sidebar-link">ETC2022</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="开源框架"><a href="#开源框架" class="header-anchor">#</a> 开源框架</h1> <p></p><div class="table-of-contents"><ul><li><a href="#开源框架">开源框架</a><ul><li><a href="#前端框架">前端框架</a><ul><li><a href="#panjiachen">PanJiaChen</a><ul><li><a href="#vue-admin-template">vue-admin-template</a></li><li><a href="#vue-element-admin">vue-element-admin</a><ul><li><a href="#问题记录">问题记录</a><ul><li><a href="#npm-install">npm install</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#ruoyi">RuoYi</a><ul><li><a href="#ruoyi-vue">RuoYi-Vue</a><ul><li><a href="#ruoyi-vue-activiti">ruoyi-vue-activiti</a></li><li><a href="#搭建">搭建</a></li><li><a href="#重构">重构</a><ul><li><a href="#后端重构">后端重构</a><ul><li><a href="#重构项目名模块名">重构项目名模块名</a></li><li><a href="#重构包名">重构包名</a></li><li><a href="#重构其他">重构其他</a></li></ul></li><li><a href="#前端重构">前端重构</a></li><li><a href="#其他">其他</a></li></ul></li><li><a href="#ruoyi-vue的oracle版本">RuoYi-Vue的Oracle版本</a><ul><li><a href="#搭建">搭建</a></li></ul></li><li><a href="#oracle版本重构">Oracle版本重构</a><ul><li><a href="#验证测试">验证测试</a><ul><li><a href="#_1-执行定时任务">1. 执行定时任务</a></li><li><a href="#新增测试模块">新增测试模块</a></li><li><a href="#新增测试模块代码生成">新增测试模块代码生成</a></li></ul></li></ul></li><li><a href="#功能验证">功能验证</a><ul><li><a href="#代码生成">代码生成</a><ul><li><a href="#mysql版">mysql版</a></li><li><a href="#oracle版">oracle版</a></li></ul></li></ul></li></ul></li><li><a href="#ruoyi">RuoYi</a><ul><li><a href="#重构">重构</a><ul><li><a href="#_1-git-clone-项目到本地">1. git clone 项目到本地</a></li><li><a href="#_2-idea-open-file-or-project">2. IDEA Open File or Project</a></li><li><a href="#_3-检查maven、jdk">3. 检查maven、JDK</a></li><li><a href="#_4-更改数据库配置">4. 更改数据库配置</a></li><li><a href="#_5-重构">5. 重构</a><ul><li><a href="#_5-1-重命名-root">5.1 重命名 root</a></li><li><a href="#_5-2-逐个重构各个子模块及其pom-xml">5.2 逐个重构各个子模块及其pom.xml</a></li><li><a href="#_5-3-重构包名">5.3 重构包名</a></li><li><a href="#_5-4-重构java类">5.4 重构java类</a></li></ul></li><li><a href="#_6-idea清除项目的git信息">6. IDEA清除项目的git信息</a></li><li><a href="#_7-分享项目到svn">7. 分享项目到SVN</a></li></ul></li></ul></li></ul></li><li><a href="#xxl开源社区">XXL开源社区</a><ul><li><a href="#xxl-job-分布式任务调度平台-https-www-xuxueli-com-xxl-job">XXL-JOB | 分布式任务调度平台</a><ul><li><a href="#配置">配置</a></li><li><a href="#修改密码">修改密码</a></li><li><a href="#任务">任务</a></li></ul></li></ul></li><li><a href="#guns">Guns</a></li><li><a href="#pig">pig</a></li><li><a href="#jeecg-boot">Jeecg-boot</a><ul><li><a href="#如何启动项目-http-doc-jeecg-com-1273967">如何启动项目</a><ul><li><a href="#_1-win10下node-js安装-https-blog-csdn-net-zsx18273117003-article-details-94716963">1. win10下node.js安装</a></li></ul></li><li><a href="#readme-md">README.md</a></li><li><a href="#访问账户">访问账户</a></li><li><a href="#报表设计">报表设计</a></li></ul></li><li><a href="#renren">renren</a></li><li><a href="#vue-manage-system-前端">vue-manage-system 前端</a></li><li><a href="#后端">后端</a><ul><li><a href="#logback的使用和logback-xml详解">logback的使用和logback.xml详解</a><ul><li><a href="#三、logback的配置介绍">三、logback的配置介绍</a><ul><li><a href="#有效级别及级别的继承">有效级别及级别的继承</a></li></ul></li><li><a href="#五、logback-xml常用配置详解">五、logback.xml常用配置详解</a></li><li><a href="#六、常用logger配置">六、常用logger配置</a></li><li><a href="#demo">Demo</a></li></ul></li><li><a href="#日志级别控制优先级">日志级别控制优先级</a></li></ul></li></ul></li><li><a href="#system-analysis">System Analysis</a><ul><li><a href="#etc2022">ETC2022</a></li></ul></li></ul></div><p></p> <ul><li><a href="https://zhuanlan.zhihu.com/p/142046905" target="_blank" rel="noopener noreferrer">秒建一个后台管理系统？用这5个开源免费的Java项目就够了<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="前端框架"><a href="#前端框架" class="header-anchor">#</a> 前端框架</h2> <h3 id="panjiachen"><a href="#panjiachen" class="header-anchor">#</a> PanJiaChen</h3> <ul><li><a href="https://panjiachen.github.io/vue-element-admin-site/#/" target="_blank" rel="noopener noreferrer">Docs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html</li></ul></li></ul> <h4 id="vue-admin-template"><a href="#vue-admin-template" class="header-anchor">#</a> vue-admin-template</h4> <blockquote><p>基础模板，它没有复杂的功能，只包含了一个后台需要最基础的东西。</p></blockquote> <ul><li><a href="https://github.com/PanJiaChen/vue-admin-template/" target="_blank" rel="noopener noreferrer">vue-admin-template<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://github.com/TosinJia/vue-admin-template" target="_blank" rel="noopener noreferrer">vue-admin-template fork<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h4 id="vue-element-admin"><a href="#vue-element-admin" class="header-anchor">#</a> vue-element-admin</h4> <blockquote><p>一个 vue 的管理后台集成方案</p></blockquote> <ul><li><a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" rel="noopener noreferrer">vue-element-admin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://github.com/TosinJia/vue-element-admin" target="_blank" rel="noopener noreferrer">vue-element-admin fork<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/" target="_blank" rel="noopener noreferrer">介绍 | vue-element-admin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><p><a href="https://juejin.cn/post/6844903476661583880" target="_blank" rel="noopener noreferrer">手摸手，带你用vue撸后台 系列一（基础篇）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://juejin.cn/post/6844903478880370701" target="_blank" rel="noopener noreferrer">手摸手，带你用vue撸后台 系列二(登录权限篇)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://juejin.cn/post/6844903481224986638" target="_blank" rel="noopener noreferrer">手摸手，带你用vue撸后台 系列三(实战篇)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>Table 拖拽排序
+<ul><li><a href="https://github.com/SortableJS/Vue.Draggable" target="_blank" rel="noopener noreferrer">Vue.Draggable<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li>Table 内联编辑
+<ul><li>https://vuejs.org/v2/guide/reactivity.html</li></ul></li> <li>Upload 上传
+<ul><li>src\views\qiniu\upload.vue</li></ul></li></ul></li> <li><p><a href="https://juejin.cn/post/6844903486241374221" target="_blank" rel="noopener noreferrer">手摸手，带你用vue撸后台 系列四(vueAdmin 一个极简的后台基础模板)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>https://panjiachen.github.io/vue-element-admin-site/guide/essentials/router-and-nav.html</li> <li>https://www.iconfont.cn/</li></ul></li> <li><p><a href="https://juejin.cn/post/6844903840626507784" target="_blank" rel="noopener noreferrer">手摸手，带你用vue撸后台 系列五(v4.0新版本)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li><p>命名规范</p> <ul><li><a href="https://cn.vuejs.org/v2/style-guide/" target="_blank" rel="noopener noreferrer">风格指南 — Vue.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>Component
+<ul><li>所有的Component文件都是以大写开头 (PascalCase)，但除了 index.vue。这也是官方所推荐的<a href="https://cn.vuejs.org/v2/style-guide/index.html#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">单文件组件文件的大小写<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</li></ul></li> <li>JS 文件
+<ul><li>所有的.js文件都遵循横线连接 (kebab-case)。</li></ul></li> <li>Views
+<ul><li>在views文件下，代表路由的.vue文件都使用横线连接 (kebab-case)，代表路由的文件夹也是使用同样的规则。</li> <li>使用横线连接 (kebab-case)来命名views主要是出于以下几个考虑。
+<ol><li>横线连接 (kebab-case) 也是官方推荐的命名规范之一<a href="https://cn.vuejs.org/v2/style-guide/index.html#%E5%8D%95%E6%96%87%E4%BB%B6%E7%BB%84%E4%BB%B6%E6%96%87%E4%BB%B6%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90" target="_blank" rel="noopener noreferrer">文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>views下的.vue文件代表的是一个路由，所以它需要和component进行区分(component 都是大写开头)</li> <li>页面的url 也都是横线连接的，比如https://www.xxx.admin/export-excel，所以路由对应的view应该要保持统一</li> <li>没有大小写敏感问题</li></ol></li></ul></li></ul></li> <li><p>CDN</p> <ul><li>你可以通过执行<code>npm run preview -- --report</code>来分析webpack打包之后的结果，观察各个静态资源的大小。</li></ul></li> <li><p><a href="https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/essentials/router-and-nav.html#%E7%82%B9%E5%87%BB%E4%BE%A7%E8%BE%B9%E6%A0%8F-%E5%88%B7%E6%96%B0%E5%BD%93%E5%89%8D%E8%B7%AF%E7%94%B1" target="_blank" rel="noopener noreferrer">redirect 刷新页面<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul></li> <li><p><a href="https://segmentfault.com/a/1190000009090836" target="_blank" rel="noopener noreferrer">手摸手，带你封装一个vue component-实操<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul></li></ul> <h5 id="问题记录"><a href="#问题记录" class="header-anchor">#</a> 问题记录</h5> <h6 id="npm-install"><a href="#npm-install" class="header-anchor">#</a> npm install</h6> <ul><li>Command failed: git clone</li></ul> <div class="language- extra-class"><pre class="language-text"><code>E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin&gt;npm install
+npm ERR! code 128
+npm ERR! Command failed: git clone --mirror -q git://github.com/adobe-webplatform/eve.git C:\Users\User\AppData\Roaming\npm-cache\_cacache\tmp\git-clone-6806fa1c\.git --config core.longpaths=true
+npm ERR! warning: templates not found in C:\Users\User\AppData\Local\Temp\pacote-git-template-tmp\git-clone-e4afbf9c
+npm ERR! error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
+npm ERR! error: 4706 bytes of body are still expected
+npm ERR! fetch-pack: unexpected disconnect while reading sideband packet
+npm ERR! fatal: early EOF
+npm ERR! fatal: fetch-pack: invalid index-pack output
+npm ERR! 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\User\AppData\Roaming\npm-cache\_logs\2022-04-24T03_04_41_825Z-debug.log
+</code></pre></div><ul><li>开启代理，重新安装</li></ul> <div class="language- extra-class"><pre class="language-text"><code>E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin&gt;npm install
+
+&gt; deasync@0.1.26 install E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\deasync
+&gt; node ./build.js
+
+`win32-x64-node-14` exists; testing
+Binary is fine; exiting
+
+&gt; yorkie@2.0.0 install E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\yorkie
+&gt; node bin/install.js
+
+setting up Git hooks
+skipping applypatch-msg hook (existing user hook)
+skipping pre-applypatch hook (existing user hook)
+skipping post-applypatch hook (existing user hook)
+skipping pre-commit hook (existing user hook)
+skipping prepare-commit-msg hook (existing user hook)
+skipping commit-msg hook (existing user hook)
+skipping post-commit hook (existing user hook)
+skipping pre-rebase hook (existing user hook)
+skipping post-checkout hook (existing user hook)
+skipping post-merge hook (existing user hook)
+skipping pre-push hook (existing user hook)
+skipping pre-receive hook (existing user hook)
+skipping update hook (existing user hook)
+skipping post-receive hook (existing user hook)
+skipping post-update hook (existing user hook)
+skipping push-to-checkout hook (existing user hook)
+skipping pre-auto-gc hook (existing user hook)
+skipping post-rewrite hook (existing user hook)
+skipping sendemail-validate hook (existing user hook)
+done
+
+
+&gt; husky@1.3.1 install E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\husky
+&gt; node husky install
+
+husky &gt; setting up git hooks
+husky &gt; done
+
+&gt; core-js@2.6.12 postinstall E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\babel-runtime\node_modules\core-js&gt; node -e &quot;try{require('./postinstall')}catch(e){}&quot;
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+&gt; https://opencollective.com/core-js 
+&gt; https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+&gt; core-js@3.6.5 postinstall E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\core-js
+&gt; node -e &quot;try{require('./postinstall')}catch(e){}&quot;
+
+
+&gt; ejs@2.7.4 postinstall E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\ejs
+&gt; node ./postinstall.js
+
+Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+
+
+&gt; highlight.js@9.18.5 postinstall E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\highlight.js
+&gt; node deprecated.js
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+  Verion 9 of Highlight.js has reached EOL.  It will no longer
+  be supported or receive security updates in the future.
+  Please upgrade to version 10 or encourage your indirect
+  dependencies to do so.
+
+  For more info:
+
+  https://github.com/highlightjs/highlight.js/issues/2877
+  https://github.com/highlightjs/highlight.js/blob/master/VERSION_10_UPGRADE.md
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+
+&gt; core-js@2.6.12 postinstall E:\iEnviroment\development\projects\ideaProjects\Demo\PanJiaChen\vue-element-admin\node_modules\node-plop\node_modules\core-js    
+&gt; node -e &quot;try{require('./postinstall')}catch(e){}&quot;
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;} (current: {&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;})
+
+added 2031 packages from 2006 contributors in 197.569s
+
+101 packages are looking for funding
+  run `npm fund` for details
+</code></pre></div><ul><li>异常信息 The unauthenticated git protocol on port 9418 is no longer supported.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>npm WARN deprecated left-pad@1.3.0: use String.prototype.padStart()
+npm ERR! Error while executing:
+npm ERR! D:\tools\portable\PortableGit\cmd\git.EXE ls-remote -h -t git://github.com/adobe-webplatform/eve.git
+npm ERR!
+npm ERR! fatal: remote error:
+npm ERR!   The unauthenticated git protocol on port 9418 is no longer supported.
+npm ERR! Please see https://github.blog/2021-09-01-improving-git-protocol-security-github/ for more information.
+npm ERR!
+npm ERR! exited with error code: 128
+</code></pre></div><ul><li>解决方案：使用https:替换git:</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&gt;git config --global url.&quot;https://&quot;.insteadOf git://
+
+&gt;git config --list
+url.https://.insteadof=git://
+</code></pre></div><ul><li>参考
+<ul><li><a href="https://blog.csdn.net/m290345792/article/details/123577379" target="_blank" rel="noopener noreferrer">fatal: remote error: The unauthenticated git protocol on port 9418 is no longer support问题解决<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h2 id="ruoyi"><a href="#ruoyi" class="header-anchor">#</a> RuoYi</h2> <ul><li><p><a href="https://ruoyi.vip/" target="_blank" rel="noopener noreferrer">技术官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="http://doc.ruoyi.vip/" target="_blank" rel="noopener noreferrer">文档地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>开发环境配置</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework
+
+Open File or Project
+	\RuoYi-master
+	\RuoYi-Vue-master
+Maven
+ E:/iEnviroment/development/apache-maven-3.8.2
+Java Compiler 8
+</code></pre></div><h3 id="ruoyi-vue"><a href="#ruoyi-vue" class="header-anchor">#</a> RuoYi-Vue</h3> <ul><li><a href="http://doc.ruoyi.vip/ruoyi-vue/" target="_blank" rel="noopener noreferrer">文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://gitee.com/y_project/RuoYi-Vue" target="_blank" rel="noopener noreferrer">代码下载<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="ruoyi-vue-activiti"><a href="#ruoyi-vue-activiti" class="header-anchor">#</a> ruoyi-vue-activiti</h4> <ul><li>softwareArchitecture/openSourceFramework/workflow/#ruoyi-vue-activiti</li></ul> <h4 id="搭建"><a href="#搭建" class="header-anchor">#</a> 搭建</h4> <ol><li><p>解压压缩包或git clone到E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework</p></li> <li><p>idea打开项目【Open File or Project】</p> <ol><li>Maven E:/iEnviroment/development/apache-maven-3.8.2</li> <li>Java Compiler 8</li></ol></li> <li><p>缓存</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>D:\tools\portable\Redis-x64-3.0.504&gt;redis-server.exe redis.windows.conf
+</code></pre></div><ol start="4"><li>数据库</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# mysql -uroot -h127.0.0.1 -p123456
+
+mysql&gt; CREATE DATABASE IF NOT EXISTS `ry-vue` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; use ry-vue;
+Database changed
+mysql&gt; source /root/RuoYi-Vue/ry_20210908.sql
+mysql&gt; source /root/RuoYi-Vue/quartz.sql;
+</code></pre></div><ol start="5"><li>修改配置 ruoyi-admin\src\main\resources\application-druid.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            master:
+                url: jdbc:mysql://localhost:3306/ry-vue?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=true&amp;serverTimezone=GMT%2B8
+                username: root
+                password: 123456
+</code></pre></div><ol start="6"><li>启动
+<ol><li><p>后台启动 RuoYiApplication.java</p></li> <li><p>后台启动</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>\RuoYi-Vue&gt;cd ruoyi-ui
+# 安装依赖
+\RuoYi-Vue\ruoyi-ui&gt;npm install
+# 启动服务
+\RuoYi-Vue\ruoyi-ui&gt;npm run dev
+</code></pre></div></li></ol> <ul><li>RuoYi-Vue_1</li></ul> <h4 id="重构"><a href="#重构" class="header-anchor">#</a> 重构</h4> <blockquote><p>RuoYi -&gt; DyEtc</p></blockquote> <blockquote><p>ruoyi -&gt; dyetc</p></blockquote> <blockquote><p>Ruoyi -&gt; Dyetc</p></blockquote> <blockquote><p>若依-&gt;德银ETC</p></blockquote> <blockquote><p>3.8.1-&gt;1.0.0</p></blockquote> <blockquote><p>RyTask-&gt;DyEtcTask</p></blockquote> <blockquote><p>ryTask-&gt;dyEtcTask</p></blockquote> <blockquote><p>ryMultipleParams -&gt; deMultipleParams</p></blockquote> <blockquote><p>ryParams -&gt; deParams</p></blockquote> <blockquote><p>ryNoParams -&gt; deNoParams</p></blockquote> <ol><li>关闭IDEA修改文件夹名 修改文件夹名
+<ol><li>RuoYi-Vue DyEtc</li> <li>ruoyi--admin dyetc-admin</li> <li>ruoyi-common dyetc-common</li> <li>ruoyi-framework dyetc-framework</li> <li>ruoyi-generator dyetc-generator</li> <li>ruoyi-quartz dyetc-quartz</li> <li>ruoyi-system dyetc-system</li> <li>ruoyi-ui dyetc-ui</li></ol></li></ol> <h5 id="后端重构"><a href="#后端重构" class="header-anchor">#</a> 后端重构</h5> <ol><li>idea打开项目 隐藏dyetc-ui</li></ol> <h6 id="重构项目名模块名"><a href="#重构项目名模块名" class="header-anchor">#</a> 重构项目名模块名</h6> <ol><li>修改pom文件 ruoyi-&gt;dyetc 区分大小写替换
+<ol><li>pom.xml</li> <li>dyetc-admin\pom.xml</li> <li>dyetc-common\pom.xml</li> <li>dyetc-framework\pom.xml</li> <li>dyetc-generator\pom.xml</li> <li>dyetc-quartz\pom.xml</li> <li>dyetc-system\pom.xml</li></ol></li> <li>Reload All Maven Projects</li> <li>确认修改项目名称
+<ul><li>File-&gt;Project Structure-&gt;Project Project Name
+<ul><li>RuoYi-Vue DyEtc -&gt; Apply</li></ul></li></ul></li> <li>确认修改模块名称
+<ul><li>File-&gt;Project Structure-&gt;Modules 修改name -&gt; Apply
+<ol><li>ruoyi dyetc</li> <li>ruoyi-admin dyetc-admin</li> <li>ruoyi-common dyetc-common</li> <li>ruoyi-framework dyetc-framework</li> <li>ruoyi-generator dyetc-generator</li> <li>ruoyi-quartz dyetc-quartz</li> <li>ruoyi-system dyetc-system</li></ol></li></ul></li> <li>Reload All Maven Projects</li> <li>后台启动 RuoYiApplication.java 确认能够正常启动</li></ol> <ul><li>DyEtc_1</li></ul> <h6 id="重构包名"><a href="#重构包名" class="header-anchor">#</a> 重构包名</h6> <ol><li><p>更换项目所有包名称com.ruoyi.xxx换成com.dyetc.xxx</p> <ul><li>com.ruoyi -&gt; Refactor -&gt; Rename
+-&gt; In Whole Project
+-&gt; 勾选 Search in comments and strings; Search for text occurences
+-&gt; Preview -&gt; Do Refactor</li></ul></li> <li><p>后台启动 RuoYiApplication.java 确认能够正常启动</p></li></ol> <h6 id="重构其他"><a href="#重构其他" class="header-anchor">#</a> 重构其他</h6> <ol><li><p>ruoyi-&gt;dyetc 区分大小写替换全部</p></li> <li><p>RuoYi -&gt; DyEtc</p> <ol><li>class RuoYi 区分大小写 勾选File Mask:*.java 重构class类 Preview -&gt; Do Refactor
+<ol><li>RuoYiApplication.java DyEtcApplication.java</li> <li>RuoYiServletInitializer.java DyEtcServletInitializer.java</li> <li>RuoYiConfig.java DyEtcConfig.java</li></ol></li> <li>RuoYi -&gt; DyEtc 区分大小写  搜索替换</li></ol></li> <li><p>Ruoyi -&gt; Dyetc 区分大小写  搜索替换</p> <ol><li>RuoyiScheduler -&gt; DyetcScheduler</li></ol></li> <li><p>替换其他字符串，最终检索不到区分大小写 ruoyi</p></li> <li><p>若依-&gt;德银ETC 替换全部</p></li> <li><p>启动验证</p> <ol><li>后台启动 RuoYiApplication.java 确认能够正常启动</li> <li>后台启动</li></ol></li> <li><p>3.8.1-&gt;1.0.0 搜索替换</p></li> <li><p>RyTask-&gt;DyEtcTask class重构</p></li> <li><p>ryTask-&gt;dyEtcTask 替换全部</p></li> <li><p>ryMultipleParams -&gt; deMultipleParams 替换全部</p></li> <li><p>ryNoParams -&gt; deNoParams 替换全部</p></li> <li><p>ryParams -&gt; deParams</p> <ol><li>DyEtcTask.java</li> <li>ry_20210908.sql</li></ol></li> <li><p>ry_20210908.sql-&gt;dyetc_20210216.sql</p> <ol><li>ry@ -&gt; dyetc@</li></ol></li> <li><p>DyEtcApplication.java 修改</p></li> <li><p>banner.txt 修改</p></li></ol> <h5 id="前端重构"><a href="#前端重构" class="header-anchor">#</a> 前端重构</h5> <ol><li><p>RuoYi-&gt;DyEtc</p> <ol><li>修改文件夹 dyetc-ui\src\components\RuoYi 重构</li> <li>查找替换</li></ol></li> <li><p>ruoyi-&gt;dyetc</p> <ol><li>查找文件 ruoyi</li> <li>重构文件
+<ol><li>src\utils\ruoyi.js</li> <li>src\assets\styles\ruoyi.scss</li></ol></li> <li>查找替换</li></ol></li> <li><p>最终检索不到区分大小写 ruoyi</p></li> <li><p>若依-&gt;德银ETC 查找替换</p></li> <li><p>3.8.1-&gt;1.0.0 搜索替换</p></li> <li><p>启动验证</p></li> <li><p>index.vue</p> <ol><li>RyTask-&gt;DyEtcTask</li> <li>ryTask-&gt;dyEtcTask</li> <li>ryMultipleParams -&gt; deMultipleParams</li> <li>ryNoParams -&gt; deNoParams</li> <li>ryParams -&gt; deParams</li></ol></li></ol> <ul><li>DyEtc_3</li></ul> <ol><li>index.vue 修改</li> <li>\dyetc-ui\public\favicon.ico 替换</li></ol> <h5 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h5> <ol><li><p>ry.bat-&gt;dyetc.bat 重构</p></li> <li><p>ry.sh-&gt;dyetc.sh 重构</p></li> <li><p>ry-&gt;dyetc</p></li> <li><p>application-druid.yml数据库名 ry-vue -&gt; dyetc</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# mysql -uroot -h127.0.0.1 -p123456
+mysql&gt; drop database dyetc;
+Query OK, 30 rows affected (0.54 sec)
+
+mysql&gt; CREATE DATABASE IF NOT EXISTS dyetc DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; use dyetc;
+Database changed
+mysql&gt; source /root/DyEtc/dyetc_20210216.sql;
+mysql&gt; source /root/DyEtc/quartz.sql;
+</code></pre></div><ul><li>DyEtc_mysql_v1</li></ul> <h4 id="ruoyi-vue的oracle版本"><a href="#ruoyi-vue的oracle版本" class="header-anchor">#</a> RuoYi-Vue的Oracle版本</h4> <ul><li><a href="https://github.com/yangzongzhuan/RuoYi-Vue-Oracle" target="_blank" rel="noopener noreferrer">代码地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h5 id="搭建-2"><a href="#搭建-2" class="header-anchor">#</a> 搭建</h5> <ol><li><p>解压压缩包或git clone到E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework\RuoYi-Vue-Oracle</p></li> <li><p>idea打开项目【Open File or Project】</p> <ol><li>Maven E:/iEnviroment/development/apache-maven-3.8.2</li> <li>Java Compiler 8</li></ol></li> <li><p>缓存</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>D:\tools\portable\Redis-x64-3.0.504&gt;redis-server.exe redis.windows.conf
+</code></pre></div><ol start="4"><li>数据库启动</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# docker ps -a
+CONTAINER ID   IMAGE                                                  COMMAND                  CREATED        STATUS                    PORTS     NAMES
+3c0ae5a124fe   registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g   &quot;/bin/sh -c '/home/o…&quot;   9 days ago     Exited (137) 8 days ago             oracle11g
+
+[root@SystemFramework ~]# docker start oracle11g
+oracle11g
+</code></pre></div><ol start="5"><li>执行数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>--加了cascade就可以把用户连带的数据全部删掉
+drop user ryvue cascade;
+create user ryvue identified by ryvue;
+grant connect,resource,dba to ryvue;
+
+--切换到ryvue模式
+1. 执行 ry_20210908.sql 
+    1. find_in_set单独执行
+2. 执行 quartz.sql
+    1. 删除语句执行报错，skip all
+</code></pre></div><ol start="5"><li>修改配置 ruoyi-admin\src\main\resources\application-druid.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            master:
+                url: jdbc:oracle:thin:@127.0.0.1:1521/helowin
+                username: ryvue
+                password: ryvue
+</code></pre></div><ol start="6"><li>启动
+<ol><li><p>后台启动 RuoYiApplication.java</p></li> <li><p>后台启动使用RuoYi-Vue版</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>\RuoYi-Vue&gt;cd ruoyi-ui
+# 安装依赖
+\RuoYi-Vue\ruoyi-ui&gt;npm install
+# 启动服务
+\RuoYi-Vue\ruoyi-ui&gt;npm run dev
+</code></pre></div></li></ol> <h4 id="oracle版本重构"><a href="#oracle版本重构" class="header-anchor">#</a> Oracle版本重构</h4> <blockquote><p>以上重构（DyEtc_mysql_v1）基础上， 借鉴RuoYi-Vue的Oracle版本完成多模块Oracle版本的重构</p></blockquote> <ol><li><p>E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework\数据库切换\dyetc</p></li> <li><p>sql文件</p> <ol><li>若依 德银ETC</li> <li>ruoyi dyetc</li> <li>ry@ dyetc@</li> <li>'ry'- 'de'</li></ol></li> <li><p>pom文件修改</p> <ol><li>pom.xml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;oracle.version&gt;10.2.0.4.0&lt;/oracle.version&gt;
+    &lt;/properties&gt;
+
+        &lt;!--oracle驱动没有发布到中央仓库，只能从此仓库下载--&gt;
+        &lt;repository&gt;
+            &lt;id&gt;jeecg&lt;/id&gt;
+            &lt;name&gt;jeecg Repository&lt;/name&gt;
+            &lt;url&gt;http://maven.jeewx.com/nexus/content/repositories/jeecg&lt;/url&gt;
+            &lt;snapshots&gt;
+                &lt;enabled&gt;false&lt;/enabled&gt;
+            &lt;/snapshots&gt;
+        &lt;/repository&gt;
+    &lt;/repositories&gt;
+</code></pre></div><ol><li>dyetc-admin\pom.xml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>        &lt;!-- oracle驱动--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.oracle&lt;/groupId&gt;
+            &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt;
+            &lt;version&gt;${oracle.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+</code></pre></div></li> <li><p>数据库搭建</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>--加了cascade就可以把用户连带的数据全部删掉
+drop user dyetc cascade;
+create user dyetc identified by dyetc;
+grant connect,resource,dba to dyetc;
+
+--切换到dyetc模式
+1. 执行 dyetc_20220217.sql
+    1. find_in_set单独执行
+2. 执行 quartz.sql
+    1. 删除语句执行报错，skip all
+</code></pre></div><ol><li>dyetc-admin\src\main\resources\application-druid.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            # 主库数据源
+            master:
+#                url: jdbc:oracle:thin:@10.1.180.77:1521/etc2021
+                url: jdbc:oracle:thin:@127.0.0.1:1521/helowin
+                username: dyetc
+                password: dyetc
+
+</code></pre></div><ol start="6"><li>启动
+<ol><li><p>后台启动 XXXApplication.java</p></li> <li><p>前台台启动</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>&gt;npm run dev
+</code></pre></div></li></ol> <h5 id="验证测试"><a href="#验证测试" class="header-anchor">#</a> 验证测试</h5> <h6 id="_1-执行定时任务"><a href="#_1-执行定时任务" class="header-anchor">#</a> 1. 执行定时任务</h6> <ol><li>问题描述</li></ol> <div class="language- extra-class"><pre class="language-text"><code>14:10:55.865 [restartedMain] WARN  o.q.i.j.AttributeRestoringConnectionInvocationHandler - [restoreOriginalAtributes,152] - Failed restore connection's original transaction isolation setting.
+java.sql.SQLException: ORA-01453: SET TRANSACTION 必须是事务处理的第一个语句
+</code></pre></div><ol><li>解决方案：修改DyEtc\dyetc-quartz\src\main\java\com\dyetc\quartz\config\ScheduleConfig.java</li></ol> <div class="language- extra-class"><pre class="language-text"><code>//        prop.put(&quot;org.quartz.jobStore.txIsolationLevelSerializable&quot;, &quot;true&quot;);
+        prop.put(&quot;org.quartz.jobStore.txIsolationLevelSerializable&quot;, &quot;false&quot;);
+</code></pre></div><h6 id="新增测试模块"><a href="#新增测试模块" class="header-anchor">#</a> 新增测试模块</h6> <blockquote><p>类比代码生成模块新增测试模块</p></blockquote> <ol><li>创建文件夹文件</li></ol> <div class="language- extra-class"><pre class="language-text"><code>DyEtc&gt;mkdir dyetc-test
+DyEtc&gt;cd dyetc-test
+DyEtc\dyetc-test&gt;cd . &gt; pom.xml
+DyEtc\dyetc-test&gt;mkdir src\main\java
+DyEtc\dyetc-test&gt;mkdir src\main\resources
+</code></pre></div><ol start="2"><li>复制代码生成pom.xml文件 到 \DyEtc\dyetc-test\pom.xml，修改</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;
+         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+    &lt;parent&gt;
+        &lt;artifactId&gt;dyetc&lt;/artifactId&gt;
+        &lt;groupId&gt;com.dyetc&lt;/groupId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/parent&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+
+    &lt;artifactId&gt;dyetc-test&lt;/artifactId&gt;
+
+    &lt;description&gt;
+        测试模块
+    &lt;/description&gt;
+
+    &lt;dependencies&gt;
+
+        &lt;!-- 通用工具--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.dyetc&lt;/groupId&gt;
+            &lt;artifactId&gt;dyetc-common&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+&lt;/project&gt;
+</code></pre></div><ol start="3"><li>修改DyEtc\pom.xml依赖声明节点、模块阶段添加测试模块</li></ol> <div class="language- extra-class"><pre class="language-text"><code>            &lt;!-- 测试模块--&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;com.dyetc&lt;/groupId&gt;
+                &lt;artifactId&gt;dyetc-test&lt;/artifactId&gt;
+                &lt;version&gt;${dyetc.version}&lt;/version&gt;
+            &lt;/dependency&gt;            
+        &lt;/dependencies&gt;
+
+        &lt;module&gt;dyetc-test&lt;/module&gt;
+    &lt;/modules&gt;
+</code></pre></div><ol start="4"><li>Reload All Maven Projects</li> <li>测试模块下新增测试类</li></ol> <div class="language- extra-class"><pre class="language-text"><code>package com.dyetc.test;
+
+public class TestTestModule {
+    public void hellTest(){
+        System.out.println(&quot;hell TestModule!&quot;);
+    }
+}
+</code></pre></div><ol start="6"><li>admin模块添加测试模块依赖，测试</li></ol> <div class="language- extra-class"><pre class="language-text"><code>1. 添加测试模块依赖
+        &lt;!-- 测试模块--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.dyetc&lt;/groupId&gt;
+            &lt;artifactId&gt;dyetc-test&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+
+2. 测试包下添加测试类
+DyEtc\dyetc-admin\src&gt;mkdir test\java
+DyEtc\dyetc-admin\src&gt;mkdir test\resources
+Reload All Maven Projects
+
+
+package com.dyetc;
+
+import com.dyetc.test.TestTestModule;
+
+public class Test {
+    public static void main(String[] args) {
+        TestTestModule ttm = new TestTestModule();
+        ttm.hellTest();
+    }
+}
+
+</code></pre></div><h6 id="新增测试模块代码生成"><a href="#新增测试模块代码生成" class="header-anchor">#</a> 新增测试模块代码生成</h6> <blockquote><p>比对修正代码生成模块代码</p></blockquote> <ol><li>generator.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code># 代码生成
+gen:
+  # 作者
+  author: dyetc
+  # 默认生成包路径 system 需改成自己的模块名称 如 system monitor tool
+  packageName: com.dyetc.test
+  # 自动去除表前缀，默认是false
+  autoRemovePre: false
+  # 表前缀（生成类名不会包含表前缀，多个用逗号分隔）
+  tablePrefix: tst_
+</code></pre></div><h4 id="功能验证"><a href="#功能验证" class="header-anchor">#</a> 功能验证</h4> <h5 id="代码生成"><a href="#代码生成" class="header-anchor">#</a> 代码生成</h5> <h6 id="mysql版"><a href="#mysql版" class="header-anchor">#</a> mysql版</h6> <ol><li>generator.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code># 代码生成
+gen:
+  # 作者
+  author: dyetc
+  # 默认生成包路径 system 需改成自己的模块名称 如 system monitor tool
+  packageName: com.dyetc.test
+  # 自动去除表前缀，默认是false
+  autoRemovePre: false
+  # 表前缀（生成类名不会包含表前缀，多个用逗号分隔）
+  tablePrefix: tst_
+
+</code></pre></div><ol><li><p>单表验证</p> <ol><li>数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>drop table if exists tst_student;
+create table tst_student (
+student_id           int(11)         auto_increment    comment '编号',
+student_name         varchar(30)     default ''        comment '学生名称',
+student_age          int(3)          default null      comment '年龄',
+student_hobby        varchar(30)     default ''        comment '爱好（0代码 1音乐 2电影）',
+student_sex          char(1)         default '0'       comment '性别（0男 1女 2未知）',
+student_status       char(1)         default '0'       comment '状态（0正常 1停用）',
+student_birthday     datetime                          comment '生日',
+primary key (student_id)
+) engine=innodb auto_increment=1 comment = '学生信息表';
+</code></pre></div><ol start="2"><li>导入、编辑提交</li> <li>下载源码
+<ol><li>执行 studentbsnMenu.sql</li> <li>vue文件加下的文件夹复制到dyetc-ui\src中</li> <li>main文件下覆盖目标模块下的main文件夹</li></ol></li></ol> <ul><li>问题整理
+<ol><li>domain.java 报错。解决方案调整domain.java.vm</li></ol> <div class="language- extra-class"><pre class="language-text"><code>import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+import com.dyetc.common.annotation.Excel;
+#if($table.crud || $table.sub)
+import com.dyetc.common.core.domain.BaseEntity;
+#elseif($table.tree)
+import com.dyetc.common.core.domain.TreeEntity;
+#end
+</code></pre></div><ol><li>爱好导出为空</li></ol> <div class="language- extra-class"><pre class="language-text"><code>解决方案一：修改TstStudent.java
+    /** 爱好（0代码 1音乐 2电影） */
+//    @Excel(name = &quot;爱好&quot;, readConverterExp = &quot;0=代码,1=音乐,2=电影&quot;)
+    @Excel(name = &quot;爱好&quot;)
+解决方案二：在字段信息中为爱好字段新增代码字典，显示类型修改为下拉框
+</code></pre></div></li></ul></li> <li><p>树表验证</p> <ol><li>数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>drop table if exists tst_product;
+create table tst_product (
+product_id        bigint(20)      not null auto_increment    comment '产品id',
+parent_id         bigint(20)      default 0                  comment '父产品id',
+product_name      varchar(30)     default ''                 comment '产品名称',
+order_num         int(4)          default 0                  comment '显示顺序',
+status            char(1)         default '0'                comment '产品状态（0正常 1停用）',
+primary key (product_id)
+) engine=innodb auto_increment=1 comment = '产品表';
+</code></pre></div><ol start="2"><li>导入、编辑提交
+<ol><li>生成信息 选择树表(增删改查)，其他信息 树编码、树父编码、树名称选择</li></ol></li> <li>同上</li></ol></li> <li><p>主子表</p></li> <li><p>数据库脚本</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>-- ----------------------------
+-- 客户表
+-- ----------------------------
+drop table if exists tst_customer;
+create table tst_customer (
+  customer_id           bigint(20)      not null auto_increment    comment '客户id',
+  customer_name         varchar(30)     default ''                 comment '客户姓名',
+  phonenumber           varchar(11)     default ''                 comment '手机号码',
+  sex                   varchar(20)     default null               comment '客户性别',
+  birthday              datetime                                   comment '客户生日',
+  remark                varchar(500)    default null               comment '客户描述',
+  primary key (customer_id)
+) engine=innodb auto_increment=1 comment = '客户表';
+
+
+-- ----------------------------
+-- 商品表
+-- ----------------------------
+drop table if exists tst_goods;
+create table tst_goods (
+  goods_id           bigint(20)      not null auto_increment    comment '商品id',
+  customer_id        bigint(20)      not null                   comment '客户id',
+  name               varchar(30)     default ''                 comment '商品名称',
+  weight             int(5)          default null               comment '商品重量',
+  price              decimal(6,2)    default null               comment '商品价格',
+  date               datetime                                   comment '商品时间',
+  type               char(1)         default null               comment '商品种类',
+  primary key (goods_id)
+) engine=innodb auto_increment=1 comment = '商品表';
+</code></pre></div><ol start="2"><li>导入主子表、编辑提交
+<ol><li>主表生成信息 主子表(增删改查)，关联信息 关联子表的表名、子表关联的外键名</li></ol></li></ol> <ul><li>问题
+<ol><li><p>验证过程中 子表时间需要按照2022-02-03格式录入</p></li> <li><p>sub-domain.java.vm 报错。解决方案调整sub-domain.java.vm</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+import com.dyetc.common.annotation.Excel;
+import com.dyetc.common.core.domain.BaseEntity;
+</code></pre></div></li></ul> <h6 id="oracle版"><a href="#oracle版" class="header-anchor">#</a> oracle版</h6> <ol><li>单表验证数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>create table tst_student (
+  student_id number(11) not null, 
+  student_name varchar2(30) default '', 
+  student_age number(3) default null, 
+  student_hobby varchar2(30) default '', 
+  student_sex char(1) default '0', 
+  student_status char(1) default '0', 
+  student_birthday date
+); 
+alter table 
+  tst_student 
+add 
+  constraint pk_tst_student primary key (student_id); 
+
+comment on table tst_student is '学生信息表';
+comment on column tst_student.student_id is '编号';
+comment on column tst_student.student_name is '学生名称'; 
+comment on column tst_student.student_age is '年龄'; 
+comment on column tst_student.student_hobby is '爱好（0代码 1音乐 2电影）'; 
+comment on column tst_student.student_sex is '性别（0男 1女 2未知）'; 
+comment on column tst_student.student_status is '状态（0正常 1停用）'; 
+comment on column tst_student.student_birthday is '生日';
+</code></pre></div><ol><li>单表综合测试脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>drop table tst_person;
+create table tst_person (
+  person_id number(11) primary key, 
+  person_name varchar2(30) default '', 
+  person_age number(3) default null, 
+  person_hobby varchar2(30) default '', 
+  person_sex char(1) default '0', 
+  person_status char(1) default '0', 
+  person_birthday date,
+  person_image varchar2(1024),
+  person_file varchar2(1024)
+); 
+
+comment on table tst_person is '人员信息表';
+comment on column tst_person.person_id is '编号';
+comment on column tst_person.person_name is '名称'; 
+comment on column tst_person.person_age is '年龄'; 
+comment on column tst_person.person_hobby is '爱好（0代码 1音乐 2电影）'; 
+comment on column tst_person.person_sex is '性别（0男 1女 2未知）'; 
+comment on column tst_person.person_status is '状态（0正常 1停用）'; 
+comment on column tst_person.person_birthday is '生日';
+comment on column tst_person.person_image is '图片';
+comment on column tst_person.person_file is '文件';
+</code></pre></div><ol start="2"><li>树表数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>drop table tst_product;
+create table tst_product (
+  product_id number(20) not null,
+  parent_id number(20) default 0,
+  product_name varchar2(30) default '',
+  order_num number(4) default 0,
+  status char(1) default '0'
+  
+);
+alter table 
+  tst_product 
+add 
+  constraint pk_tst_product primary key (product_id); 
+comment on table tst_product is '产品表';
+comment on column tst_product.product_id is '产品id';
+comment on column tst_product.parent_id is '父产品id';
+comment on column tst_product.product_name is '产品名称';
+comment on column tst_product.order_num is '显示顺序';
+comment on column tst_product.status is '产品状态（0正常 1停用）';
+</code></pre></div><ol start="3"><li>主子表数据库脚本</li></ol> <div class="language- extra-class"><pre class="language-text"><code>-- ----------------------------
+-- 客户表
+-- ----------------------------
+drop table tst_customer;
+create table tst_customer (
+  customer_id number(20) primary key,
+  customer_name varchar2(30) default '',
+  phonenumber varchar2(11) default '',
+  sex varchar2(20) default null,
+  birthday date,
+  remark varchar2(500) default null
+);
+comment on table tst_customer is '客户表';
+comment on column tst_customer.customer_id is '客户id';
+comment on column tst_customer.customer_name is '客户姓名';
+comment on column tst_customer.phonenumber is '手机号码';
+comment on column tst_customer.sex is '客户性别';
+comment on column tst_customer.birthday is '客户生日';
+comment on column tst_customer.remark is '客户描述';
+
+-- ----------------------------
+-- 商品表
+-- ----------------------------
+drop table tst_goods;
+create table tst_goods (
+  goods_id number(20) primary key,
+  customer_id number(20) not null,
+  name varchar2(30) default '',
+  weight number(5) default null,
+  price number(6,2) default null,
+  goods_date date,
+  type char(1) default null
+);
+comment on table tst_goods is '商品表';
+comment on column tst_goods.goods_id is '商品id';
+comment on column tst_goods.customer_id is '客户id';
+comment on column tst_goods.name is '商品名称';
+comment on column tst_goods.weight is '商品重量';
+comment on column tst_goods.price is '商品价格';
+comment on column tst_goods.goods_date is '商品时间';
+comment on column tst_goods.type is '商品种类';
+</code></pre></div><ul><li>异常处理</li></ul> <div class="language- extra-class"><pre class="language-text"><code>加入子表商品信息异常
+nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='__frch_item_0.goodsId', mode=IN, javaType=class java.lang.Long, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #1 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 无效的列类型
+
+解决方案
+1. 添加主键自增触发器
+drop sequence seq_tst_goods;
+drop trigger tst_goods_pk_trigger;
+
+create sequence seq_tst_goods
+increment by 1
+start with 10
+nomaxvalue
+nominvalue
+cache 20;
+
+create trigger tst_goods_pk_trigger before insert on tst_goods for each row
+begin
+    select seq_tst_goods.nextval into :new.goods_id from dual;
+end;
+
+2. 修改入库脚本，去掉主键
+    &lt;insert id=&quot;batchTstGoods&quot;&gt;
+        insert all
+        &lt;foreach item=&quot;item&quot; index=&quot;index&quot; collection=&quot;list&quot;&gt;
+            into tst_goods( goods_id, customer_id, name, weight, price, goods_date, type) values ( #{item.goodsId}, #{item.customerId}, #{item.name}, #{item.weight}, #{item.price}, #{item.goodsDate}, #{item.type})
+        &lt;/foreach&gt;
+        SELECT 1 FROM DUAL
+    &lt;/insert&gt;
+
+            into tst_goods( customer_id, name, weight, price, goods_date, type) values ( #{item.customerId}, #{item.name}, #{item.weight}, #{item.price}, #{item.goodsDate}, #{item.type})
+
+</code></pre></div><h3 id="ruoyi-2"><a href="#ruoyi-2" class="header-anchor">#</a> RuoYi</h3> <ul><li><a href="https://gitee.com/y_project/RuoYi" target="_blank" rel="noopener noreferrer">项目地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# systemctl start mysqld 
+[root@SystemFramework ~]# docker start iredis
+
+start RuoYiApplicaiton
+E:\iEnviroment\development\projects\ideaProjects\Demo\system-framework\RuoYi-Vue\ruoyi-ui&gt;npm run dev
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>mysql&gt; CREATE DATABASE IF NOT EXISTS RuoYi DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci; 
+Query OK, 1 row affected (0.00 sec)
+mysql&gt; use RuoYi;
+Database changed
+mysql&gt; source /root/RuoYi/ry_20210924.sql
+mysql&gt; source /root/RuoYi/quartz.sql
+</code></pre></div><h4 id="重构-2"><a href="#重构-2" class="header-anchor">#</a> 重构</h4> <h5 id="_1-git-clone-项目到本地"><a href="#_1-git-clone-项目到本地" class="header-anchor">#</a> 1. git clone 项目到本地</h5> <div class="language- extra-class"><pre class="language-text"><code>- 从现有仓库克隆
+E:\TosinJia\IdeaProjects\TxjXtzc&gt;git --help
+# 浏览器中打开 file:///E:/TosinJia/tools/portableSoft/PortableGit/mingw64/share/doc/git-doc/git-clone.html
+E:\TosinJia\IdeaProjects\TxjXtzc&gt;git help clone
+# TxjIs新建的项目目录名称
+PS E:\TosinJia\IdeaProjects\TxjXtzc&gt; git clone https://github.com/yangzongzhuan/RuoYi-Oracle.git TxjIs 
+
+</code></pre></div><h5 id="_2-idea-open-file-or-project"><a href="#_2-idea-open-file-or-project" class="header-anchor">#</a> 2. IDEA Open File or Project</h5> <div class="language- extra-class"><pre class="language-text"><code>E:\TosinJia\IdeaProjects\TxjXtzc\TxjIs
+</code></pre></div><h5 id="_3-检查maven、jdk"><a href="#_3-检查maven、jdk" class="header-anchor">#</a> 3. 检查maven、JDK</h5> <div class="language- extra-class"><pre class="language-text"><code>E:/TosinJia/tools/portableSoft/apache-maven-3.6.3
+E:\TosinJia\tools\portableSoft\apache-maven-3.6.3\conf\settings.xml
+E:\TosinJia\tools\portableSoft\apache-maven-3.6.3\repository
+E:\Program Files\Java\jdk1.8.0_251
+
+</code></pre></div><h5 id="_4-更改数据库配置"><a href="#_4-更改数据库配置" class="header-anchor">#</a> 4. 更改数据库配置</h5> <div class="language- extra-class"><pre class="language-text"><code>Copy Path From Content Root: src\main\resources\application-druid.yml
+Path From Source Root: application-druid.yml
+Path From Repository Root: ruoyi-admin/src/main/resources/application-druid.yml
+                url: jdbc:oracle:thin:@172.16.9.206:1521/innetdb
+                username: RUOYI
+                password: RUOYI
+
+- 启动验证通过
+
+</code></pre></div><h5 id="_5-重构"><a href="#_5-重构" class="header-anchor">#</a> 5. 重构</h5> <h6 id="_5-1-重命名-root"><a href="#_5-1-重命名-root" class="header-anchor">#</a> 5.1 重命名 root</h6> <div class="language- extra-class"><pre class="language-text"><code>5.1.1 选中-右键-&gt;Refactor-&gt;Rename...[Shift+F6]
+	- Enter new module name: 
+5.1.2 修改 pom.xml
+    &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;
+    &lt;artifactId&gt;ruoyi&lt;/artifactId&gt;
+    &lt;version&gt;4.3.1&lt;/version&gt;	
+	
+	&lt;name&gt;ruoyi&lt;/name&gt;
+
+修改为
+
+    &lt;groupId&gt;com.txj.xtzc.is&lt;/groupId&gt;
+    &lt;artifactId&gt;txjis&lt;/artifactId&gt;
+    &lt;version&gt;0.1.0&lt;/version&gt;
+
+	&lt;!-- Maven tool window 模块名有关 --&gt;
+    &lt;name&gt;txjis&lt;/name&gt;
+
+        &lt;ruoyi.version&gt;4.3.1&lt;/ruoyi.version&gt;
+		&lt;txjis.version&gt;0.1.0&lt;/txjis.version&gt;
+
+ruoyi.version-&gt;txjis.version
+com.ruoyi-&gt;com.txj.xtzc.is
+ruoyi- -&gt; txjis-
+
+</code></pre></div><h6 id="_5-2-逐个重构各个子模块及其pom-xml"><a href="#_5-2-逐个重构各个子模块及其pom-xml" class="header-anchor">#</a> 5.2 逐个重构各个子模块及其pom.xml</h6> <div class="language- extra-class"><pre class="language-text"><code>重命名子模块名
+选中子模块-右键-&gt;Refactor-&gt;Rename...[Shift+F6]
+Select Refactring
+	- 选中 Rname module and directory
+	- OK
+		- Rename
+			- ruoyi-admin -&gt; txjis-admin
+			- Preview
+			- Do Refactor
+
+txjis-admin/pom.xml
+    &lt;parent&gt;
+        &lt;artifactId&gt;ruoyi&lt;/artifactId&gt;
+        &lt;groupId&gt;com.ruoyi&lt;/groupId&gt;
+        &lt;version&gt;4.3.1&lt;/version&gt;
+    &lt;/parent&gt;
+	
+    &lt;parent&gt;
+        &lt;groupId&gt;com.txj.xtzc.is&lt;/groupId&gt;
+        &lt;artifactId&gt;txjis&lt;/artifactId&gt;
+        &lt;version&gt;0.1.0&lt;/version&gt;
+    &lt;/parent&gt;
+
+
+ruoyi- -&gt; txjis-	
+com.ruoyi-&gt;com.txj.xtzc.is
+
+
+启动验证通过 TxjIs-1.zip
+
+</code></pre></div><h6 id="_5-3-重构包名"><a href="#_5-3-重构包名" class="header-anchor">#</a> 5.3 重构包名</h6> <ol><li>在目录树中选中要修改的包（或 在代码中找到导入包的一条语句，将鼠标放置在要重命名的包上），点击鼠标右键-&gt;Refactro-&gt;Rename...[Shift+F6]</li> <li>弹出框Warning，点击 Rename package</li> <li>弹出修改框Rename，输入框中新包名 com.ruoyi -&gt; com.txj.xtzc.is，选择相应的Scope Project Files，点击 Preview，打开 Refactoring Preview 界面，点击 Do Refacotr</li></ol> <ul><li><a href="https://jingyan.baidu.com/article/0a52e3f4ed1b59bf63ed727d.html" target="_blank" rel="noopener noreferrer">IntelliJ IDEA重命名Package(包)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>------------------------------------------------------------
+或者 可以逐个模块的包名重构 
+com.ruoyi.web com.txj.xtzc.is.web
+com.ruoyi.common com.txj.xtzc.is.common
+com.ruoyi.framework com.txj.xtzc.is.framework
+com.ruoyi.generator com.txj.xtzc.is.generator
+com.ruoyi.quartz com.txj.xtzc.is.quartz
+com.ruoyi.system com.txj.xtzc.is.system
+
+删除com.ruoyi 包对应的directory &quot;ruoyi&quot;
+------------------------------------------------------------
+Ctrl+Shift+R 替换
+com.ruoyi -&gt; com.txj.xtzc.is
+
+
+@author ruoyi -&gt; @author txjxtzc
+</code></pre></div><h6 id="_5-4-重构java类"><a href="#_5-4-重构java类" class="header-anchor">#</a> 5.4 重构java类</h6> <ul><li>RuoYiApplication-&gt;TxjIsApplication</li> <li>RuoYiServletInitializer -&gt; TxjIsServletInitializer</li> <li>异常
+<ul><li>Caused by: java.lang.ClassNotFoundException: KaptchaTextCreator</li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>关闭验证码
+    # 验证码开关
+
+启动验证通过
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>@author ruoyi -&gt; @author TxjXtzc	
+
+备份 TxjIs-2.zip
+
+区分大小写
+ruoyi txjis
+1. ../static/ruoyi/
+2. ../static/ruoyi.png
+@ConfigurationProperties(prefix = &quot;ruoyi&quot;)
+
+Application Version: ${ruoyi.version}
+&lt;ehcache name=&quot;ruoyi&quot; updateCheck=&quot;false&quot;&gt;
+&lt;div&gt;&lt;a href=&quot;http://doc.ruoyi.vip/ruoyi/document/zjwd.html#bootstrap-suggest&quot; target=&quot;_blank&quot;&gt;http://doc.ruoyi.vip/ruoyi/document/zjwd.html#bootstrap-suggest&lt;/a&gt;&lt;/div&gt;
+return $.table.imageView('http://demo.ruoyi.vip/ruoyi.png');
+
+更改目录名
+txjis-admin/src/main/resources/static/ruoyi -&gt; txjis-admin/src/main/resources/static/txjis
+
+Ctrl+Shift+N 按文件名搜索文件  更改文件名
+ruoyi -&gt;txjis .png .htlm .pdm
+
+启动验证通过 备份 TxjIs-3.zip
+
+
+区分大小写；不区分大小写查找有哪些，区分大小写替换
+RuoYi TxjIs
+Ruoyi Txjis
+
+若依 -&gt; 智能发运
+
+
+验证码异常问题
+Caused by: java.lang.ClassNotFoundException: KaptchaTextCreator
+        // 验证码文本生成器 properties.setProperty(KAPTCHA_TEXTPRODUCER_IMPL, &quot;KaptchaTextCreator&quot;);
+        properties.setProperty(KAPTCHA_TEXTPRODUCER_IMPL, &quot;com.ruoyi.framework.config.KaptchaTextCreator&quot;);
+
+启动验证通过 备份 TxjIs-4.zip
+
+
+</code></pre></div><h5 id="_6-idea清除项目的git信息"><a href="#_6-idea清除项目的git信息" class="header-anchor">#</a> 6. IDEA清除项目的git信息</h5> <ul><li>IntelliJ IDEA.md 清除项目的git信息（IntelliJ IDEA上删除Git项目）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>备份TxjIs-5.zip
+更新启动时字符画
+启动验证通过 备份 TxjIs-6.zip
+</code></pre></div><h5 id="_7-分享项目到svn"><a href="#_7-分享项目到svn" class="header-anchor">#</a> 7. 分享项目到SVN</h5> <ul><li>IntelliJ IDEA.md 分享项目到SVN</li></ul> <h2 id="xxl开源社区"><a href="#xxl开源社区" class="header-anchor">#</a> XXL开源社区</h2> <ul><li><a href="https://www.xuxueli.com/index.html" target="_blank" rel="noopener noreferrer">XXL开源社区<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://www.xuxueli.com/page/projects.html" target="_blank" rel="noopener noreferrer">项目<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h3 id="xxl-job-分布式任务调度平台"><a href="#xxl-job-分布式任务调度平台" class="header-anchor">#</a> <a href="https://www.xuxueli.com/xxl-job/" target="_blank" rel="noopener noreferrer">XXL-JOB | 分布式任务调度平台<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <ul><li><a href="https://gitee.com/xuxueli0323/xxl-job" target="_blank" rel="noopener noreferrer">GITEE<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/xuxueli/xxl-job/" target="_blank" rel="noopener noreferrer">GITHUB<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h4> <ul><li>BOOT-INF.classes.application.properties</li></ul> <div class="language- extra-class"><pre class="language-text"><code>### web
+server.port=8894
+server.servlet.context-path=/xxl-job-admin
+
+### actuator
+management.server.servlet.context-path=/actuator
+management.health.mail.enabled=false
+
+### resources
+spring.mvc.servlet.load-on-startup=0
+spring.mvc.static-path-pattern=/static/**
+spring.resources.static-locations=classpath:/static/
+
+### freemarker
+spring.freemarker.templateLoaderPath=classpath:/templates/
+spring.freemarker.suffix=.ftl
+spring.freemarker.charset=UTF-8
+spring.freemarker.request-context-attribute=request
+spring.freemarker.settings.number_format=0.##########
+
+### mybatis
+mybatis.mapper-locations=classpath:/mybatis-mapper/*Mapper.xml
+#mybatis.type-aliases-package=com.xxl.job.admin.core.model
+
+### xxl-job, datasource
+spring.datasource.url=jdbc:mysql://XXX:3306/xxl_job?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true&amp;serverTimezone=Asia/Shanghai
+spring.datasource.username=root
+spring.datasource.password=XXX
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+### datasource-pool
+spring.datasource.type=com.zaxxer.hikari.HikariDataSource
+spring.datasource.hikari.minimum-idle=10
+spring.datasource.hikari.maximum-pool-size=30
+spring.datasource.hikari.auto-commit=true
+spring.datasource.hikari.idle-timeout=30000
+spring.datasource.hikari.pool-name=HikariCP
+spring.datasource.hikari.max-lifetime=900000
+spring.datasource.hikari.connection-timeout=10000
+spring.datasource.hikari.connection-test-query=SELECT 1
+spring.datasource.hikari.validation-timeout=1000
+
+### xxl-job, email
+spring.mail.host=smtp.qq.com
+spring.mail.port=25
+spring.mail.username=xxx@qq.com
+spring.mail.from=xxx@qq.com
+spring.mail.password=xxx
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
+
+### xxl-job, access token
+xxl.job.accessToken=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+### xxl-job, i18n (default is zh_CN, and you can choose &quot;zh_CN&quot;, &quot;zh_TC&quot; and &quot;en&quot;)
+xxl.job.i18n=zh_CN
+
+## xxl-job, triggerpool max size
+xxl.job.triggerpool.fast.max=200
+xxl.job.triggerpool.slow.max=100
+
+### xxl-job, log retention days
+xxl.job.logretentiondays=30
+</code></pre></div><ul><li>src/main/resources/application-prod.yml</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+xxl:
+  job:
+    admin:
+      ### 调度中心部署跟地址 [选填]：如调度中心集群部署存在多个地址则用逗号分隔。执行器将会使用该地址进行&quot;执行器心跳注册&quot;和&quot;任务结果回调&quot;；为空则关闭自动注册；
+      #测试内网地址，开发环境调试定时器 不要使用任务调度的方式
+      addresses: http://XXXX:8894/xxl-job-admin
+      ### 执行器通讯TOKEN [选填]：非空时启用；
+    accessToken: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    ### 执行器AppName [选填]：执行器心跳注册分组依据；为空则关闭自动注册
+    executor:
+      appname: client-api
+      ### 执行器注册 [选填]：优先使用该配置作为注册地址，为空时使用内嵌服务 ”IP:PORT“ 作为注册地址。从而更灵活的支持容器类型执行器动态IP和动态映射端口问题。
+      address:
+      ### 执行器IP [选填]：默认为空表示自动获取IP，多网卡时可手动设置指定IP，该IP不会绑定Host仅作为通讯实用；地址信息用于 &quot;执行器注册&quot; 和 &quot;调度中心请求并触发任务&quot;；
+      ip: XXX
+      ### 执行器端口号 [选填]：小于等于0则自动获取；默认端口为9999，单机部署多个执行器时，注意要配置不同执行器端口；
+      port: 8903
+      ### 执行器运行日志文件存储磁盘路径 [选填] ：需要对该路径拥有读写权限；为空则使用默认路径；
+      logpath: logs/xxl-job
+      ### 执行器日志文件保存天数 [选填] ： 过期日志自动清理, 限制值大于等于3时生效; 否则, 如-1, 关闭自动清理功能；
+      logretentiondays: 30
+
+</code></pre></div><h4 id="修改密码"><a href="#修改密码" class="header-anchor">#</a> 修改密码</h4> <div class="language- extra-class"><pre class="language-text"><code>UPDATE xxl_job.xxl_job_user
+	SET password='e10adc3949ba59abbe56e057f20f883e'
+	WHERE id=1;
+</code></pre></div><h4 id="任务"><a href="#任务" class="header-anchor">#</a> 任务</h4> <div class="language- extra-class"><pre class="language-text"><code>select * from xxl_job_info xji WHERE xji.executor_handler like '%updateQccCompanyInfo%';
+</code></pre></div><h2 id="guns"><a href="#guns" class="header-anchor">#</a> Guns</h2> <ul><li>admin/111111</li></ul> <h2 id="pig"><a href="#pig" class="header-anchor">#</a> pig</h2> <h2 id="jeecg-boot"><a href="#jeecg-boot" class="header-anchor">#</a> Jeecg-boot</h2> <ul><li><a href="http://www.jeecg.com/" target="_blank" rel="noopener noreferrer">技术官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://gitee.com/jeecg/jeecg-boot" target="_blank" rel="noopener noreferrer">项目地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="http://boot.jeecg.com/" target="_blank" rel="noopener noreferrer">在线演示<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="如何启动项目"><a href="#如何启动项目" class="header-anchor">#</a> <a href="http://doc.jeecg.com/1273967" target="_blank" rel="noopener noreferrer">如何启动项目<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <h4 id="_1-win10下node-js安装"><a href="#_1-win10下node-js安装" class="header-anchor">#</a> 1. <a href="https://blog.csdn.net/zsx18273117003/article/details/94716963" target="_blank" rel="noopener noreferrer">win10下node.js安装<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\Tosin&gt;node -v
+v12.18.2
+
+C:\Users\Tosin&gt;npm install -g http-server
+E:\TosinJia\tools\portableSoft\node-v12.18.2-win-x64\http-server -&gt; E:\TosinJia\tools\portableSoft\node-v12.18.2-win-x64\node_modules\http-server\bin\http-server
+E:\TosinJia\tools\portableSoft\node-v12.18.2-win-x64\hs -&gt; E:\TosinJia\tools\portableSoft\node-v12.18.2-win-x64\node_modules\http-server\bin\http-server
++ http-server@0.12.3
+added 23 packages from 35 contributors in 17.775s
+
+C:\Users\Tosin&gt;
+</code></pre></div><ul><li>E:\TosinJia\tools\portableSoft\node-v12.18.2-win-x64\node_modules\http-server\bin</li></ul> <div class="language- extra-class"><pre class="language-text"><code>if (!port) {
+  portfinder.basePort = 8089;
+  portfinder.getPort(function (err, port) {
+    if (err) { throw err; }
+    listen(port);
+  });
+}
+</code></pre></div><h3 id="readme-md"><a href="#readme-md" class="header-anchor">#</a> README.md</h3> <ul><li>E:\TosinJia\IdeaProjects\Jeecg-boot\README.md</li></ul> <h3 id="访问账户"><a href="#访问账户" class="header-anchor">#</a> 访问账户</h3> <ul><li>admin 123456</li> <li>jeecg 123456</li></ul> <h3 id="报表设计"><a href="#报表设计" class="header-anchor">#</a> 报表设计</h3> <h2 id="renren"><a href="#renren" class="header-anchor">#</a> renren</h2> <ul><li>https://www.renren.io/</li></ul> <h2 id="vue-manage-system-前端"><a href="#vue-manage-system-前端" class="header-anchor">#</a> vue-manage-system 前端</h2> <ul><li>https://gitee.com/lin-xin/vue-manage-system
+<ul><li>https://lin-xin.gitee.io/example/work/#/login</li></ul></li></ul> <h2 id="后端"><a href="#后端" class="header-anchor">#</a> 后端</h2> <h3 id="logback的使用和logback-xml详解"><a href="#logback的使用和logback-xml详解" class="header-anchor">#</a> logback的使用和logback.xml详解</h3> <ul><li><a href="https://logback.qos.ch/documentation.html" target="_blank" rel="noopener noreferrer">官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cnblogs.com/warking/p/5710303.html" target="_blank" rel="noopener noreferrer">logback的使用和logback.xml详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/snail_bi/article/details/103496697" target="_blank" rel="noopener noreferrer">logback pattern配置及详解<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.jianshu.com/p/65329ea56184" target="_blank" rel="noopener noreferrer">logback彩色字符编码说明<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="三、logback的配置介绍"><a href="#三、logback的配置介绍" class="header-anchor">#</a> 三、logback的配置介绍</h4> <h5 id="有效级别及级别的继承"><a href="#有效级别及级别的继承" class="header-anchor">#</a> 有效级别及级别的继承</h5> <ul><li>Logger 可以被分配级别。级别包括：TRACE、DEBUG、INFO、WARN 和 ERROR，定义于ch.qos.logback.classic.Level类。如果 logger没有被分配级别，那么它将从有被分配级别的最近的祖先那里继承级别。root logger 默认级别是 DEBUG。</li></ul> <h4 id="五、logback-xml常用配置详解"><a href="#五、logback-xml常用配置详解" class="header-anchor">#</a> 五、logback.xml常用配置详解</h4> <h4 id="六、常用logger配置"><a href="#六、常用logger配置" class="header-anchor">#</a> 六、常用logger配置</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- show parameters for hibernate sql 专为 Hibernate 定制 --&gt;
+&lt;logger name=&quot;org.hibernate.type.descriptor.sql.BasicBinder&quot; level=&quot;TRACE&quot; /&gt;
+&lt;logger name=&quot;org.hibernate.type.descriptor.sql.BasicExtractor&quot; level=&quot;DEBUG&quot; /&gt;
+&lt;logger name=&quot;org.hibernate.SQL&quot; level=&quot;DEBUG&quot; /&gt;
+&lt;logger name=&quot;org.hibernate.engine.QueryParameters&quot; level=&quot;DEBUG&quot; /&gt;
+&lt;logger name=&quot;org.hibernate.engine.query.HQLQueryPlan&quot; level=&quot;DEBUG&quot; /&gt;
+
+&lt;!--myibatis log configure--&gt;
+&lt;logger name=&quot;com.apache.ibatis&quot; level=&quot;TRACE&quot;/&gt;
+&lt;logger name=&quot;java.sql.Connection&quot; level=&quot;DEBUG&quot;/&gt;
+&lt;logger name=&quot;java.sql.Statement&quot; level=&quot;DEBUG&quot;/&gt;
+&lt;logger name=&quot;java.sql.PreparedStatement&quot; level=&quot;DEBUG&quot;/&gt;
+</code></pre></div><h4 id="demo"><a href="#demo" class="header-anchor">#</a> Demo</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration debug=&quot;false&quot;&gt;
+&lt;!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径--&gt;
+&lt;property name=&quot;LOG_HOME&quot; value=&quot;/home&quot; /&gt;
+&lt;!-- 控制台输出 --&gt;
+&lt;appender name=&quot;STDOUT&quot; class=&quot;ch.qos.logback.core.ConsoleAppender&quot;&gt;
+&lt;encoder class=&quot;ch.qos.logback.classic.encoder.PatternLayoutEncoder&quot;&gt;
+&lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符--&gt;
+&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&lt;/pattern&gt;
+&lt;/encoder&gt;
+&lt;/appender&gt;
+&lt;!-- 按照每天生成日志文件 --&gt;
+&lt;appender name=&quot;FILE&quot; class=&quot;ch.qos.logback.core.rolling.RollingFileAppender&quot;&gt;
+&lt;rollingPolicy class=&quot;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&quot;&gt;
+&lt;!--日志文件输出的文件名--&gt;
+&lt;FileNamePattern&gt;${LOG_HOME}/TestWeb.log.%d{yyyy-MM-dd}.log&lt;/FileNamePattern&gt;
+&lt;!--日志文件保留天数--&gt;
+&lt;MaxHistory&gt;30&lt;/MaxHistory&gt;
+&lt;/rollingPolicy&gt;
+&lt;encoder class=&quot;ch.qos.logback.classic.encoder.PatternLayoutEncoder&quot;&gt;
+&lt;!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符--&gt;
+&lt;pattern&gt;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n&lt;/pattern&gt;
+&lt;/encoder&gt;
+&lt;!--日志文件最大的大小--&gt;
+&lt;triggeringPolicy class=&quot;ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy&quot;&gt;
+&lt;MaxFileSize&gt;10MB&lt;/MaxFileSize&gt;
+&lt;/triggeringPolicy&gt;
+&lt;/appender&gt;
+
+&lt;!-- 日志输出级别 --&gt;
+&lt;root level=&quot;INFO&quot;&gt;
+&lt;appender-ref ref=&quot;STDOUT&quot; /&gt;
+&lt;/root&gt;
+&lt;/configuration&gt;
+</code></pre></div><ul><li>%logger{50} 类名大于50采用简写，全类名不加{50}</li></ul> <h3 id="日志级别控制优先级"><a href="#日志级别控制优先级" class="header-anchor">#</a> 日志级别控制优先级</h3> <ol><li>application.yml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>logging:
+  level:
+    org.springframework: warn
+    org.activiti.engine.impl.persistence.entity: TRACE
+</code></pre></div><ol start="2"><li>logback.xml</li></ol> <div class="language- extra-class"><pre class="language-text"><code>	&lt;logger name=&quot;org.springframework&quot; level=&quot;warn&quot; /&gt;
+    &lt;logger name=&quot;org.activiti.engine.impl.persistence.entity&quot; level=&quot;info&quot; /&gt;
+</code></pre></div><h1 id="system-analysis"><a href="#system-analysis" class="header-anchor">#</a> System Analysis</h1> <ul><li><a href="/work/TruckSell/SystemFunctions">TruckSell</a></li> <li><a href="/work/TruckSell/BusinessProcess">TruckSell_BusinessProcess</a></li></ul> <h2 id="etc2022"><a href="#etc2022" class="header-anchor">#</a> ETC2022</h2> <ul><li><a href="/work/ETC2022/ProcessAnalysis.html">ETC2022_BusinessProcess</a></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/24.86d2ac06.js" defer></script>
+  </body>
+</html>

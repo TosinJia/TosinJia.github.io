@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/21.05a74ab0.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/20.1074faf8.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/24.86d2ac06.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/29.5a968fce.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/51.742ddc89.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/54.3dbad0f1.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/7.fe9d2c9f.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" class="nav-link">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>MySQL</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/database/mysql.html#在线资料" class="sidebar-link">在线资料</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/mysql.html#官网" class="sidebar-link">官网</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#手册" class="sidebar-link">手册</a></li></ul></li><li><a href="/database/mysql.html#常用指令" class="sidebar-link">常用指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/mysql.html#mysqldump" class="sidebar-link">mysqldump</a></li></ul></li><li><a href="/database/mysql.html#日常" class="sidebar-link">日常</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/mysql.html#日常问题" class="sidebar-link">日常问题</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#日常操作" class="sidebar-link">日常操作</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#数据表" class="sidebar-link">数据表</a></li></ul></li><li><a href="/database/mysql.html#建库脚本" class="sidebar-link">建库脚本</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/database/mysql.html#存储过程" class="sidebar-link">存储过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/mysql.html#一、存储过程" class="sidebar-link">一、存储过程</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#二、存储过程的使用步骤" class="sidebar-link">二、存储过程的使用步骤</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#三、存储过程的变量和赋值" class="sidebar-link">三、存储过程的变量和赋值</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#四、存储过程中的流程控制" class="sidebar-link">四、存储过程中的流程控制</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#五、游标与handler" class="sidebar-link">五、游标与handler</a></li></ul></li><li><a href="/database/mysql.html#mysql数据库高级" class="sidebar-link">MySQL数据库高级</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/mysql.html#其他参考" class="sidebar-link">其他参考</a></li></ul></li><li><a href="/database/mysql.html#mysql安装配置" class="sidebar-link">MySQL安装配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/mysql.html#mysql-5-7-39-rpm包安装" class="sidebar-link">mysql-5.7.39 RPM包安装</a></li><li class="sidebar-sub-header"><a href="/database/mysql.html#mysql-5-7-28-rpm包安装" class="sidebar-link">mysql-5.7.28 RPM包安装</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mysql"><a href="#mysql" class="header-anchor">#</a> MySQL</h1> <p></p><div class="table-of-contents"><ul><li><a href="#mysql">MySQL</a><ul><li><a href="#在线资料">在线资料</a><ul><li><a href="#官网">官网</a></li><li><a href="#手册">手册</a><ul><li><a href="#select-statement">select statement</a></li><li><a href="#表">表</a><ul><li><a href="#添加字段">添加字段</a></li></ul></li><li><a href="#视图">视图</a><ul><li><a href="#问题">问题</a></li></ul></li><li><a href="#函数">函数</a><ul><li><a href="#date-add">DATE_ADD</a></li><li><a href="#date-format">DATE_FORMAT</a></li><li><a href="#curdate">CURDATE</a></li></ul></li></ul></li></ul></li><li><a href="#常用指令">常用指令</a><ul><li><a href="#mysqldump">mysqldump</a><ul><li><a href="#整库备份还原">整库备份还原</a><ul><li><a href="#linux定时备份">linux定时备份</a></li></ul></li><li><a href="#非整库">非整库</a></li></ul></li></ul></li><li><a href="#日常">日常</a><ul><li><a href="#日常问题">日常问题</a><ul><li><a href="#timestamp与datatime">timestamp与datatime</a><ul><li><a href="#选择">选择</a></li><li><a href="#区别">区别</a></li><li><a href="#总结">总结</a></li></ul></li><li><a href="#mysql不区分大小写设置">MySQL不区分大小写设置</a></li><li><a href="#mysql字符集-utf8-和utf8mb4-的区别">mysql字符集 utf8 和utf8mb4 的区别</a></li><li><a href="#sql-错误-1055-42000">SQL 错误 [1055] [42000]:</a><ul><li><a href="#问题描述">问题描述</a></li><li><a href="#问题处理">问题处理</a></li></ul></li></ul></li><li><a href="#日常操作">日常操作</a><ul><li><a href="#查询数据库中各表的数据量">查询数据库中各表的数据量</a></li><li><a href="#查询数据库中各表的主键、自增标识">查询数据库中各表的主键、自增标识</a></li><li><a href="#版本查看">版本查看</a></li><li><a href="#null判断">NULL判断</a></li><li><a href="#分组获取每组里边的第一条数据">分组获取每组里边的第一条数据</a></li><li><a href="#修改root密码">修改root密码</a><ul><li><a href="#_1-修改本地访问密码-mysqladmin">1. 修改本地访问密码 mysqladmin</a></li><li><a href="#_2-修改远程访问密码">2. 修改远程访问密码</a></li></ul></li></ul></li><li><a href="#数据表">数据表</a><ul><li><a href="#备份">备份</a></li><li><a href="#从查询结果中更新数据">从查询结果中更新数据</a></li></ul></li></ul></li></ul></li><li><a href="#教程">教程</a><ul><li><a href="#建库脚本">建库脚本</a></li><li><a href="#存储过程">存储过程</a><ul><li><a href="#一、存储过程">一、存储过程</a><ul><li><a href="#_1-1-什么是存储过程">1.1 什么是存储过程</a></li><li><a href="#_1-2-数据库存储过程程序">1.2 数据库存储过程程序</a></li><li><a href="#_1-3-为什么要使用存储程序">1.3 为什么要使用存储程序</a></li></ul></li><li><a href="#二、存储过程的使用步骤">二、存储过程的使用步骤</a><ul><li><a href="#_2-1-存储过程的开发思想">2.1 存储过程的开发思想</a></li><li><a href="#_2-2-存储过程的优缺点">2.2 存储过程的优缺点</a></li><li><a href="#_2-3-mysql存储过程的官方文档">2.3 MySQL存储过程的官方文档</a></li><li><a href="#_2-3-存储过程的使用语法">2.3 存储过程的使用语法</a></li></ul></li><li><a href="#三、存储过程的变量和赋值">三、存储过程的变量和赋值</a><ul><li><a href="#_3-1-局部变量">3.1 局部变量</a></li><li><a href="#_3-2-用户变量">3.2 用户变量</a></li><li><a href="#_3-3-会话变量">3.3 会话变量</a></li><li><a href="#_3-4-全局变量">3.4 全局变量</a></li><li><a href="#_3-5-入参出参">3.5 入参出参</a></li></ul></li><li><a href="#四、存储过程中的流程控制">四、存储过程中的流程控制</a><ul><li><a href="#_4-1-if-条件判断-推荐">4.1 if 条件判断（推荐）</a></li><li><a href="#_4-2-case条件判断">4.2 case条件判断</a></li><li><a href="#_4-3-loop循环">4.3 loop循环</a></li><li><a href="#_4-4-repeat循环">4.4 repeat循环</a></li><li><a href="#_4-5-while循环">4.5 while循环</a></li><li><a href="#_4-6-流程控制语句-继续、结束">4.6 流程控制语句（继续、结束）</a></li></ul></li><li><a href="#五、游标与handler">五、游标与handler</a><ul><li><a href="#_5-1-游标">5.1 游标</a></li><li><a href="#_5-2-handler句柄">5.2 handler句柄</a></li></ul></li></ul></li><li><a href="#mysql数据库高级">MySQL数据库高级</a><ul><li><a href="#其他参考">其他参考</a></li></ul></li><li><a href="#mysql安装配置">MySQL安装配置</a><ul><li><a href="#mysql-5-7-39-rpm包安装">mysql-5.7.39 RPM包安装</a><ul><li><a href="#_1-下载地址">1. 下载地址</a></li><li><a href="#_2-检测本地包">2. 检测本地包</a></li><li><a href="#_3-安装">3. 安装</a><ul><li><a href="#_3-1-下载解压安装包">3.1 下载解压安装包</a></li></ul></li><li><a href="#_4-启动">4. 启动</a></li><li><a href="#_5-开启远程访问权限">5. 开启远程访问权限</a><ul><li><a href="#第一种-改表法">第一种（改表法）</a></li><li><a href="#第二种-授权法">第二种（授权法）</a></li></ul></li><li><a href="#_6-开机自启">6.开机自启</a></li><li><a href="#_7-配置调整">7.配置调整</a></li><li><a href="#其他">其他</a><ul><li><a href="#linux平台mysql的安装目录">Linux平台MySQL的安装目录</a></li><li><a href="#命令登录-mysql">命令登录 MySQL</a></li><li><a href="#异常处理">异常处理</a></li></ul></li></ul></li><li><a href="#mysql-5-7-28-rpm包安装">mysql-5.7.28 RPM包安装</a><ul><li><a href="#_1-官网下载地址">1. 官网下载地址</a></li><li><a href="#_2-检测本地包">2. 检测本地包</a></li><li><a href="#_3-安装">3. 安装</a><ul><li><a href="#_1-上传安装包到指定目录">1. 上传安装包到指定目录</a></li><li><a href="#_2-解压安装包">2. 解压安装包</a></li><li><a href="#_3-安装">3. 安装</a></li></ul></li><li><a href="#_4-启动">4. 启动</a><ul><li><a href="#_1-查看mysql服务是否启动">1 查看mysql服务是否启动</a></li><li><a href="#_2-启动mysql服务">2 启动mysql服务</a></li><li><a href="#_3-查看默认生成的密码">3 查看默认生成的密码</a></li><li><a href="#_4-登录">4 登录</a></li><li><a href="#_5-修改密码">5 修改密码</a><ul><li><a href="#_1-修改密码规则">1 修改密码规则</a></li><li><a href="#_2-修改密码">2 修改密码</a></li></ul></li></ul></li><li><a href="#_5-远程访问">5. 远程访问</a></li><li><a href="#_6-补充操作">6. 补充操作</a></li></ul></li></ul></li></ul></li></ul></div><p></p> <h2 id="在线资料"><a href="#在线资料" class="header-anchor">#</a> 在线资料</h2> <h3 id="官网"><a href="#官网" class="header-anchor">#</a> 官网</h3> <ul><li><a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">MySQL<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>账户：公用oracle账户</li></ul></li></ul> <h3 id="手册"><a href="#手册" class="header-anchor">#</a> 手册</h3> <ul><li><a href="https://dev.mysql.com/doc/" target="_blank" rel="noopener noreferrer">MySQL :: MySQL Documentation<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li>https://dev.mysql.com/doc/refman/5.7/en/
+<ul><li>https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html
+<ul><li>https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_str-to-date</li></ul></li> <li><a href="https://dev.mysql.com/doc/refman/5.7/en/data-types.html" target="_blank" rel="noopener noreferrer">MySQL :: MySQL 5.7 Reference Manual :: 11 Data Types<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://dev.mysql.com/doc/refman/5.7/en/create-view.html" target="_blank" rel="noopener noreferrer">MySQL :: MySQL 5.7 Reference Manual :: 13.1.21 CREATE VIEW Statement<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://dev.mysql.com/doc/refman/5.7/en/select.html" target="_blank" rel="noopener noreferrer">MySQL :: MySQL 5.7 Reference Manual :: 13.2.9 SELECT Statement<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li> <li><a href="http://www.mysqlab.net/docs/view/refman-5.1-zh/chapter/index.html" target="_blank" rel="noopener noreferrer">MySQL 5.1 中文参考手册 - 目录<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.mysqlzh.com/" target="_blank" rel="noopener noreferrer">MySQL 中文文档 | MySQL 中文网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h4 id="select-statement"><a href="#select-statement" class="header-anchor">#</a> select statement</h4> <ul><li><a href="https://www.cnblogs.com/hrhguanli/p/3826218.html" target="_blank" rel="noopener noreferrer">MySQL 通配符学习小结<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://dev.mysql.com/doc/refman/5.7/en/regexp.html" target="_blank" rel="noopener noreferrer">MySQL :: MySQL 5.7 Reference Manual :: 12.8.2 Regular Expressions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>select id, word, ipa_phonetic_symbol, pronunciation, audio, meaning, update_time, create_time from dict_word_info WHERE word like concat('%', 'a_', '%')
+select id, word, ipa_phonetic_symbol, pronunciation, audio, meaning, update_time, create_time from dict_word_info WHERE word rlike '^[abc]+$'
+select id, word, ipa_phonetic_symbol, pronunciation, audio, meaning, update_time, create_time from dict_word_info WHERE word regexp '^[abc]+$' 
+</code></pre></div><h4 id="表"><a href="#表" class="header-anchor">#</a> 表</h4> <h5 id="添加字段"><a href="#添加字段" class="header-anchor">#</a> 添加字段</h5> <div class="language- extra-class"><pre class="language-text"><code>ALTER TABLE `ry-vue`.dict_word_info ADD meaning varchar(1024) NULL COMMENT '含义';
+ALTER TABLE `ry-vue`.dict_word_info CHANGE meaning meaning varchar(1024) NULL COMMENT '含义' AFTER audio;
+</code></pre></div><h4 id="视图"><a href="#视图" class="header-anchor">#</a> 视图</h4> <div class="language- extra-class"><pre class="language-text"><code>create [or replace] view view_outdict_query_info as
+select
+	dwi.word query_word,
+	dwi.word,
+	dwi.ipa_phonetic_symbol,
+	dwi.pronunciation
+from
+	dict_word_info dwi
+union all
+select
+	oi.query_word,
+	dwi.word,
+	dwi.ipa_phonetic_symbol,
+	dwi.pronunciation
+from
+	outdict_info oi
+left join dict_word_info dwi on
+	oi.word = dwi.word
+where
+	oi.dict_type = '1'
+</code></pre></div><h5 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h5> <ol><li>SQL 错误 [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'union all</li></ol> <div class="language- extra-class"><pre class="language-text"><code>create view view_outdict_query_info as( select  dwi.word query_word,  dwi.word,  dwi.pronunciation from  dict_word_info dwi union all select  oi.query_word,  dwi.word,  dwi.pronunciation from  outdict_info oi left join dict_word_info dwi on  oi.word = dwi.word where  oi.dict_type = '1')
+</code></pre></div><h4 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h4> <ul><li><a href="https://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html" target="_blank" rel="noopener noreferrer">MySQL :: MySQL 5.7 Reference Manual :: 12.7 Date and Time Functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <p>select current_timestamp(), now(), curdate();</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;current_timestamp()&quot;,&quot;now()&quot;,&quot;curdate()&quot;
+&quot;2021-11-16 11:23:39&quot;,&quot;2021-11-16 11:23:39&quot;,&quot;2021-11-16&quot;
+</code></pre></div><ul><li><a href="https://dev.mysql.com/doc/refman/5.7/en/string-functions.html" target="_blank" rel="noopener noreferrer">MySQL :: MySQL 5.7 Reference Manual :: 12.8 String Functions and Operators<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <ul><li><a href="https://dev.mysql.com/doc/refman/5.7/en/string-functions.html#function_find-in-set" target="_blank" rel="noopener noreferrer">function_find-in-set<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h5 id="date-add"><a href="#date-add" class="header-anchor">#</a> DATE_ADD</h5> <ul><li>https://www.w3school.com.cn/sql/func_date_add.asp</li></ul> <h5 id="date-format"><a href="#date-format" class="header-anchor">#</a> DATE_FORMAT</h5> <ul><li>https://www.w3school.com.cn/sql/func_date_format.asp</li></ul> <h5 id="curdate"><a href="#curdate" class="header-anchor">#</a> CURDATE</h5> <ul><li>https://www.w3school.com.cn/sql/func_curdate.asp</li></ul> <h2 id="常用指令"><a href="#常用指令" class="header-anchor">#</a> 常用指令</h2> <h3 id="mysqldump"><a href="#mysqldump" class="header-anchor">#</a> mysqldump</h3> <ul><li><p><a href="https://blog.csdn.net/mashuai720/article/details/83347029" target="_blank" rel="noopener noreferrer">MySQL5.7 --- mysqldump 备份与恢复<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>软件开发/database/工具/DBeaver</p></li></ul> <h4 id="整库备份还原"><a href="#整库备份还原" class="header-anchor">#</a> 整库备份还原</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@etc ~]# mysqldump -help
+Usage: mysqldump [OPTIONS] database [tables]
+OR     mysqldump [OPTIONS] --databases [OPTIONS] DB1 [DB2 DB3...]
+OR     mysqldump [OPTIONS] --all-databases [OPTIONS]
+For more options, use mysqldump --help
+
+# 调用mysqldump带有--all-databases选项备份所有的数据库
+# mysqldump -uroot -pClgg7890 --all-databases &gt; Shaanxi_NetworkFreight_20220310.sql
+# 调用mysqldump带有- -databases选项备份指定的数据库
+# mysqldump -uroot -pClgg7890 --databases gateway yy_framework yy_matchup yy_tms &gt; Shaanxi_NetworkFreight_20220310_used.sql
+[root@localhost ~]# mysqldump -uroot -pClgg7890 --databases clgg_base &gt; clgg_base20210929.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+[root@etc ~]# mysql -h127.0.0.1 -uroot -p123456 -p123456 --default-character-set=utf8
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 3
+Server version: 5.7.29 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| clgg_base          |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.01 sec)
+
+mysql&gt; drop database clgg_base;
+Query OK, 120 rows affected (1.92 sec)
+
+mysql&gt; quit;
+Bye
+
+[root@etc ~]# mysql -h127.0.0.1 -uroot -p123456 &lt; clgg_base20210929.sql 
+mysql: [Warning] Using a password on the command line interface can be insecure.
+</code></pre></div><h5 id="linux定时备份"><a href="#linux定时备份" class="header-anchor">#</a> linux定时备份</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@clggdb ~]# crontab -l
+0 0 * * * sh /home/db/db_back_up.sh
+* * * * * /bin/bash /home/dbspc_redhat_centos_x64/spc1/startspc.sh
+20 11 * * * sh /home/db/clean_redundancy_db_back_up.sh
+
+[root@clggdb ~]# cat /home/db/db_back_up.sh
+#!/bin/bash
+#在使用之前，请提前创建以下各个目录
+#获取当前时间
+date_now=$(date &quot;+%Y%m%d-%H%M%S&quot;)
+backUpFolder=/home/db/backup
+db_name=&quot;clgg_base&quot;
+#定义备份文件名
+fileName=&quot;${db_name}_${date_now}.sql&quot;
+#定义备份文件目录
+backUpFileName=&quot;${backUpFolder}/${fileName}&quot;
+echo &quot;starting backup mysql ${db_name} at ${date_now}.&quot;
+mysqldump  --lock-all-tables --flush-logs ${db_name} &gt; ${backUpFileName}
+echo &quot;backup process finished!&quot;
+
+# 清除指定日期和天数的sql文件
+[root@clggdb ~]# cat /home/db/clean_redundancy_db_back_up.sh
+find /home/db/backup -mtime +50 -name '*.sql' -exec rm -rf {} \;
+</code></pre></div><h4 id="非整库"><a href="#非整库" class="header-anchor">#</a> 非整库</h4> <ol><li>备份</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@localhost database_bak]# mysqldump -h 127.0.0.1 -uroot -pClgg7890 -R -i --set-gtid-purged=OFF clgg_base1 &gt; /root/database_bak/clgg_base1_20211022-1.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+存储过程缺失-R
+[root@localhost database_bak]# mysqldump -h 127.0.0.1 -uroot -pClgg7890 -R -i --no-data clgg_base1 &gt; /root/database_bak/clgg_base1_20211022-2.sql
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+</code></pre></div><ul><li>-R:指定备份存储过程</li> <li>-i:备份注释</li> <li>--no-data:如果不需要数据</li> <li>-h:指定服务器</li> <li>-u:用户名</li> <li>-p:密码</li></ul> <ol start="2"><li>恢复数据库</li></ol> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; drop database clgg_base;
+Query OK, 120 rows affected (3.06 sec)
+
+# utf8 utf8_general_ci
+mysql&gt; CREATE DATABASE clgg_base DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+Query OK, 1 row affected (0.01 sec)
+
+mysql&gt; CREATE DATABASE IF NOT EXISTS clgg_base DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql&gt; use clgg_base;
+
+mysql&gt; source /root/clgg_base_20211015-000001.sql
+
+</code></pre></div><h2 id="日常"><a href="#日常" class="header-anchor">#</a> 日常</h2> <h3 id="日常问题"><a href="#日常问题" class="header-anchor">#</a> 日常问题</h3> <h4 id="timestamp与datatime"><a href="#timestamp与datatime" class="header-anchor">#</a> timestamp与datatime</h4> <p>参考</p> <ul><li><a href="https://cloud.tencent.com/developer/article/1541699" target="_blank" rel="noopener noreferrer">MySQL 中 datetime 和 timestamp 的区别与选择<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/u014696474/article/details/70568733" target="_blank" rel="noopener noreferrer">MYSQL-datatime和timestamp的区别<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h5 id="选择"><a href="#选择" class="header-anchor">#</a> 选择</h5> <ol><li>如果在时间上要超过Linux时间的，或者服务器时区不一样的就建议选择 datetime。</li> <li>如果是想要使用自动插入时间或者自动更新时间功能的，可以使用timestamp。</li> <li>如果只是想表示年、日期、时间的还可以使用 year、 date、 time，它们分别占据 1、3、3 字节，而datetime就是它们的集合。</li></ol> <h5 id="区别"><a href="#区别" class="header-anchor">#</a> 区别</h5> <ol><li>对于timestamp来说，如果储存时的时区和检索时的时区不一样，那么拿出来的数据也不一样。对于datetime来说，存什么拿到的就是什么。</li> <li>如果存进去的是NULL，timestamp会自动储存当前时间，而datetime会储存NULL。</li></ol> <h5 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h5> <ol><li>TIMESTAMP和DATETIME除了存储范围和存储方式不一样，没有太大区别。当然，对于跨时区的业务，TIMESTAMP更为合适。</li> <li>timestamp有自动初始化和更新，当你update某条记录的时候，该列值会自动更新，这是和datatime最大的区别。</li></ol> <h4 id="mysql不区分大小写设置"><a href="#mysql不区分大小写设置" class="header-anchor">#</a> MySQL不区分大小写设置</h4> <blockquote><p>修改配置后需要重启服务，如果之前的数据库删除不了，将配置调回去再删。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>[root@CentOS-7 imysql]# docker exec -it imysql /bin/bash
+
+[mysqld]
+...
+
+lower_case_table_names=1
+
+</code></pre></div><ul><li>sql</li></ul> <div class="language-SQL extra-class"><pre class="language-sql"><code>
+<span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">&quot;%case%&quot;</span><span class="token punctuation">;</span>
+lower_case_file_system	<span class="token keyword">OFF</span>
+lower_case_table_names	<span class="token number">1</span>
+</code></pre></div><ul><li>参考
+<ul><li><a href="https://blog.csdn.net/wangkun_j/article/details/117651603" target="_blank" rel="noopener noreferrer">MySQL不区分大小写设置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h4 id="mysql字符集-utf8-和utf8mb4-的区别"><a href="#mysql字符集-utf8-和utf8mb4-的区别" class="header-anchor">#</a> mysql字符集 utf8 和utf8mb4 的区别</h4> <ul><li><a href="https://blog.csdn.net/qq_37054881/article/details/90023611" target="_blank" rel="noopener noreferrer">mysql字符集 utf8 和utf8mb4 的区别<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="sql-错误-1055-42000"><a href="#sql-错误-1055-42000" class="header-anchor">#</a> SQL 错误 [1055] [42000]:</h4> <h5 id="问题描述"><a href="#问题描述" class="header-anchor">#</a> 问题描述</h5> <div class="language- extra-class"><pre class="language-text"><code>org.jkiss.dbeaver.model.sql.DBSQLException: SQL 错误 [1055] [42000]: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 's.tenant_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+</code></pre></div><ul><li>相关sql</li></ul> <div class="language- extra-class"><pre class="language-text"><code>SELECT
+	count(0)
+FROM
+	(
+	SELECT
+		s.id,
+		s.tenant_id,
+		s.create_time,
+		s.modify_time,
+		s.load_place,
+		s.load_place_code,
+		s.load_place_address,
+		s.unload_place,
+		s.unload_place_code,
+		s.unload_place_address,
+		s.sender,
+		s.sender_phone,
+		s.recipient,
+		s.recipient_phone,
+		s.goods_name,
+		s.goods_type,
+		s.use_type,
+		s.vehicle_type,
+		s.vehicle_length,
+		s.goods_weight,
+		s.goods_body,
+		s.load_time,
+		s.load_way,
+		s.goods_freight,
+		s.price_negotiation,
+		s.remarks,
+		s.status,
+		s.is_assign,
+		s.reasons_expiration,
+		s.valuation_way,
+		s.code,
+		s.transport_tenant_id transporttenantid,
+		s.is_cancel is_cancel,
+		s.cancel_reason cancel_reason,
+		s.send_area_id,
+		s.arrive_area_id,
+		u.link_man,
+		u.tenant_head_portrait,
+		u.transaction_count,
+		u.tran_transaction_count,
+		p.cash_payment,
+		p.unpaid,
+		p.oil_card,
+		p.arrrival_payment,
+		p.oil_card_deposit,
+		p.other_amount,
+		p.back_bill_deposit,
+		c.company_name company_name,
+		c.address company_address,
+		tr.tenant_id tran_tenant_id,
+		tr.link_man tran_link_man,
+		tr.tenant_head_portrait tran_tenant_head_portrait,
+		tr.link_phone,
+		tr.driver,
+		tr.car_number,
+		tr.code tran_code,
+		tr.tran_transaction_count v_tran_transaction_count,
+		tr.send_goods_count tran_send_goods_count,
+		tr.company_name tran_company_name,
+		tr.address tran_company_address,
+		tr.load_time tran_load_time
+	FROM
+		v_source_goods_capacity s
+	LEFT JOIN company_info c ON
+		c.tenant_id = s.tenant_id
+	LEFT JOIN my_user_info u ON
+		u.id = s.tenant_id
+	LEFT JOIN biz_payment_way p ON
+		p.source_goods_id = s.id
+	LEFT JOIN v_transport_info tr ON
+		tr.is_deleted = 0
+		AND tr.source_goods_id = s.id
+	WHERE
+		s.transport_tenant_id = 170
+	GROUP BY
+		s.id) table_count;
+</code></pre></div><h5 id="问题处理"><a href="#问题处理" class="header-anchor">#</a> 问题处理</h5> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">select</span> version<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> @<span class="token variable">@GLOBAL.sql_mode</span><span class="token punctuation">;</span>
+<span class="token keyword">select</span> @<span class="token variable">@SESSION.sql_mode</span><span class="token punctuation">;</span>
+<span class="token keyword">set</span> sql_mode<span class="token operator">=</span><span class="token string">'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'</span><span class="token punctuation">;</span>
+
+</code></pre></div><ul><li>shell</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">[</span>root@etc ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/my.cnf </span>
+<span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span>
+<span class="token assign-left variable">explicit_defaults_for_timestamp</span><span class="token operator">=</span>true
+<span class="token assign-left variable">basedir</span><span class="token operator">=</span>/usr/local/mysql
+<span class="token assign-left variable">datadir</span><span class="token operator">=</span>/usr/local/mysql/data
+<span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token number">3306</span>
+<span class="token assign-left variable">socket</span><span class="token operator">=</span>/usr/local/mysql/data/mysql.sock
+character-set-server<span class="token operator">=</span>utf8
+log-error<span class="token operator">=</span>/usr/local/mysql/data/mysqld.log
+pid-file<span class="token operator">=</span>/usr/local/mysql/data/mysqld.pid
+
+<span class="token assign-left variable">sql_mode</span><span class="token operator">=</span>STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+
+<span class="token punctuation">[</span>root@etc ~<span class="token punctuation">]</span><span class="token comment"># service mysqld restart</span>
+Shutting down MySQL<span class="token punctuation">..</span><span class="token punctuation">..</span> SUCCESS<span class="token operator">!</span> 
+Starting MySQL<span class="token punctuation">..</span> SUCCESS<span class="token operator">!</span> 
+</code></pre></div><ul><li><a href="https://blog.csdn.net/helloxiaozhe/article/details/78570016" target="_blank" rel="noopener noreferrer">MySql出现错误：ERROR 1055 (42000) 和 MYSQL的WARNINGS 和 ERRORS查询细节<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cnblogs.com/kiko2014551511/p/11527480.html" target="_blank" rel="noopener noreferrer">mysql的sql_mode设置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.php.cn/mysql-tutorials-480982.html" target="_blank" rel="noopener noreferrer">MySQL如何在linux中重新启动<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h3 id="日常操作"><a href="#日常操作" class="header-anchor">#</a> 日常操作</h3> <h4 id="查询数据库中各表的数据量"><a href="#查询数据库中各表的数据量" class="header-anchor">#</a> 查询数据库中各表的数据量</h4> <div class="language- extra-class"><pre class="language-text"><code>select t.TABLE_NAME, t.TABLE_ROWS from information_schema.TABLES t where t.TABLE_SCHEMA ='ruoyi-vue-activiti7' and t.TABLE_NAME in (
+'act_evt_log',
+'act_ru_variable'
+) order by t.TABLE_ROWS desc;
+</code></pre></div><h4 id="查询数据库中各表的主键、自增标识"><a href="#查询数据库中各表的主键、自增标识" class="header-anchor">#</a> 查询数据库中各表的主键、自增标识</h4> <div class="language- extra-class"><pre class="language-text"><code>-- 所有表主键 mysql查询数据库中各表的主键、自增标识
+SELECT
+  t.TABLE_NAME,
+  c.COLUMN_NAME,
+  ts.AUTO_INCREMENT
+FROM
+  INFORMATION_SCHEMA.TABLE_CONSTRAINTS AS t,
+  information_schema.TABLES AS ts,
+  information_schema.KEY_COLUMN_USAGE AS c
+WHERE
+  t.TABLE_NAME = ts.TABLE_NAME
+  AND ts.TABLE_NAME  = c.TABLE_NAME
+  AND t.TABLE_SCHEMA = 'truck_sell_test'
+  AND t.CONSTRAINT_TYPE = 'PRIMARY KEY'
+  ORDER BY ts.`AUTO_INCREMENT` DESC;
+</code></pre></div><h4 id="版本查看"><a href="#版本查看" class="header-anchor">#</a> 版本查看</h4> <div class="language- extra-class"><pre class="language-text"><code>select version();
+</code></pre></div><h4 id="null判断"><a href="#null判断" class="header-anchor">#</a> NULL判断</h4> <div class="language- extra-class"><pre class="language-text"><code>-- SQL 错误 [1052] [23000]: Column 'phone' in field list is ambiguous
+select phone from bak_sys_client_20220107 a LEFT JOIN (select phone from sys_client) b on a.phone=b.phone;
+
+select a.phone,b.phone phone2 from bak_sys_client_20220107 a LEFT JOIN (select distinct phone from sys_client) b on a.phone=b.phone where b.phone is null;
+</code></pre></div><h4 id="分组获取每组里边的第一条数据"><a href="#分组获取每组里边的第一条数据" class="header-anchor">#</a> 分组获取每组里边的第一条数据</h4> <div class="language- extra-class"><pre class="language-text"><code>select
+	iecur1.*
+from
+	icbc_etc_card_update_record iecur1,
+	(
+	select
+		service_order_no,
+		unit_type,
+		MAX(create_time) create_time
+	from
+		icbc_etc_card_update_record
+	group by
+		service_order_no,
+		unit_type ) as iecur2
+where
+	iecur1.service_order_no = iecur2.service_order_no
+	and iecur1.unit_type = iecur2.unit_type
+	and iecur1.create_time = iecur2.create_time
+order by
+	iecur1.service_order_no,
+	iecur1.unit_type,
+	iecur1.create_time desc
+</code></pre></div><h4 id="修改root密码"><a href="#修改root密码" class="header-anchor">#</a> 修改root密码</h4> <ul><li><p><a href="https://blog.csdn.net/qq_40757240/article/details/118068317" target="_blank" rel="noopener noreferrer">MySQL修改root用户密码<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://blog.csdn.net/u011311291/article/details/87923540" target="_blank" rel="noopener noreferrer">mysql修改root密码(包括远程登录密码)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul> <h5 id="_1-修改本地访问密码-mysqladmin"><a href="#_1-修改本地访问密码-mysqladmin" class="header-anchor">#</a> 1. 修改本地访问密码 mysqladmin</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# mysqladmin -u root -h 127.0.0.1 -p password &quot;123456&quot; --&gt; 新密码
+Enter password: 旧密码
+mysqladmin: [Warning] Using a password on the command line interface can be insecure.
+Warning: Since password will be sent to server in plain text, use ssl connection to ensure password safety.
+</code></pre></div><ul><li>语法参数说明如下：
+<ul><li>usermame 指需要修改密码的用户名称，在这里指定为 root 用户；</li> <li>hostname 指需要修改密码的用户主机名，该参数可以不写，默认是 localhost；</li> <li>password 为关键字，而不是指旧密码；</li> <li>newpwd 为新设置的密码，必须用双引号括起来。如果使用单引号会引发错误，可能会造成修改后的密码不是你想要的。</li></ul></li></ul> <h5 id="_2-修改远程访问密码"><a href="#_2-修改远程访问密码" class="header-anchor">#</a> 2. 修改远程访问密码</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@SystemFramework ~]# mysql -uroot -h127.0.0.1 -uroot -p123456 
+mysql&gt; ALTER USER 'root'@'%' IDENTIFIED BY '123456';
+Query OK, 0 rows affected (0.01 sec)
+</code></pre></div><h3 id="数据表"><a href="#数据表" class="header-anchor">#</a> 数据表</h3> <h4 id="备份"><a href="#备份" class="header-anchor">#</a> 备份</h4> <div class="language- extra-class"><pre class="language-text"><code>SELECT * FROM channel_month_rebate;
+create table tmp_channel_month_rebate as SELECT * FROM channel_month_rebate;
+SELECT * FROM tmp_channel_month_rebate;
+DROP table tmp_channel_month_rebate;
+</code></pre></div><h4 id="从查询结果中更新数据"><a href="#从查询结果中更新数据" class="header-anchor">#</a> 从查询结果中更新数据</h4> <ul><li><a href="https://blog.csdn.net/qq_39840681/article/details/79401795" target="_blank" rel="noopener noreferrer">mysql update select 从查询结果中更新数据<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>update select 语句(注意:必须使用inner join) 语法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>UPDATE a
+INNER JOIN ( SELECT yy FROM b ) c ON a.id = c.id 
+SET a.xx = c.yy
+</code></pre></div><ul><li>demo</li></ul> <div class="language- extra-class"><pre class="language-text"><code>UPDATE bak_sso_20220107_sys_client_update a
+	INNER JOIN ( 
+		select sc.user_name, sc.user_code, sc1.user_code user_code_org from bak_sso_20220107_sys_client_update sc left join bak_sys_client_20220107 sc1 on sc.user_name =sc1.user_name where sc.user_code!=sc1.user_code 
+	) b ON a.user_name = b.user_name 
+SET a.user_code = b.user_code_org;
+-- SET a.user_code = 999999;
+
+# 更新后验证总是没更新 原因
+-- 同一个user_name在bak_sys_client_20220107有两条数据，bak_sso_20220107_sys_client_update一条数据
+</code></pre></div><h1 id="教程"><a href="#教程" class="header-anchor">#</a> 教程</h1> <ul><li><a href="https://songyu.blog.csdn.net/article/details/109108573" target="_blank" rel="noopener noreferrer">MySQL常用操作指令大全<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>http://c.biancheng.net/view/2413.html</li></ul> <h2 id="建库脚本"><a href="#建库脚本" class="header-anchor">#</a> 建库脚本</h2> <div class="language- extra-class"><pre class="language-text"><code>-- 查看MYSQL数据库服务器和数据库字符集 
+show variables like '%character%';
+show variables like 'collation%';
+
+-- 建库脚本
+CREATE DATABASE test DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+</code></pre></div><ul><li>样例脚本</li></ul> <div class="language- extra-class"><pre class="language-text"><code>DROP DATABASE IF EXISTS `ry-vue`;
+
+CREATE DATABASE `ry-vue` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+USE `ry-vue`;
+</code></pre></div><h2 id="存储过程"><a href="#存储过程" class="header-anchor">#</a> 存储过程</h2> <ul><li><p><a href="https://juejin.cn/post/6844904185725468685" target="_blank" rel="noopener noreferrer">面向MySQL存储过程编程（详细）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://www.bilibili.com/video/BV1q64y1T7Uh" target="_blank" rel="noopener noreferrer">【黑马程序员】两小时带你玩转MySQL数据库存储过程【配套源码+笔记】<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>https://dev.mysql.com/doc/refman/5.6/en/preface.html</p></li> <li><p>https://dev.mysql.com/doc/refman/5.6/en/server-error-reference.html</p> <ul><li>https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html</li></ul></li> <li><p>https://dev.mysql.com/doc/refman/5.7/en/sql-prepared-statements.html</p></li> <li><p>https://dev.mysql.com/doc/refman/5.7/en/sql-compound-statements.html</p></li></ul> <h3 id="一、存储过程"><a href="#一、存储过程" class="header-anchor">#</a> 一、存储过程</h3> <h4 id="_1-1-什么是存储过程"><a href="#_1-1-什么是存储过程" class="header-anchor">#</a> 1.1 什么是存储过程</h4> <h4 id="_1-2-数据库存储过程程序"><a href="#_1-2-数据库存储过程程序" class="header-anchor">#</a> 1.2 数据库存储过程程序</h4> <h4 id="_1-3-为什么要使用存储程序"><a href="#_1-3-为什么要使用存储程序" class="header-anchor">#</a> 1.3 为什么要使用存储程序</h4> <h3 id="二、存储过程的使用步骤"><a href="#二、存储过程的使用步骤" class="header-anchor">#</a> 二、存储过程的使用步骤</h3> <h4 id="_2-1-存储过程的开发思想"><a href="#_2-1-存储过程的开发思想" class="header-anchor">#</a> 2.1 存储过程的开发思想</h4> <h4 id="_2-2-存储过程的优缺点"><a href="#_2-2-存储过程的优缺点" class="header-anchor">#</a> 2.2 存储过程的优缺点</h4> <h4 id="_2-3-mysql存储过程的官方文档"><a href="#_2-3-mysql存储过程的官方文档" class="header-anchor">#</a> 2.3 MySQL存储过程的官方文档</h4> <h4 id="_2-3-存储过程的使用语法"><a href="#_2-3-存储过程的使用语法" class="header-anchor">#</a> 2.3 存储过程的使用语法</h4> <h3 id="三、存储过程的变量和赋值"><a href="#三、存储过程的变量和赋值" class="header-anchor">#</a> 三、存储过程的变量和赋值</h3> <h4 id="_3-1-局部变量"><a href="#_3-1-局部变量" class="header-anchor">#</a> 3.1 局部变量</h4> <h4 id="_3-2-用户变量"><a href="#_3-2-用户变量" class="header-anchor">#</a> 3.2 用户变量</h4> <h4 id="_3-3-会话变量"><a href="#_3-3-会话变量" class="header-anchor">#</a> 3.3 会话变量</h4> <h4 id="_3-4-全局变量"><a href="#_3-4-全局变量" class="header-anchor">#</a> 3.4 全局变量</h4> <h4 id="_3-5-入参出参"><a href="#_3-5-入参出参" class="header-anchor">#</a> 3.5 入参出参</h4> <h3 id="四、存储过程中的流程控制"><a href="#四、存储过程中的流程控制" class="header-anchor">#</a> 四、存储过程中的流程控制</h3> <h4 id="_4-1-if-条件判断-推荐"><a href="#_4-1-if-条件判断-推荐" class="header-anchor">#</a> 4.1 if 条件判断（推荐）</h4> <h4 id="_4-2-case条件判断"><a href="#_4-2-case条件判断" class="header-anchor">#</a> 4.2 case条件判断</h4> <h4 id="_4-3-loop循环"><a href="#_4-3-loop循环" class="header-anchor">#</a> 4.3 loop循环</h4> <h4 id="_4-4-repeat循环"><a href="#_4-4-repeat循环" class="header-anchor">#</a> 4.4 repeat循环</h4> <h4 id="_4-5-while循环"><a href="#_4-5-while循环" class="header-anchor">#</a> 4.5 while循环</h4> <h4 id="_4-6-流程控制语句-继续、结束"><a href="#_4-6-流程控制语句-继续、结束" class="header-anchor">#</a> 4.6 流程控制语句（继续、结束）</h4> <h3 id="五、游标与handler"><a href="#五、游标与handler" class="header-anchor">#</a> 五、游标与handler</h3> <h4 id="_5-1-游标"><a href="#_5-1-游标" class="header-anchor">#</a> 5.1 游标</h4> <h4 id="_5-2-handler句柄"><a href="#_5-2-handler句柄" class="header-anchor">#</a> 5.2 handler句柄</h4> <h2 id="mysql数据库高级"><a href="#mysql数据库高级" class="header-anchor">#</a> MySQL数据库高级</h2> <ul><li><p><a href="https://www.processon.com/mindmap/6164d01b1e085340f84175ca" target="_blank" rel="noopener noreferrer">MySQL 高级开发 ProcessOn Mind<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://www.bilibili.com/video/BV1KW411u7vy?p=1" target="_blank" rel="noopener noreferrer">尚硅谷MySQL数据库高级，mysql优化，数据库优化<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://blog.csdn.net/u011863024/article/details/115470147" target="_blank" rel="noopener noreferrer">MySQL优化学习笔记<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul> <h3 id="其他参考"><a href="#其他参考" class="header-anchor">#</a> 其他参考</h3> <ul><li><p>https://naotu.baidu.com/file/9fd1b2249eb371587b71bf4b7be39757</p></li> <li><p><a href="http://3brother.cn/mysql.html" target="_blank" rel="noopener noreferrer">mysql高级应用.mmap<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://blog.csdn.net/qq_21579045/article/details/99702766" target="_blank" rel="noopener noreferrer">尚硅谷MySQL高级学习笔记<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://blog.csdn.net/weixin_46002478/article/details/109158249" target="_blank" rel="noopener noreferrer">MySQL高级建表语句<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://www.processon.com/view/link/5eafbe626376897466a3403f" target="_blank" rel="noopener noreferrer">72_MySQL 高级开发 | ProcessOn免费在线作图,在线流程图,在线思维导图<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>https://github.com/a29hbGE/mysql.git</p></li> <li><p><a href="https://juejin.cn/column/6962445414091980814" target="_blank" rel="noopener noreferrer">MySQL 数据库使用<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>http://note.youdao.com/noteshare?id=9621ae473061a1cb975bc11580311f8c</p></li></ul> <h2 id="mysql安装配置"><a href="#mysql安装配置" class="header-anchor">#</a> MySQL安装配置</h2> <h3 id="mysql-5-7-39-rpm包安装"><a href="#mysql-5-7-39-rpm包安装" class="header-anchor">#</a> mysql-5.7.39 RPM包安装</h3> <ul><li><a href="http://c.biancheng.net/view/7616.html" target="_blank" rel="noopener noreferrer">Linux安装配置MySQL详细步骤<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h4 id="_1-下载地址"><a href="#_1-下载地址" class="header-anchor">#</a> 1. 下载地址</h4> <ul><li><p><a href="https://downloads.mysql.com/archives/community/" target="_blank" rel="noopener noreferrer">MySQL :: Download MySQL Community Server (Archived Versions)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ol><li>Product Version: 5.7.39</li> <li>Operating System: Red Hat Enterprise Linux / Oracle Linux</li> <li>OS Version: All
+<ul><li>https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.39-1.el7.x86_64.rpm-bundle.tar</li></ul></li></ol></li> <li><p>CentOS 7 应该选用 el7 安装包。如果安装包对应的系统版本不正确，安装时会出现有关 glibc 的依赖错误。CentOS 6.5，选用 el6 的安装包。</p></li></ul> <h4 id="_2-检测本地包"><a href="#_2-检测本地包" class="header-anchor">#</a> 2. 检测本地包</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o ~]# rpm -qa | grep mariadb
+mariadb-libs-5.5.65-1.el7.x86_64
+[root@2m264bunohhn7o ~]# yum -y remove mariadb-libs-5.5.65-1.el7.x86_64
+</code></pre></div><h4 id="_3-安装"><a href="#_3-安装" class="header-anchor">#</a> 3. 安装</h4> <h5 id="_3-1-下载解压安装包"><a href="#_3-1-下载解压安装包" class="header-anchor">#</a> 3.1 下载解压安装包</h5> <div class="language- extra-class"><pre class="language-text"><code># 创建用于存放第三方软件包的目录
+[root@2m264bunohhn7o ~]# mkdir -p /opt/module/mysql
+[root@2m264bunohhn7o ~]# cd /opt/module/mysql/
+
+# 下载安装包 步骤 1)：进入官方下载页面选择要下载的包。
+[root@2m264bunohhn7o mysql]# wget https://downloads.mysql.com/archives/get/p/23/file/mysql-5.7.39-1.el7.x86_64.rpm-bundle.tar
+[root@2m264bunohhn7o mysql]# tar -xvf mysql-5.7.39-1.el7.x86_64.rpm-bundle.tar 
+[root@2m264bunohhn7o mysql]# ll
+total 1086272
+-rw-r--r-- 1 root root  556165120 Jun 13  2022 mysql-5.7.39-1.el7.x86_64.rpm-bundle.tar
+-rw-r--r-- 1 7155 31415  29107248 Jun 13  2022 mysql-community-client-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415    318320 Jun 13  2022 mysql-community-common-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415   4383060 Jun 13  2022 mysql-community-devel-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415  48149356 Jun 13  2022 mysql-community-embedded-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415  23316500 Jun 13  2022 mysql-community-embedded-compat-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415 133181836 Jun 13  2022 mysql-community-embedded-devel-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415   2717964 Jun 13  2022 mysql-community-libs-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415   1264480 Jun 13  2022 mysql-community-libs-compat-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415 186717812 Jun 13  2022 mysql-community-server-5.7.39-1.el7.x86_64.rpm
+-rw-r--r-- 1 7155 31415 126996412 Jun 13  2022 mysql-community-test-5.7.39-1.el7.x86_64.rpm
+
+# 步骤 2)：下载完成后，切换到 root 用户。按照依赖关系依次安装 rpm 包，依赖关系依次为 common→libs→client→server。使用命令rpm -ivh {-file-name}进行安装操作。
+# 安装common （卸载rpm -e mysql-community-common-5.7.39-1.el7.x86_64 检测）
+[root@2m264bunohhn7o mysql]# rpm -ivh mysql-community-common-5.7.39-1.el7.x86_64.rpm
+[root@2m264bunohhn7o mysql]# rpm -ivh mysql-community-libs-5.7.39-1.el7.x86_64.rpm
+[root@2m264bunohhn7o mysql]# rpm -ivh mysql-community-client-5.7.39-1.el7.x86_64.rpm
+[root@2m264bunohhn7o mysql]# rpm -ivh mysql-community-server-5.7.39-1.el7.x86_64.rpm
+# 检测
+[root@2m264bunohhn7o mysql]# rpm -qa | grep mysql
+mysql-community-common-5.7.39-1.el7.x86_64
+mysql-community-client-5.7.39-1.el7.x86_64
+mysql-community-server-5.7.39-1.el7.x86_64
+mysql-community-libs-5.7.39-1.el7.x86_64
+</code></pre></div><h4 id="_4-启动"><a href="#_4-启动" class="header-anchor">#</a> 4. 启动</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o mysql]# which mysql
+/bin/mysql
+[root@2m264bunohhn7o mysql]# whereis mysql
+mysql: /usr/bin/mysql /usr/lib64/mysql /usr/share/mysql /usr/share/man/man1/mysql.1.gz
+# 步骤 3)：通过以下命令可以启动 MySQL 数据库，但是必须使用 root 权限。
+[root@2m264bunohhn7o mysql]# service mysqld start
+Redirecting to /bin/systemctl start mysqld.service
+[root@2m264bunohhn7o mysql]# mysql --version
+mysql  Ver 14.14 Distrib 5.7.39, for Linux (x86_64) using  EditLine wrapper
+# 步骤 4)：服务启动后，查找 root 初始随机密码（如果没有初始密码，直接输入用户名 root 登录即可）
+[root@2m264bunohhn7o mysql]# cat /var/log/mysqld.log | grep password
+2023-04-20T02:44:53.745467Z 1 [Note] A temporary password is generated for root@localhost: cuQA&gt;7Iarx2X
+# 步骤 5)：安装成功后，使用以下命令登录 MySQL。
+[root@2m264bunohhn7o mysql]# mysql -uroot -p'cuQA&gt;7Iarx2X'
+# 步骤 6)：可使用以下命令修改密码
+mysql&gt; set password='dyyy2023.xxjsb@DYTX';
+Query OK, 0 rows affected (0.00 sec);
+mysql&gt; SHOW VARIABLES LIKE 'validate_password%';
++--------------------------------------+--------+
+| Variable_name                        | Value  |
++--------------------------------------+--------+
+| validate_password_check_user_name    | OFF    |
+| validate_password_dictionary_file    |        |
+| validate_password_length             | 8      |
+| validate_password_mixed_case_count   | 1      |
+| validate_password_number_count       | 1      |
+| validate_password_policy             | MEDIUM |
+| validate_password_special_char_count | 1      |
++--------------------------------------+--------+
+7 rows in set (0.00 sec)
+# 步骤 7)：配置 MySQL 服务，将 /usr/share/mysql/ 或 /usr/share/ 文件夹下的某一个后缀名为 cnf 的文件拷贝到 /etc/ 文件夹下，并且改名为 my.cnf。使用 vi 编辑器来编辑 my.cnf
+[root@2m264bunohhn7o mysql]# find / -name my.cnf
+/etc/my.cnf
+[root@2m264bunohhn7o mysql]# cat /etc/my.cnf
+# 编辑并保存 my.cnf 文件后，必须重新启动 MySQL 服务，这样 my.cnf 中的配置才会起作用
+</code></pre></div><ul><li>192.168.150.58:3306
+<ul><li>root dyyy2023.xxjsb@DYTX</li></ul></li></ul> <h4 id="_5-开启远程访问权限"><a href="#_5-开启远程访问权限" class="header-anchor">#</a> 5. 开启远程访问权限</h4> <ul><li><a href="https://blog.csdn.net/mazaiting/article/details/106661158" target="_blank" rel="noopener noreferrer">MySQL 异常: &quot;Host 'xxx' is not allowed to connect to this MySQL server&quot;<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/weixin_31832223/article/details/113971079" target="_blank" rel="noopener noreferrer">mysql撤销授权不生效_MySql授权和撤销权限操作<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h5 id="第一种-改表法"><a href="#第一种-改表法" class="header-anchor">#</a> 第一种（改表法）</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o mysql]# mysql -uroot -p'dyyy2023.xxjsb@DYTX'
+# 使用数据库mysql
+mysql&gt; use mysql;
+# 查看主机和用户
+mysql&gt; select host,user from user;
++-----------+---------------+
+| host      | user          |
++-----------+---------------+
+| localhost | mysql.session |
+| localhost | mysql.sys     |
+| localhost | root          |
++-----------+---------------+
+3 rows in set (0.00 sec)
+mysql&gt; update user set host = '%' where user = 'root';
+mysql&gt; select host,user from user;
++-----------+---------------+
+| host      | user          |
++-----------+---------------+
+| %         | root          |
+| localhost | mysql.session |
+| localhost | mysql.sys     |
++-----------+---------------+
+3 rows in set (0.00 sec)
+</code></pre></div><h5 id="第二种-授权法"><a href="#第二种-授权法" class="header-anchor">#</a> 第二种（授权法）</h5> <ol><li>你想root使用mypassword从任何主机连接到mysql服务器的话</li></ol> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'dyyy2023.xxjsb@DYTX' WITH GRANT OPTION;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql&gt; select host,user from user;
++-----------+---------------+
+| host      | user          |
++-----------+---------------+
+| %         | root          |
+| localhost | mysql.session |
+| localhost | mysql.sys     |
+| localhost | root          |
++-----------+---------------+
+4 rows in set (0.00 sec)
+
+# 撤销授权（无效）
+mysql&gt; revoke ALL PRIVILEGES ON *.* from 'root'@'%';
+Query OK, 0 rows affected (0.00 sec)
+# 删除mysql的user表中的数据，将没权限访问:(彻底的收权方法:)
+mysql&gt; delete from user where user='root' and host='%';
+Query OK, 1 row affected (0.00 sec)
+
+mysql&gt; select host,user from user;
++-----------+---------------+
+| host      | user          |
++-----------+---------------+
+| localhost | mysql.session |
+| localhost | mysql.sys     |
+| localhost | root          |
++-----------+---------------+
+3 rows in set (0.00 sec)
+
+mysql&gt; flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+</code></pre></div><ol start="2"><li>允许用户root从ip为192.168.150.20的主机连接到mysql服务器，并使用'dyyy2023.xxjsb@DYTX'作为密码</li></ol> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.150.20' IDENTIFIED BY 'dyyy2023.xxjsb@DYTX' WITH GRANT OPTION;
+mysql&gt; GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.150.57' IDENTIFIED BY 'dyyy2023.xxjsb@DYTX' WITH GRANT OPTION;
+mysql&gt; select host,user from user;
++----------------+---------------+
+| host           | user          |
++----------------+---------------+
+| 192.168.150.20 | root          |
+| 192.168.150.57 | root          |
+</code></pre></div><h4 id="_6-开机自启"><a href="#_6-开机自启" class="header-anchor">#</a> 6.开机自启</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o mysql]# vi /etc/rc.local
+# 添加mysqld开机自启
+service mysqld start
+</code></pre></div><h4 id="_7-配置调整"><a href="#_7-配置调整" class="header-anchor">#</a> 7.配置调整</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o ~]# find / -name my.cnf
+/etc/my.cnf
+[root@2m264bunohhn7o ~]# vi /etc/my.cnf
+# 移除默认的ONLY_FULL_GROUP_BY
+sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'
+# 大小写不敏感
+lower_case_table_names=1
+[root@2m264bunohhn7o ~]# service mysqld restart
+Redirecting to /bin/systemctl restart mysqld.service
+</code></pre></div><ul><li>验证</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o ~]# mysql -uroot -p'dyyy2023.xxjsb@DYTX'
+mysql&gt; show global variables like '%lower_case%';
++------------------------+-------+
+| Variable_name          | Value |
++------------------------+-------+
+| lower_case_file_system | OFF   |
+| lower_case_table_names | 1     |
++------------------------+-------+
+2 rows in set (0.01 sec)
+
+# 调整前
+mysql&gt; select @@global.sql_mode;
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| @@global.sql_mode                                                                                                                         |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+| ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION |
++-------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+# 调整后
+mysql&gt; select @@global.sql_mode;
++------------------------------------------------------------------------------------------------------------------------+
+| @@global.sql_mode                                                                                                      |
++------------------------------------------------------------------------------------------------------------------------+
+| STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION |
++------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+</code></pre></div><h4 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h4> <h5 id="linux平台mysql的安装目录"><a href="#linux平台mysql的安装目录" class="header-anchor">#</a> Linux平台MySQL的安装目录</h5> <table><thead><tr><th>文件夹</th> <th>文件夹内容</th></tr></thead> <tbody><tr><td>/usr/bin</td> <td>客户端和脚本（mysqladmin、mysqldump 等命令）</td></tr> <tr><td>/usr/sbin</td> <td>mysqld 服务器</td></tr> <tr><td>/var/lib/mysql</td> <td>日志文件、socket 文件和数据库</td></tr> <tr><td>/usr/share/info</td> <td>信息格式的手册</td></tr> <tr><td>/usr/share/man</td> <td>UNIX 帮助页</td></tr> <tr><td>/usr/include/mysql</td> <td>头文件</td></tr> <tr><td>/usr/lib/mysql</td> <td>库</td></tr> <tr><td>/usr/share/mysql</td> <td>错误消息、字符集、安装文件和配置文件等</td></tr> <tr><td>/etc/rc.d/init.d/</td> <td>启动脚本文件的 mysql 目录，可以用来启动和停止 MySQL 服务</td></tr></tbody></table> <h5 id="命令登录-mysql"><a href="#命令登录-mysql" class="header-anchor">#</a> 命令登录 MySQL</h5> <ul><li>Commands end with; or\g：说明 mysql 命令行下的命令是以分号（;）或“\g”来结束的，遇到这个结束符就开始执行命令。</li> <li>Your MySQL connection id is 1：id 表示 MySQL 数据库的连接次数，这里为 1，说明是首次登录。</li> <li>Server version: 5.7.39 Server: Server version 后面说明数据库的版本，这个版本为 5.7.39； version: 5. 7.29-log MySQL Community Server（GPL）：Server version 后面说明数据库的版本，这个版本为 5.7.29。Community 表示该版本是社区版。</li> <li>Type 'help;' or '\h' for help：表示输入”help;“或者”\h“可以看到帮助信息。</li> <li>Type '\c' to clear the current input statement：表示遇到”\c“就清除前面的命令。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o mysql]# mysql -uroot -p'cuQA&gt;7Iarx2X'
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.7.39
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql&gt; 
+
+</code></pre></div><h5 id="异常处理"><a href="#异常处理" class="header-anchor">#</a> 异常处理</h5> <ul><li><a href="https://blog.csdn.net/u010886217/article/details/89416159" target="_blank" rel="noopener noreferrer">安装mysql 5.7.19 rpm包报错：/usr/bin/perl is needed by mysql-community-server-5.7.19-1.el7.x86_64<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[root@2m264bunohhn7o mysql]# rpm -ivh mysql-community-server-5.7.39-1.el7.x86_64.rpm 
+warning: mysql-community-server-5.7.39-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID 3a79bd29: NOKEY
+error: Failed dependencies:
+	/usr/bin/perl is needed by mysql-community-server-5.7.39-1.el7.x86_64
+	perl(Getopt::Long) is needed by mysql-community-server-5.7.39-1.el7.x86_64
+	perl(strict) is needed by mysql-community-server-5.7.39-1.el7.x86_64
+# 缺少nperl.x86_64依赖，使用yum安装即可。
+[root@2m264bunohhn7o mysql]# yum search perl | grep perl.x86_64
+perl.x86_64 : Practical Extraction and Report Language
+[root@2m264bunohhn7o mysql]# yum -y install perl.x86_64
+</code></pre></div><h3 id="mysql-5-7-28-rpm包安装"><a href="#mysql-5-7-28-rpm包安装" class="header-anchor">#</a> mysql-5.7.28 RPM包安装</h3> <h4 id="_1-官网下载地址"><a href="#_1-官网下载地址" class="header-anchor">#</a> 1. 官网下载地址</h4> <ul><li>https://dev.mysql.com/downloads/mysql/5.7.html#downloads
+<ul><li>https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.28-1.el7.x86_64.rpm-bundle.tar</li> <li><a href="https://downloads.mysql.com/archives/community/" target="_blank" rel="noopener noreferrer">Archives<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h4 id="_2-检测本地包-2"><a href="#_2-检测本地包-2" class="header-anchor">#</a> 2. 检测本地包</h4> <p>1.检测本地是否有mysql已存在的包</p> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 software]# rpm -qa | grep mysql
+# 必须 载原有系统mysql的内部库
+[root@bd-00-00 software]# yum remove mysql-libs 
+</code></pre></div><ol start="2"><li>检测本地是否有mariadb已存在的包（可选）</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 software]# rpm -qa | grep mariadb
+mariadb-libs-5.5.60-1.el7_5.x86_64
+# rpm -e --nodeps mariadb-libs-5.5.60-1.el7_5.x86_64
+[root@bd-00-00 software]# yum -y remove mariadb-libs-5.5.60-1.el7_5.x86_64
+</code></pre></div><h4 id="_3-安装-2"><a href="#_3-安装-2" class="header-anchor">#</a> 3. 安装</h4> <h5 id="_1-上传安装包到指定目录"><a href="#_1-上传安装包到指定目录" class="header-anchor">#</a> 1. 上传安装包到指定目录</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 software]# ll
+total 595272
+-rw-r--r-- 1 root root 609556480 Nov  8 22:51 mysql-5.7.28-1.el7.x86_64.rpm-bundle.tar
+</code></pre></div><h5 id="_2-解压安装包"><a href="#_2-解压安装包" class="header-anchor">#</a> 2. 解压安装包</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 software]# mkdir -p /opt/module/mysql
+[root@bd-00-00 software]# tar -xvf mysql-5.7.28-1.el7.x86_64.rpm-bundle.tar -C /opt/module/mysql
+</code></pre></div><h5 id="_3-安装-3"><a href="#_3-安装-3" class="header-anchor">#</a> 3. 安装</h5> <ol><li>必须</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 software]# cd /opt/module/mysql/
+[root@bd-00-00 mysql]# rpm -ivh mysql-community-common-5.7.28-1.el7.x86_64.rpm 
+[root@bd-00-00 mysql]# rpm -ivh mysql-community-libs-5.7.28-1.el7.x86_64.rpm 
+[root@bd-00-00 mysql]# rpm -ivh mysql-community-client-5.7.28-1.el7.x86_64.rpm 
+[root@bd-00-00 mysql]# rpm -ivh mysql-community-server-5.7.28-1.el7.x86_64.rpm 
+warning: mysql-community-server-5.7.28-1.el7.x86_64.rpm: Header V3 DSA/SHA1 Signature, key ID 5072e1f5: NOKEY
+error: Failed dependencies:
+        net-tools is needed by mysql-community-server-5.7.28-1.el7.x86_64
+# 安装依赖
+# # yum install -y perl
+[root@bd-00-00 mysql]# yum -y install net-tools
+</code></pre></div><ol start="2"><li>可选</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 mysql]# rpm -ivh mysql-community-libs-compat-5.7.28-1.el7.x86_64.rpm 
+[root@bd-00-00 mysql]# rpm -ivh mysql-community-devel-5.7.28-1.el7.x86_64.rpm 
+</code></pre></div><h4 id="_4-启动-2"><a href="#_4-启动-2" class="header-anchor">#</a> 4. 启动</h4> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 ~]# whereis mysql
+mysql: /usr/bin/mysql /usr/lib64/mysql /usr/include/mysql /usr/share/mysql /usr/share/man/man1/mysql.1.gz
+[root@bd-00-00 ~]# which mysql
+/usr/bin/mysql
+</code></pre></div><h5 id="_1-查看mysql服务是否启动"><a href="#_1-查看mysql服务是否启动" class="header-anchor">#</a> 1 查看mysql服务是否启动</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 mysql]# service mysqld status
+Redirecting to /bin/systemctl status mysqld.service
+</code></pre></div><h5 id="_2-启动mysql服务"><a href="#_2-启动mysql服务" class="header-anchor">#</a> 2 启动mysql服务</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 mysql]# service mysqld start
+Redirecting to /bin/systemctl start mysqld.service
+</code></pre></div><h5 id="_3-查看默认生成的密码"><a href="#_3-查看默认生成的密码" class="header-anchor">#</a> 3 查看默认生成的密码</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 mysql]# cat /var/log/mysqld.log | grep password
+2019-11-09T10:51:45.963490Z 1 [Note] A temporary password is generated for root@localhost: w1&gt;e5jiRwah,
+</code></pre></div><h5 id="_4-登录"><a href="#_4-登录" class="header-anchor">#</a> 4 登录</h5> <div class="language- extra-class"><pre class="language-text"><code>[root@bd-00-00 mysql]# mysql -uroot -p'w1&gt;e5jiRwah,'
+</code></pre></div><h5 id="_5-修改密码"><a href="#_5-修改密码" class="header-anchor">#</a> 5 修改密码</h5> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; alter user 'root'@'localhost' identified by'000000';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+</code></pre></div><h6 id="_1-修改密码规则"><a href="#_1-修改密码规则" class="header-anchor">#</a> 1 修改密码规则</h6> <table><thead><tr><th>级别</th> <th>描述</th></tr></thead> <tbody><tr><td>0 or LOW</td> <td>长度</td></tr> <tr><td>1 or MEDIUM</td> <td>长度、大小写、数字、特殊字符</td></tr> <tr><td>2 or STRONG</td> <td>长度、大小写、数字、特殊字符、词典</td></tr></tbody></table> <ul><li>注 以下修改是临时修改</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 1.密码强度检查等级，0/LOW、1/MEDIUM、2/STRONG
+mysql&gt; set global validate_password_policy=0;
+# 2.密码至少要包含的小写字母个数和大写字母个数
+mysql&gt; set global validate_password_mixed_case_count=0;
+# 3.密码至少要包含的数字个数 
+mysql&gt; set global validate_password_number_count=3;
+# 4. 密码至少要包含的特殊字符数
+mysql&gt; set global validate_password_special_char_count=0;
+# 5.密码最小长度，参数默认为8
+# 它有最小值的限制，最小值为：validate_password_number_count + 密码至少要包含的数字个数validate_password_special_char_count +特殊字符(2 * validate_password_mixed_case_count)至少要包含的小写字母个数和大写字母个数
+mysql&gt; set global validate_password_length=3;
+</code></pre></div><h6 id="_2-修改密码"><a href="#_2-修改密码" class="header-anchor">#</a> 2 修改密码</h6> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; alter user 'root'@'localhost' identified by'000000';
+
+（跳过）GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY '000000' WITH GRANT OPTION;
+</code></pre></div><p>####### 1 查询当前user表内root的登录权限</p> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; select host,user from mysql.user; 
++-----------+---------------+
+| host      | user          |
++-----------+---------------+
+| localhost | mysql.session |
+| localhost | mysql.sys     |
+| localhost | root          |
++-----------+---------------+
+3 rows in set (0.00 sec)
+</code></pre></div><p>####### 2 修改host为所有%</p> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; update mysql.user set host='%' where user='root';
+</code></pre></div><p>####### 3 刷新缓存</p> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; flush privileges;
+</code></pre></div><h4 id="_5-远程访问"><a href="#_5-远程访问" class="header-anchor">#</a> 5. 远程访问</h4> <ul><li>关闭防火墙</li></ul> <h4 id="_6-补充操作"><a href="#_6-补充操作" class="header-anchor">#</a> 6. 补充操作</h4> <div class="language- extra-class"><pre class="language-text"><code>mysql&gt; help;
+# 修改root本地密码
+mysql&gt; alter user 'root'@'localhost'identified by 'TosinJia_1';
+# 远程访问
+mysql&gt; create user 'root'@'%' identified by 'TosinJia_1';
+# 授权 所有库 所有权限
+mysql&gt; grant all on *.* to 'root'@'%';
+
+#创建数据库
+mysql&gt; create database hive;
+#创建用户
+mysql&gt; create user 'hiveowner'@'%' identified by 'TosinJia_1';
+#给用户授权
+mysql&gt; grant all on hive.* TO 'hiveowner'@'%';
+mysql&gt; grant all on hive.* TO 'hiveowner'@'localhost' identified by 'TosinJia_1';
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/21.05a74ab0.js" defer></script>
+  </body>
+</html>

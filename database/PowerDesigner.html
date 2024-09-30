@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sybase PowerDesigner | TosinJia</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script language="javascript" type="text/javascript" src="/js/pgmanor-self.js"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="TosinJia">
+    
+    <link rel="preload" href="/assets/css/0.styles.d77f493a.css" as="style"><link rel="preload" href="/assets/js/app.de0ffd6c.js" as="script"><link rel="preload" href="/assets/js/3.059a2ce3.js" as="script"><link rel="preload" href="/assets/js/20.1074faf8.js" as="script"><link rel="prefetch" href="/assets/js/10.471d2f7d.js"><link rel="prefetch" href="/assets/js/11.64c9bea0.js"><link rel="prefetch" href="/assets/js/12.8cd035ea.js"><link rel="prefetch" href="/assets/js/13.ac133c7d.js"><link rel="prefetch" href="/assets/js/14.55b76568.js"><link rel="prefetch" href="/assets/js/15.94aa71a8.js"><link rel="prefetch" href="/assets/js/16.6d62875d.js"><link rel="prefetch" href="/assets/js/17.d3dbf31d.js"><link rel="prefetch" href="/assets/js/18.5f3a7f7e.js"><link rel="prefetch" href="/assets/js/19.adf383b8.js"><link rel="prefetch" href="/assets/js/2.9d302d7a.js"><link rel="prefetch" href="/assets/js/21.05a74ab0.js"><link rel="prefetch" href="/assets/js/22.7f76ccfc.js"><link rel="prefetch" href="/assets/js/23.9304b5d5.js"><link rel="prefetch" href="/assets/js/24.86d2ac06.js"><link rel="prefetch" href="/assets/js/25.a13eba67.js"><link rel="prefetch" href="/assets/js/26.9baa244d.js"><link rel="prefetch" href="/assets/js/27.7a40c7b4.js"><link rel="prefetch" href="/assets/js/28.9e30bc88.js"><link rel="prefetch" href="/assets/js/29.5a968fce.js"><link rel="prefetch" href="/assets/js/30.8faabbe6.js"><link rel="prefetch" href="/assets/js/31.60e0f28d.js"><link rel="prefetch" href="/assets/js/32.7bb1d9af.js"><link rel="prefetch" href="/assets/js/33.6f86b100.js"><link rel="prefetch" href="/assets/js/34.84067eaf.js"><link rel="prefetch" href="/assets/js/35.b2b8ac8d.js"><link rel="prefetch" href="/assets/js/36.7fc4dbe8.js"><link rel="prefetch" href="/assets/js/37.7849bc09.js"><link rel="prefetch" href="/assets/js/38.235de5e3.js"><link rel="prefetch" href="/assets/js/39.161f213e.js"><link rel="prefetch" href="/assets/js/4.335c6a02.js"><link rel="prefetch" href="/assets/js/40.f3b94ce2.js"><link rel="prefetch" href="/assets/js/41.fdc5ac1f.js"><link rel="prefetch" href="/assets/js/42.9d9ce856.js"><link rel="prefetch" href="/assets/js/43.883aa723.js"><link rel="prefetch" href="/assets/js/44.09215286.js"><link rel="prefetch" href="/assets/js/45.dae7f7c0.js"><link rel="prefetch" href="/assets/js/46.66c92fb8.js"><link rel="prefetch" href="/assets/js/47.575074f0.js"><link rel="prefetch" href="/assets/js/48.3e1ece3e.js"><link rel="prefetch" href="/assets/js/49.42212c07.js"><link rel="prefetch" href="/assets/js/5.2f47cbe8.js"><link rel="prefetch" href="/assets/js/50.47bec168.js"><link rel="prefetch" href="/assets/js/51.742ddc89.js"><link rel="prefetch" href="/assets/js/52.6876737a.js"><link rel="prefetch" href="/assets/js/53.5e1f3810.js"><link rel="prefetch" href="/assets/js/54.3dbad0f1.js"><link rel="prefetch" href="/assets/js/55.f233405f.js"><link rel="prefetch" href="/assets/js/56.d1566959.js"><link rel="prefetch" href="/assets/js/57.a58e03cf.js"><link rel="prefetch" href="/assets/js/6.e8a5dbcd.js"><link rel="prefetch" href="/assets/js/7.fe9d2c9f.js"><link rel="prefetch" href="/assets/js/8.0880906a.js"><link rel="prefetch" href="/assets/js/9.6e293cc6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d77f493a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TosinJia</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件架构" class="dropdown-title"><span class="title">软件架构</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件架构" class="mobile-dropdown-title"><span class="title">软件架构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/relatedTechnology.html" class="nav-link">
+  相关技术
+</a></li><li class="dropdown-item"><h4>
+          开源框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/introduction.html" class="nav-link">
+  简介
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/fontEnd/" class="nav-link">
+  前端框架
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-vue/" class="nav-link">
+  RuoYi-Vue
+</a></li><li class="dropdown-subitem"><a href="/softwareArchitecture/openSourceFramework/ruoyi/ruoyi-cloud/" class="nav-link">
+  RuoYi-Cloud
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作流" class="dropdown-title"><span class="title">工作流</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作流" class="mobile-dropdown-title"><span class="title">工作流</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/" class="nav-link">
+  Activiti
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti基础.html" class="nav-link">
+  Activiti基础
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti进阶.html" class="nav-link">
+  Activiti进阶
+</a></li><li class="dropdown-item"><!----> <a href="/softwareArchitecture/openSourceFramework/workflow/Activiti整合.html" class="nav-link">
+  Activiti整合
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="教程" class="dropdown-title"><span class="title">教程</span> <span class="arrow down"></span></button> <button type="button" aria-label="教程" class="mobile-dropdown-title"><span class="title">教程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tutorials/linuxTutorial.html" class="nav-link">
+  Linux教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/maven.html" class="nav-link">
+  Maven教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/gitTutorial.html" class="nav-link">
+  Git教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/vueTutorial.html" class="nav-link">
+  Vue教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/thymeleaf.html" class="nav-link">
+  Thymeleaf教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/docker.html" class="nav-link">
+  Docker教程
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/virtualMachine.html" class="nav-link">
+  虚拟机
+</a></li><li class="dropdown-item"><!----> <a href="/tutorials/JMeter.html" class="nav-link">
+  JMeter
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          设计
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/database/PowerDesigner.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  PowerDesigner
+</a></li><li class="dropdown-subitem"><a href="/database/oracle.html" class="nav-link">
+  Oracle
+</a></li><li class="dropdown-subitem"><a href="/database/mysql.html" class="nav-link">
+  MySQL
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="搭建" class="dropdown-title"><span class="title">搭建</span> <span class="arrow down"></span></button> <button type="button" aria-label="搭建" class="mobile-dropdown-title"><span class="title">搭建</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/build/" class="nav-link">
+  站点搭建
+</a></li><li class="dropdown-item"><!----> <a href="/build/thirdPartyMd.html" class="nav-link">
+  三方Markdown
+</a></li></ul></div></div><div class="nav-item"><a href="https://www.bing.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  bing
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Sybase PowerDesigner</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/database/PowerDesigner.html#快捷键" class="sidebar-link">快捷键</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/database/PowerDesigner.html#菜单" class="sidebar-link">菜单</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#file" class="sidebar-link">File</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#model" class="sidebar-link">Model</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#symbol" class="sidebar-link">Symbol</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#database" class="sidebar-link">Database</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#edit" class="sidebar-link">Edit</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#tools" class="sidebar-link">Tools</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#help" class="sidebar-link">Help</a></li></ul></li><li><a href="/database/PowerDesigner.html#physicaldiagram" class="sidebar-link">PhysicalDiagram</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#导入库表结构" class="sidebar-link">导入库表结构</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#自动布局" class="sidebar-link">自动布局</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#同时显示table-name-table-code" class="sidebar-link">同时显示Table Name, Table Code</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#view-properties-视图" class="sidebar-link">View Properties 视图</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#sequence-properites-序列" class="sidebar-link">Sequence Properites 序列</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#物理模型导出-生产数据库脚本" class="sidebar-link">物理模型导出-生产数据库脚本</a></li><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#物理模型导入-db生成pdm" class="sidebar-link">物理模型导入-DB生成PDM</a></li></ul></li><li><a href="/database/PowerDesigner.html#mysql2oracle" class="sidebar-link">mysql2oracle</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/database/PowerDesigner.html#类型转换" class="sidebar-link">类型转换</a></li></ul></li><li><a href="/database/PowerDesigner.html#sim卡综合管理系统" class="sidebar-link">SIM卡综合管理系统</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/database/PowerDesigner.html#订单系统" class="sidebar-link">订单系统</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sybase-powerdesigner"><a href="#sybase-powerdesigner" class="header-anchor">#</a> Sybase PowerDesigner</h1> <p></p><div class="table-of-contents"><ul><li><a href="#sybase-powerdesigner">Sybase PowerDesigner</a><ul><li><a href="#快捷键">快捷键</a></li><li><a href="#菜单">菜单</a><ul><li><a href="#file">File</a></li><li><a href="#model">Model</a></li><li><a href="#symbol">Symbol</a><ul><li><a href="#format-ctrl-t">Format... Ctrl+T</a></li><li><a href="#get-format">Get Format</a></li><li><a href="#apply-format">Apply Format</a></li></ul></li><li><a href="#database">Database</a><ul><li><a href="#【execute-sql-query】">【Execute SQL Query】</a></li><li><a href="#备注">备注</a></li></ul></li><li><a href="#edit">Edit</a><ul><li><a href="#import-image">Import Image...</a></li><li><a href="#export-image">Export Image...</a></li></ul></li><li><a href="#tools">Tools</a><ul><li><a href="#脚本">脚本</a><ul><li><a href="#vbscript">VBScript</a></li><li><a href="#导出excel脚本">导出Excel脚本</a></li><li><a href="#comment写入name">comment写入name</a></li></ul></li><li><a href="#display-preferences-【display-preferences】">Display Preferences... 【Display Preferences】</a><ul><li><a href="#general-settings">General Settings</a><ul><li><a href="#diagram">Diagram</a></li></ul></li><li><a href="#reference">Reference</a><ul><li><a href="#content">Content</a></li><li><a href="#format">Format</a></li></ul></li><li><a href="#table">Table</a></li></ul></li><li><a href="#model-options-【model-options】">Model Options... 【Model Options】</a></li></ul></li><li><a href="#help">Help</a></li></ul></li><li><a href="#physicaldiagram">PhysicalDiagram</a><ul><li><a href="#导入库表结构">导入库表结构</a></li><li><a href="#自动布局">自动布局</a></li><li><a href="#同时显示table-name-table-code">同时显示Table Name, Table Code</a></li><li><a href="#view-properties-视图">View Properties 视图</a><ul><li><a href="#sql-query">SQL Query</a></li><li><a href="#preview">Preview</a></li></ul></li><li><a href="#sequence-properites-序列">Sequence Properites 序列</a><ul><li><a href="#physical-options-common">Physical Options(Common)</a></li></ul></li><li><a href="#物理模型导出-生产数据库脚本">物理模型导出-生产数据库脚本</a><ul><li><a href="#分隔符">分隔符 ;-&gt;/</a></li></ul></li><li><a href="#物理模型导入-db生成pdm">物理模型导入-DB生成PDM</a><ul><li><a href="#修改">修改</a></li><li><a href="#connection-profile-definition">Connection Profile Definition</a></li><li><a href="#问题">问题</a><ul><li><a href="#non-sql-error-could-not-load-class-oracle-jdbc-oracledriver">Non SQL Error : Could not load class oracle.jdbc.OracleDriver</a></li><li><a href="#ora-12505-tns-listener-does-not-currently-know-of-sid-given-in-connect-descriptor">ORA-12505, TNS:listener does not currently know of SID given in connect descriptor</a></li><li><a href="#could-not-initialize-javavm">Could not Initialize JavaVM!</a></li><li><a href="#non-sql-error-could-not-load-class-oracle-jdbc-oracledriver">Non SQL Error : Could not load class oracle.jdbc.OracleDriver</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#数据库切换">数据库切换</a><ul><li><a href="#mysql2oracle">mysql2oracle</a><ul><li><a href="#类型转换">类型转换</a></li></ul></li></ul></li><li><a href="#案例">案例</a><ul><li><a href="#sim卡综合管理系统">SIM卡综合管理系统</a></li><li><a href="#订单系统">订单系统</a></li></ul></li></ul></div><p></p> <ul><li>百度云盘 TosinJia PowerDesigner16.5安装包和破解文件.rar</li> <li><a href="https://www.fujieace.com/software/powerdesigner.html" target="_blank" rel="noopener noreferrer">PowerDesigner安装教程（含下载+汉化+破解）<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="快捷键"><a href="#快捷键" class="header-anchor">#</a> 快捷键</h2> <table><thead><tr><th>快捷键</th> <th>作用</th></tr></thead> <tbody><tr><td>F4</td> <td>打开检查模型窗口,检查模型</td></tr> <tr><td>F5</td> <td>如果图窗口内的图改变过大小,恢复为原有大小即正常大小</td></tr> <tr><td>==F6==</td> <td>放大图窗口内的图</td></tr> <tr><td>==F7==</td> <td>缩小图窗口内的图</td></tr> <tr><td>==F8==</td> <td>在图窗口内中查看全部图内容</td></tr> <tr><td>F9</td> <td>预览图窗口</td></tr> <tr><td>F10</td> <td>在图窗口中以一幅视图的高度显示图Shift+单击对象连续选择对象</td></tr> <tr><td>alt+0</td> <td>显示或隐藏浏览器窗口</td></tr> <tr><td>alt+1</td> <td>显示或隐藏输出窗口</td></tr> <tr><td>alt+2</td> <td>显示或隐藏结果列表窗口</td></tr> <tr><td>ctrl+双击或ctrl+&quot;+&quot;</td> <td>打开包图</td></tr> <tr><td>ctrl+tab</td> <td>在图窗口中切换大小,在文本中插入制表符或在属性表窗口中切换标签页</td></tr> <tr><td>ctrl+page up/page down</td> <td>在属性表标签页中切换标签页</td></tr> <tr><td>ctrl+移动窗口</td> <td>禁止Docking特性</td></tr> <tr><td>==ctrl+b==</td> <td>在浏览器窗口中查找对象</td></tr> <tr><td>ctrl+d</td> <td>打开选择图窗口,选择图</td></tr> <tr><td>ctrl+e</td> <td>打开报表列表窗口</td></tr> <tr><td>==ctrl+f==</td> <td>打开查找对象窗口,查找对象</td></tr> <tr><td>ctrl+j</td> <td>在对象符号中调整文本</td></tr> <tr><td>ctrl+F4</td> <td>关闭当前图窗口</td></tr> <tr><td>ctrl+alt+F4</td> <td>关闭模型</td></tr> <tr><td>ctrl+F6</td> <td>在多个属性表窗口间切换</td></tr> <tr><td>ctrl+shift+F6</td> <td>在多个属性表窗口间反向切换</td></tr> <tr><td>ctrl+u</td> <td>回到父图</td></tr> <tr><td>shift+F2</td> <td>打开Workspace</td></tr> <tr><td>shift+F3</td> <td>保存Workspace</td></tr> <tr><td>shift+F4</td> <td>关闭Workspace</td></tr></tbody></table> <ul><li><a href="https://www.iteye.com/blog/kafeibei-621294" target="_blank" rel="noopener noreferrer">PowerDesigner常用快捷键<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="菜单"><a href="#菜单" class="header-anchor">#</a> 菜单</h2> <h3 id="file"><a href="#file" class="header-anchor">#</a> File</h3> <ol><li>Reverse Engineer
+<ol><li>Database... 【New Physical Data Model】
+<ol><li>确认【Database Reverse Engineering Options】
+<ol><li>Using script files</li> <li>Using a data source</li></ol></li></ol></li></ol></li></ol> <h3 id="model"><a href="#model" class="header-anchor">#</a> Model</h3> <ol><li>Tables... [List of Tables]</li> <li>Columns... [List of Columns]</li></ol> <h3 id="symbol"><a href="#symbol" class="header-anchor">#</a> Symbol</h3> <blockquote><p>调整PhysicalDiagram物理图中符号的颜色</p></blockquote> <h4 id="format-ctrl-t"><a href="#format-ctrl-t" class="header-anchor">#</a> Format... Ctrl+T</h4> <h4 id="get-format"><a href="#get-format" class="header-anchor">#</a> Get Format</h4> <h4 id="apply-format"><a href="#apply-format" class="header-anchor">#</a> Apply Format</h4> <h3 id="database"><a href="#database" class="header-anchor">#</a> Database</h3> <ul><li><p>Change Current DBMS...</p> <ul><li>选择 New DBMS</li></ul></li> <li><p>Edit Current DBMS... 【DBMS Properties(For All Models)】</p> <ul><li>Genral
+<ul><li>ORA11GR1::Script\Sql\Format
+<ul><li>CaseSensitivityUsingQuote 确定标识符的区分大小写是否使用双引号进行管理</li> <li>EnableOwnerPrefix</li> <li>UpperCaseOnly</li></ul></li></ul></li></ul></li> <li><p>Generate Database.. 导出sql</p></li> <li><p>Apply Model Changes to Database...</p></li> <li><p>Update Model from Database...</p> <ul><li>【Database Reverse Engineering Options】
+<ul><li>Using script files
+<ul><li>中文乱码，文件编码修改为gb2312</li></ul></li> <li>Using a data source</li></ul></li></ul></li> <li><p>Execute SQL... 【Execute SQL Query】</p></li></ul> <h4 id="【execute-sql-query】"><a href="#【execute-sql-query】" class="header-anchor">#</a> 【Execute SQL Query】</h4> <ul><li>Menue
+<ol><li>Insert... 执行insert语句 有执行情况反馈</li></ol></li></ul> <h4 id="备注"><a href="#备注" class="header-anchor">#</a> 备注</h4> <ol><li>空数据库通过以下两种方式，生产的sql，区别仅在于 删除语句
+<ol><li>Generate Database.. 导出sql</li> <li>Apply Model Changes to Database...</li></ol></li></ol> <h3 id="edit"><a href="#edit" class="header-anchor">#</a> Edit</h3> <h4 id="import-image"><a href="#import-image" class="header-anchor">#</a> Import Image...</h4> <h4 id="export-image"><a href="#export-image" class="header-anchor">#</a> Export Image...</h4> <blockquote><p>前提：按住Shift键点击鼠标选择要导出的对象</p></blockquote> <h3 id="tools"><a href="#tools" class="header-anchor">#</a> Tools</h3> <ul><li>Execute Commands
+<ul><li>Edit/Run Script... 脚本</li></ul></li></ul> <h4 id="脚本"><a href="#脚本" class="header-anchor">#</a> 脚本</h4> <h5 id="vbscript"><a href="#vbscript" class="header-anchor">#</a> VBScript</h5> <ul><li><a href="https://www.jb51.net/shouce/vbscript/" target="_blank" rel="noopener noreferrer">https://www.jb51.net/shouce/vbscript/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.jb51.net/shouce/vbs/" target="_blank" rel="noopener noreferrer">https://www.jb51.net/shouce/vbs/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h5 id="导出excel脚本"><a href="#导出excel脚本" class="header-anchor">#</a> 导出Excel脚本</h5> <ul><li><a href="https://www.cnblogs.com/chenz/articles/3456340.html" target="_blank" rel="noopener noreferrer">powerdesigner辅助导入导出excel文件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://zhuanlan.zhihu.com/p/365065278" target="_blank" rel="noopener noreferrer">太实用了，powerDesigner导出Excel脚本<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>'******************************************************************************
+'* File:     Exported_Excel_page.vbs
+'* Purpose:  分目录递归，查找当前PDM下所有表，并导出Excel
+'******************************************************************************
+
+Option Explicit
+ValidationMode = True
+InteractiveMode = im_Batch
+
+'-----------------------------------------------------------------------------
+' 主函数
+'-----------------------------------------------------------------------------
+' 获取当前活动模型
+Dim mdl ' 当前的模型
+Set mdl = ActiveModel
+Dim EXCEL,catalog,sheet,catalogNum,rowsNum,linkNum
+rowsNum = 1
+catalogNum = 1
+linkNum = 1
+
+If (mdl Is Nothing) Then
+    MsgBox &quot;There is no Active Model&quot;
+Else
+    SetCatalog
+    ListObjects(mdl)
+End If
+
+'----------------------------------------------------------------------------------------------
+' 子过程，用于扫描当前包并从当前包中打印对象的信息，然后对当前包的所有子包再次调用相同的子过程
+'----------------------------------------------------------------------------------------------
+Private Sub ListObjects(fldr)
+    output &quot;Scanning &quot; &amp; fldr.code
+    Dim obj ' 运行对象
+    For Each obj In fldr.children
+        ' 调用子过程来打印对象上的信息
+        DescribeObject obj
+    Next
+    ' 进入子包
+    Dim f ' 运行文件夹
+    For Each f In fldr.Packages
+        '调用子程序扫描子程序包
+        ListObjects f
+    Next
+End Sub
+
+'-----------------------------------------------------------------------------
+' 子过程，用于在输出中打印当前对象的信息
+'-----------------------------------------------------------------------------
+Private Sub DescribeObject(CurrentObject)
+    if not CurrentObject.Iskindof(cls_NamedObject) then exit sub
+    if CurrentObject.Iskindof(cls_Table) then 
+        AddSheet CurrentObject.code
+        ExportTable CurrentObject, sheet
+        ExportCatalog CurrentObject
+    else
+        output &quot;Found &quot;+CurrentObject.ClassName+&quot; &quot;&quot;&quot;+CurrentObject.Name+&quot;&quot;&quot;, Created by &quot;+CurrentObject.Creator+&quot; On &quot;+Cstr(CurrentObject.CreationDate)   
+    End if
+End Sub
+
+'----------------------------------------------------------------------------------------------
+' 设置Excel的sheet页
+'----------------------------------------------------------------------------------------------
+Sub SetExcel()
+    Set EXCEL= CreateObject(&quot;Excel.Application&quot;)
+
+    ' 使Excel通过应用程序对象可见。
+    EXCEL.Visible = True
+    EXCEL.workbooks.add(-4167)'添加工作表
+    EXCEL.workbooks(1).sheets(1).name =&quot;pdm&quot;
+    set sheet = EXCEL.workbooks(1).sheets(&quot;pdm&quot;)
+
+    ' 将一些文本放在工作表的第一行
+    sheet.Cells(rowsNum, 1).Value = &quot;表名&quot;
+    sheet.Cells(rowsNum, 2).Value = &quot;表中文名&quot;
+    sheet.Cells(rowsNum, 3).Value = &quot;表备注&quot;
+    sheet.Cells(rowsNum, 4).Value = &quot;字段ID&quot;
+    sheet.Cells(rowsNum, 5).Value = &quot;字段名&quot;
+    sheet.Cells(rowsNum, 6).Value = &quot;字段中文名&quot;
+    sheet.Cells(rowsNum, 7).Value = &quot;字段类型&quot;
+    sheet.Cells(rowsNum, 8).Value = &quot;字段备注&quot;
+    sheet.cells(rowsNum, 9).Value = &quot;主键&quot;
+    sheet.cells(rowsNum, 10).Value = &quot;非空&quot;
+    sheet.cells(rowsNum, 11).Value = &quot;默认值&quot;
+End Sub
+
+'----------------------------------------------------------------------------------------------
+' 导出目录结构
+'----------------------------------------------------------------------------------------------
+Sub ExportCatalog(tab)
+    catalogNum = catalogNum + 1
+    catalog.cells(catalogNum, 1).Value = tab.parent.name
+    catalog.cells(catalogNum, 2).Value = tab.code
+    catalog.cells(catalogNum, 3).Value = tab.comment
+    '设置超链接
+    catalog.Hyperlinks.Add catalog.cells(catalogNum,2), &quot;&quot;,tab.code&amp;&quot;!A2&quot;
+End Sub 
+
+'----------------------------------------------------------------------------------------------
+' 导出sheet页
+'----------------------------------------------------------------------------------------------
+Sub ExportTable(tab, sheet)
+    Dim col ' 运行列
+    Dim colsNum
+    colsNum = 0
+    for each col in tab.columns
+        colsNum = colsNum + 1
+        rowsNum = rowsNum + 1
+        sheet.Cells(rowsNum, 1).Value = tab.code
+        'sheet.Cells(rowsNum, 2).Value = tab.name
+        sheet.Cells(rowsNum, 2).Value = tab.comment
+        'sheet.Cells(rowsNum, 4).Value = colsNum
+        sheet.Cells(rowsNum, 3).Value = col.code
+        'sheet.Cells(rowsNum, 4).Value = col.name
+        sheet.Cells(rowsNum, 4).Value = col.datatype
+        sheet.Cells(rowsNum, 5).Value = col.comment
+        
+        If col.Primary = true Then
+            sheet.cells(rowsNum, 6) = &quot;Y&quot; 
+        Else
+            sheet.cells(rowsNum, 6) = &quot;&quot; 
+        End If
+        If col.Mandatory = true Then
+            sheet.cells(rowsNum, 7) = &quot;Y&quot; 
+        Else
+            sheet.cells(rowsNum, 7) = &quot;&quot; 
+        End If
+        
+        sheet.cells(rowsNum, 8).Value = col.defaultvalue
+        '设置居中显示
+        sheet.cells(rowsNum,6).HorizontalAlignment = 3
+        sheet.cells(rowsNum,7).HorizontalAlignment = 3
+    next
+    output &quot;Exported table: &quot;+ +tab.Code+&quot;(&quot;+tab.Name+&quot;)&quot;
+End Sub 
+
+'----------------------------------------------------------------------------------------------
+' 设置Excel目录页
+'----------------------------------------------------------------------------------------------
+Sub SetCatalog()
+    Set EXCEL= CreateObject(&quot;Excel.Application&quot;)
+    
+    ' 使Excel通过应用程序对象可见。
+    EXCEL.Visible = True
+    EXCEL.workbooks.add(-4167)'添加工作表
+    EXCEL.workbooks(1).sheets(1).name =&quot;表结构&quot;
+    EXCEL.workbooks(1).sheets.add
+    EXCEL.workbooks(1).sheets(1).name =&quot;目录&quot;
+    set catalog = EXCEL.workbooks(1).sheets(&quot;目录&quot;)
+
+    catalog.cells(catalogNum, 1) = &quot;模块&quot;
+    catalog.cells(catalogNum, 2) = &quot;表名&quot;
+    catalog.cells(catalogNum, 3) = &quot;表注释&quot;
+    
+    ' 设置列宽和自动换行
+    catalog.Columns(1).ColumnWidth = 20
+    catalog.Columns(2).ColumnWidth = 25
+    catalog.Columns(3).ColumnWidth = 55
+    
+    '设置首行居中显示
+    
+    catalog.Range(catalog.cells(1,1),catalog.cells(1,3)).HorizontalAlignment = 3
+    '设置首行字体加粗
+    catalog.Range(catalog.cells(1,1),catalog.cells(1,3)).Font.Bold = True
+End Sub 
+
+'----------------------------------------------------------------------------------------------
+' 新增sheet页
+'----------------------------------------------------------------------------------------------
+Sub AddSheet(sheetName)
+    EXCEL.workbooks(1).Sheets(2).Select
+    EXCEL.workbooks(1).sheets.add
+    EXCEL.workbooks(1).sheets(2).name = sheetName
+    set sheet = EXCEL.workbooks(1).sheets(sheetName)
+    rowsNum = 1
+    '将一些文本放在工作表的第一行
+    sheet.Cells(rowsNum, 1).Value = &quot;表名&quot;
+    'sheet.Cells(rowsNum, 2).Value = &quot;表中文名&quot;
+    sheet.Cells(rowsNum, 2).Value = &quot;表备注&quot;
+    'sheet.Cells(rowsNum, 4).Value = &quot;字段ID&quot;
+    sheet.Cells(rowsNum, 3).Value = &quot;字段名&quot;
+    'sheet.Cells(rowsNum, 4).Value = &quot;字段中文名&quot;
+    sheet.Cells(rowsNum, 4).Value = &quot;字段类型&quot;
+    sheet.Cells(rowsNum, 5).Value = &quot;字段备注&quot;
+    sheet.cells(rowsNum, 6).Value = &quot;主键&quot;
+    sheet.cells(rowsNum, 7).Value = &quot;非空&quot;
+    sheet.cells(rowsNum, 8).Value = &quot;默认值&quot;
+    
+    '设置列宽
+    sheet.Columns(1).ColumnWidth = 20
+    sheet.Columns(2).ColumnWidth = 20
+    sheet.Columns(3).ColumnWidth = 20
+    sheet.Columns(4).ColumnWidth = 20
+    sheet.Columns(5).ColumnWidth = 20
+    sheet.Columns(6).ColumnWidth = 5
+    sheet.Columns(7).ColumnWidth = 5
+    sheet.Columns(8).ColumnWidth = 10
+
+    '设置首行居中显示
+    sheet.Range(sheet.cells(1,1),sheet.cells(1,8)).HorizontalAlignment = 3
+    '设置首行字体加粗
+    sheet.Range(sheet.cells(1,1),sheet.cells(1,8)).Font.Bold = True
+    
+    linkNum = linkNum + 1
+    '设置超链接
+    sheet.Hyperlinks.Add sheet.cells(1,1), &quot;&quot;,&quot;目录&quot;&amp;&quot;!B&quot;&amp;linkNum
+End Sub 
+</code></pre></div><h5 id="comment写入name"><a href="#comment写入name" class="header-anchor">#</a> comment写入name</h5> <ul><li><a href="https://blog.csdn.net/itanping/article/details/108563626" target="_blank" rel="noopener noreferrer">PowerDesigner书签（03）显示comment字段注释内容<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <div class="language- extra-class"><pre class="language-text"><code>Option   Explicit   
+    ValidationMode   =   True   
+    InteractiveMode   =   im_Batch
+    Dim   mdl   '   the   current   model  
+      
+    '   get   the   current   active   model   
+    Set   mdl   =   ActiveModel   
+    If   (mdl   Is   Nothing)   Then   
+          MsgBox   &quot;There   is   no   current   Model &quot;   
+    ElseIf   Not   mdl.IsKindOf(PdPDM.cls_Model)   Then   
+          MsgBox   &quot;The   current   model   is   not   an   Physical   Data   model. &quot;   
+    Else   
+          ProcessFolder   mdl   
+    End   If  
+      
+    Private   sub   ProcessFolder(folder)   
+    On Error Resume Next  
+          Dim   Tab   'running     table   
+          for   each   Tab   in   folder.tables   
+                if   not   tab.isShortcut   then   
+                      tab.name   =   tab.comment  
+                      Dim   col   '   running   column   
+                      for   each   col   in   tab.columns   
+                      if col.comment = &quot;&quot; or replace(col.comment,&quot; &quot;, &quot;&quot;)=&quot;&quot; Then
+                            col.name = col.code
+                      else  
+                            'col.name = col.comment
+                            '以下两个代码无效
+                            'strArr = split(col.comment, &quot;（&quot;)
+                            'col.name = strArr(0)
+                            col.name = split(col.comment, &quot;（&quot;)(0)
+                      end if  
+                      next   
+                end   if   
+          next  
+      
+          Dim   view   'running   view   
+          for   each   view   in   folder.Views   
+                if   not   view.isShortcut   then   
+                      view.name   =   view.comment   
+                end   if   
+          next  
+      
+          '   go   into   the   sub-packages   
+          Dim   f   '   running   folder   
+          For   Each   f   In   folder.Packages   
+                if   not   f.IsShortcut   then   
+                      ProcessFolder   f   
+                end   if   
+          Next   
+    end   sub
+</code></pre></div><h4 id="display-preferences-【display-preferences】"><a href="#display-preferences-【display-preferences】" class="header-anchor">#</a> Display Preferences... 【Display Preferences】</h4> <h5 id="general-settings"><a href="#general-settings" class="header-anchor">#</a> General Settings</h5> <h6 id="diagram"><a href="#diagram" class="header-anchor">#</a> Diagram</h6> <ul><li>Show page delimiter 去掉背景中的黑色网格线</li></ul> <h5 id="reference"><a href="#reference" class="header-anchor">#</a> Reference</h5> <h6 id="content"><a href="#content" class="header-anchor">#</a> Content</h6> <ul><li>Center
+<ul><li>Name</li></ul></li></ul> <h6 id="format"><a href="#format" class="header-anchor">#</a> Format</h6> <ul><li>Modify.. -&gt; Line Style</li></ul> <h5 id="table"><a href="#table" class="header-anchor">#</a> Table</h5> <h4 id="model-options-【model-options】"><a href="#model-options-【model-options】" class="header-anchor">#</a> Model Options... 【Model Options】</h4> <ul><li>Model Settings
+<ul><li>Reference
+<ul><li>Auto-migrate columns unselected （PowerDesigner删除外键关系,而不删除外键列）</li> <li>Default link on creation:
+<ul><li>Primary Key</li> <li>User-defined</li></ul></li></ul></li></ul></li></ul> <h3 id="help"><a href="#help" class="header-anchor">#</a> Help</h3> <ol><li>Help Contents F1</li> <li>Online Documentation
+<ul><li><a href="https://infocenter.sybase.com/help/index.jsp" target="_blank" rel="noopener noreferrer">Sybase 产品手册<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ol> <h2 id="physicaldiagram"><a href="#physicaldiagram" class="header-anchor">#</a> PhysicalDiagram</h2> <h3 id="导入库表结构"><a href="#导入库表结构" class="header-anchor">#</a> 导入库表结构</h3> <ul><li>Tools
+<ul><li>-&gt; Import Tables
+<ul><li>-&gt; SQL Inserts
+<ul><li>Use Command Window</li> <li>Import file: .sql
+<ul><li>Import</li></ul></li></ul></li></ul></li></ul></li></ul> <h3 id="自动布局"><a href="#自动布局" class="header-anchor">#</a> 自动布局</h3> <ul><li>选中需要布局的元素 -&gt; 右键 -&gt; Auto-Layout...</li></ul> <h3 id="同时显示table-name-table-code"><a href="#同时显示table-name-table-code" class="header-anchor">#</a> 同时显示Table Name, Table Code</h3> <ol><li><p>Tools -&gt; Model Options... -&gt; Name Convention -&gt; 右侧display中选择显示name还是code
+不支持同时显示，但可以选择显示code，然后将name填入stereotype中，变相同时显示</p></li> <li><p>Tools -&gt; Display Preferences -&gt; Table</p> <ol><li>-&gt; 勾选 stereotype是否显示</li> <li>-&gt; 选中 Comment，Comment中填写表名</li> <li>-&gt; Advanced... -&gt; Customize Content -&gt; Columns -&gt; 添加NAME</li></ol></li> <li><p>在菜单栏中选择 Tools &gt;&gt; Execute Commands &gt;&gt; Edit/Run Script...</p></li></ol> <h3 id="view-properties-视图"><a href="#view-properties-视图" class="header-anchor">#</a> View Properties 视图</h3> <h4 id="sql-query"><a href="#sql-query" class="header-anchor">#</a> SQL Query</h4> <div class="language- extra-class"><pre class="language-text"><code>select id, LTRIM(sys_connect_by_path(abbr_name, '_'),'_') as full_name,LTRIM(sys_connect_by_path(id, ','),',') as org_ids
+  from t_b_company
+connect by prior id = parent_id start with parent_id='0'
+</code></pre></div><h4 id="preview"><a href="#preview" class="header-anchor">#</a> Preview</h4> <div class="language- extra-class"><pre class="language-text"><code>drop view V_COMPANY_ORG;
+
+/*==============================================================*/
+/* View: V_COMPANY_ORG                                          */
+/*==============================================================*/
+create or replace view V_COMPANY_ORG as
+select id, LTRIM(sys_connect_by_path(abbr_name, '_'),'_') as full_name,LTRIM(sys_connect_by_path(id, ','),',') as org_ids
+  from t_b_company
+connect by prior id = parent_id start with parent_id='0'
+with read only;
+
+</code></pre></div><h3 id="sequence-properites-序列"><a href="#sequence-properites-序列" class="header-anchor">#</a> Sequence Properites 序列</h3> <h4 id="physical-options-common"><a href="#physical-options-common" class="header-anchor">#</a> Physical Options(Common)</h4> <ul><li>不填写时默认值</li></ul> <div class="language- extra-class"><pre class="language-text"><code>Start with 1
+Increment by 1
+Min value 1
+Max value 9999999999999999999999999999
+Cache 20
+</code></pre></div><ul><li>相应Preview</li></ul> <div class="language- extra-class"><pre class="language-text"><code>drop sequence SEQ_T_B_FUNC;
+
+create sequence SEQ_T_B_FUNC;
+</code></pre></div><ul><li>最终生成的序列</li></ul> <div class="language- extra-class"><pre class="language-text"><code>create sequence SEQ_T_B_FUNC
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 1
+increment by 1
+cache 20;
+</code></pre></div><h3 id="物理模型导出-生产数据库脚本"><a href="#物理模型导出-生产数据库脚本" class="header-anchor">#</a> 物理模型导出-生产数据库脚本</h3> <ul><li><p>Database -&gt; Generate Database...</p> <ul><li>生成的脚本带双引号时，创建的表，表名区分大小写，访问时也必须加上引号。</li></ul></li> <li><p>删除用户</p></li> <li><p>[Database Generation - name]</p> <ul><li>General
+<ul><li>Directory: choose directory</li> <li>File name: input</li></ul></li> <li>Options
+<ul><li>Table &amp; Column
+<ul><li>uncheck Table\Key\Index Physical options</li></ul></li> <li>首次执行 uncheck Drop...</li></ul></li> <li>Format 注释为空时，用NAME
+<ul><li>Generate name in empty comment</li></ul></li></ul></li></ul> <div class="language- extra-class"><pre class="language-text"><code>alter table SYS_OPER_LOG
+   drop primary key cascade;
+
+drop table SYS_OPER_LOG cascade constraints;
+
+/*==============================================================*/
+/* Table: SYS_OPER_LOG                                          */
+/*==============================================================*/
+create table SYS_OPER_LOG 
+(
+   OPER_ID              NUMBER(20)           not null,
+   TITLE                VARCHAR2(50)         default '',
+   BUSINESS_TYPE        NUMBER(2)            default 0,
+   METHOD               VARCHAR2(200)        default '',
+   REQUEST_METHOD       VARCHAR2(10)         default '',
+   OPERATOR_TYPE        NUMBER(1)            default 0,
+   OPER_NAME            VARCHAR2(50)         default '',
+   DEPT_NAME            VARCHAR2(50)         default '',
+   OPER_URL             VARCHAR2(255)        default '',
+   OPER_IP              VARCHAR2(50)         default '',
+   OPER_LOCATION        VARCHAR2(255)        default '',
+   OPER_PARAM           VARCHAR2(2000)       default '',
+   JSON_RESULT          VARCHAR2(2000)       default '',
+   STATUS               NUMBER(1)            default 0,
+   ERROR_MSG            VARCHAR2(2000)       default '',
+   OPER_TIME            DATE
+--);
+) tablespace  vtspace;
+
+comment on table SYS_OPER_LOG is
+'操作日志记录';
+
+comment on column SYS_OPER_LOG.OPER_ID is
+'日志主键seq_sys_oper_log.nextval';
+
+comment on column SYS_OPER_LOG.TITLE is
+'模块标题';
+
+comment on column SYS_OPER_LOG.BUSINESS_TYPE is
+'业务类型（0其它 1新增 2修改 3删除）';
+
+comment on column SYS_OPER_LOG.METHOD is
+'方法名称';
+
+comment on column SYS_OPER_LOG.REQUEST_METHOD is
+'请求方式';
+
+comment on column SYS_OPER_LOG.OPERATOR_TYPE is
+'操作类别（0其它 1后台用户 2手机端用户）';
+
+comment on column SYS_OPER_LOG.OPER_NAME is
+'操作人员';
+
+comment on column SYS_OPER_LOG.DEPT_NAME is
+'部门名称';
+
+comment on column SYS_OPER_LOG.OPER_URL is
+'请求URL';
+
+comment on column SYS_OPER_LOG.OPER_IP is
+'主机地址';
+
+comment on column SYS_OPER_LOG.OPER_LOCATION is
+'操作地点';
+
+comment on column SYS_OPER_LOG.OPER_PARAM is
+'请求参数';
+
+comment on column SYS_OPER_LOG.JSON_RESULT is
+'返回参数';
+
+comment on column SYS_OPER_LOG.STATUS is
+'操作状态（0正常 1异常）';
+
+comment on column SYS_OPER_LOG.ERROR_MSG is
+'错误消息';
+
+comment on column SYS_OPER_LOG.OPER_TIME is
+'操作时间';
+
+alter table SYS_OPER_LOG
+   add constraint PK_SYS_OPER_LOG primary key (OPER_ID);
+
+
+</code></pre></div><h4 id="分隔符"><a href="#分隔符" class="header-anchor">#</a> 分隔符 ;-&gt;/</h4> <ol><li>指定语句分隔符进行
+<ul><li>DATABASE -&gt; EDIT CURRENT DATABASE -&gt; General -&gt; Script -&gt; Sytax -&gt;Teminator</li> <li>只要我在模型中加入Procedures后，生成的代码就由原来的分号（；）自动变成了斜线（/）
+<ul><li>Procedure自身带分号</li></ul></li></ul></li></ol> <h3 id="物理模型导入-db生成pdm"><a href="#物理模型导入-db生成pdm" class="header-anchor">#</a> 物理模型导入-DB生成PDM</h3> <ul><li>参考
+<ul><li><a href="https://www.cnblogs.com/deng-cc/p/6824946.html" target="_blank" rel="noopener noreferrer">PowerDesigner连接MySQL和逆向工程图<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://jingyan.baidu.com/article/19192ad8f68c21e53e5707eb.html" target="_blank" rel="noopener noreferrer">连接Oracle数据库并导出Oracle的表结构<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <ol start="0"><li>环境设置
+<ol><li>JAVA_HOME jdk必须选择32位</li> <li>CLASSPATH 添加数据库驱动</li></ol></li></ol> <div class="language- extra-class"><pre class="language-text"><code>File-&gt;Reverse Engineer-&gt;Database...
+	- DBMS ORACLE Version 11g
+	- 选择 确定
+
+Database Reverse Enginneering Options
+	- Using a data source
+	
+	- Connect to a Data Source 
+		- Connection profile
+			- Configure...
+
+[Database -&gt; Configure Connectins...]		
+Configure Data Connections 界面
+	选择 Connection Profiles
+		Add Data Source
+
+Connection Profile Definition 界面
+Connection profile name: 
+Directory:
+Connection type: JDBC
+DBMS type: ORACLE
+User name: RUOYI
+JDBC driver class: oracle.jdbc.OracleDriver
+JDBC connection URL: jdbc:oracle:thin:@172.16.9.201:1521:innetdb
+</code></pre></div><ul><li><p>*.dcp</p> <ul><li>可以修改文件名，文件配置信息。修改文件名后，无法识别
+<ol><li>[Configure Data Connections]界面
+<ul><li>Connection Profiles
+<ul><li>删除 old.dcp</li></ul></li></ul></li> <li>[Connect to a Data Source]界面
+<ul><li>Connection profile
+<ul><li>Browse For Folder: 选中 new.dcp所在的文件夹</li> <li>Open: 选中 new.dcp</li></ul></li></ul></li></ol></li></ul></li> <li><p>E:\TosinJia\IdeaProjects\TxjXtzc\db\RuoYi.dcp</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>[ConnectionProfile]
+ConnectionType=JDBC
+Dbms=Oracle
+Description=RuoYi框架数据库
+DisableBind=0
+Driver=oracle.jdbc.OracleDriver
+JarFiles=RUOYI
+LogId=RUOYI
+MapDateToDateTime=1
+TrimSpaces=0
+URL=jdbc:oracle:thin:@172.16.9.206:1521:innetdb
+</code></pre></div><ul><li>选择反向数据</li></ul> <div class="language- extra-class"><pre class="language-text"><code># 
+Database Reverse Engineering界面
+	- 选择需要反向的数据
+		- 选择 Table（不选择Physical options）、Trigger、Sequence、DatabaseLink
+		- 不选择 User Tablespace，User
+</code></pre></div><h4 id="修改"><a href="#修改" class="header-anchor">#</a> 修改</h4> <div class="language- extra-class"><pre class="language-text"><code>Table Properties
+
+	Owner
+	Physical Options
+
+	Key Proerties
+		Physical Options
+		Physical Options(Common)
+</code></pre></div><h4 id="connection-profile-definition"><a href="#connection-profile-definition" class="header-anchor">#</a> Connection Profile Definition</h4> <div class="language- extra-class"><pre class="language-text"><code>Connection type: JDBC
+DBMS type: ORACLE
+User name: ztcbos
+JDBC driver classs: oracle.jdbc.OracleDriver
+JDBC connection URL: jdbc:oracle:thin:@172.16.9.201:1521:innetdb
+</code></pre></div><h4 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h4> <h5 id="non-sql-error-could-not-load-class-oracle-jdbc-oracledriver"><a href="#non-sql-error-could-not-load-class-oracle-jdbc-oracledriver" class="header-anchor">#</a> Non SQL Error : Could not load class oracle.jdbc.OracleDriver</h5> <ul><li>环境变量 CLASSPATH，添加 E:\TosinJia\tools\portableSoft\apache-maven-3.6.3\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar 路径</li></ul> <h5 id="ora-12505-tns-listener-does-not-currently-know-of-sid-given-in-connect-descriptor"><a href="#ora-12505-tns-listener-does-not-currently-know-of-sid-given-in-connect-descriptor" class="header-anchor">#</a> ORA-12505, TNS:listener does not currently know of SID given in connect descriptor</h5> <div class="language- extra-class"><pre class="language-text"><code>SQLSTATE = 66000
+Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+</code></pre></div><ul><li>解决方法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>jdbc:oracle:thin:@172.16.9.199:1521:innetdb
+Connection test sucessful.
+jdbc:oracle:thin:@172.16.9.199:1521/innetdb
+</code></pre></div><h5 id="could-not-initialize-javavm"><a href="#could-not-initialize-javavm" class="header-anchor">#</a> Could not Initialize JavaVM!</h5> <ul><li>解决办法：jdk必须选择32位，64位会报  &quot;Could not Initialize JavaVM!&quot;</li></ul> <div class="language- extra-class"><pre class="language-text"><code>JAVA_HOME
+E:\TosinJia\MyEnviroment\WorkingEnvironment\JAVAEnviroment\64\jdk1.8.0_111
+
+E:\TosinJia\MyEnviroment\WorkingEnvironment\JAVAEnviroment\x86\jdk1.8.0_111
+</code></pre></div><h5 id="non-sql-error-could-not-load-class-oracle-jdbc-oracledriver-2"><a href="#non-sql-error-could-not-load-class-oracle-jdbc-oracledriver-2" class="header-anchor">#</a> Non SQL Error : Could not load class oracle.jdbc.OracleDriver</h5> <ul><li>解决办法：需要在环境变量中配置驱动的路径</li></ul> <div class="language- extra-class"><pre class="language-text"><code>
+CLASSPATH
+E:\tools\maven\apache-maven-3.0.5-2.0\mavenrepo\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar
+</code></pre></div><h1 id="数据库切换"><a href="#数据库切换" class="header-anchor">#</a> 数据库切换</h1> <h2 id="mysql2oracle"><a href="#mysql2oracle" class="header-anchor">#</a> mysql2oracle</h2> <h3 id="类型转换"><a href="#类型转换" class="header-anchor">#</a> 类型转换</h3> <ol><li>varchar(100) varchar2(100)</li> <li>datetime DATE</li> <li>bigint(20) NUMBER(20)</li> <li>int(4) NUMBER(4)</li> <li>decimal(12,2) NUMBER(12,2)</li></ol> <ul><li>参考
+<ul><li><a href="https://www.cnblogs.com/guyueyanzi/archive/2010/02/27/1674788.html" target="_blank" rel="noopener noreferrer">MYSQL 与 Oracle 之间的数据类型转换<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.cnblogs.com/priestess-zhao/p/14308959.html" target="_blank" rel="noopener noreferrer">mysql与oracle之间的数据类型转换<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul> <h1 id="案例"><a href="#案例" class="header-anchor">#</a> 案例</h1> <h2 id="sim卡综合管理系统"><a href="#sim卡综合管理系统" class="header-anchor">#</a> SIM卡综合管理系统</h2> <ul><li>E:\MyEnviroment\WorkingEnvironment\项目整理\中交天健\SIM卡综合管理系统\数据库设计\v2.1\SIM卡综合管理系统.pdm</li></ul> <h2 id="订单系统"><a href="#订单系统" class="header-anchor">#</a> 订单系统</h2> <ul><li>E:\workspaces\eclipseProjects\txjProjects\txjiov\db\TXJIVO_V1.5.pdm</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.de0ffd6c.js" defer></script><script src="/assets/js/3.059a2ce3.js" defer></script><script src="/assets/js/20.1074faf8.js" defer></script>
+  </body>
+</html>
